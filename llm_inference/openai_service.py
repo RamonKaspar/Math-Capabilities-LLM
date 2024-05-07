@@ -17,11 +17,15 @@ class OpenAIService(LLMInterface):
         messages.append({"role": "user", "content": question})
         return messages
 
-    def make_request(self, messages):
+    def make_request(self, messages) -> tuple[str, int, int]:
         response = self.client.chat.completions.create(
             model=self.model_name,
             messages=messages,
             max_tokens=self.max_tokens,
             temperature=self.temperature,
         )
-        return response.choices[0].message.content
+        response_message = response.choices[0].message.content
+        completion_tokens_used = response.usage.completion_tokens
+        prompt_tokens_used = response.usage.prompt_tokens
+        print(response)
+        return response_message, completion_tokens_used, prompt_tokens_used
