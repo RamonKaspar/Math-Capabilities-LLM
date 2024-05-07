@@ -1,5 +1,7 @@
 import os
 from openai import AzureOpenAI
+from openai.types.chat import ChatCompletionMessageParam
+from typing import List
 
 from .llm_interface import LLMInterface
 
@@ -12,16 +14,7 @@ class AzureOpenAIService(LLMInterface):
             azure_endpoint=os.getenv("AZURE_OPENAI_ENDPOINT")
         )
 
-    def create_prompt(self, system_prompt, few_shot_examples, question):
-        messages = []
-        messages.append({"role": "system", "content": system_prompt})
-        for message in few_shot_examples:
-            messages.append({"role": "user", "content": message['question']})
-            messages.append({"role": "assistant", "content": message['answer']})
-        messages.append({"role": "user", "content": question})
-        return messages
-
-    def make_request(self, messages) -> tuple[str, int, int]:
+    def make_request(self, messages: List[ChatCompletionMessageParam]) -> tuple[str, int, int]:
         response = self.client.chat.completions.create(
             model=self.model_name,
             messages=messages,
@@ -31,5 +24,4 @@ class AzureOpenAIService(LLMInterface):
         response_message = response.choices[0].message.content
         completion_tokens_used = response.usage.completion_tokens
         prompt_tokens_used = response.usage.prompt_tokens
-        print(response)
         return response_message, completion_tokens_used, prompt_tokens_used
