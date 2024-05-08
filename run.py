@@ -1,5 +1,6 @@
 import pandas as pd
 import time
+from time import sleep
 from tqdm import tqdm
 
 from techniques.Baseline import Baseline
@@ -26,7 +27,11 @@ def run_evaluation(technique_name, dataset, service, model, temperature, max_tok
     results = []
     for index, sample in tqdm(dataset_df.iterrows(), total=dataset_df.shape[0]):
         question = str(sample['question'])
-        correct_answer = float(sample['answer']) 
+        try:
+            correct_answer = float(sample['answer'])
+        except Exception as e:
+            print(f"Error parsing the answer to float for question '{question}': {e}")
+            continue
         category = sample.get('category', 'N/A')  
         subcategory = sample.get('subcategory', 'N/A') 
         try: 
@@ -42,15 +47,36 @@ def run_evaluation(technique_name, dataset, service, model, temperature, max_tok
         response['subcategory'] = subcategory  
         response['latency_in_seconds'] = latency
         results.append(response)
-        break
+        
+        # Sleep for 1 second to avoid rate limiting
+        sleep(1)
+        
     results_df = pd.DataFrame(results)
     results_df.to_csv(f"evaluation/data/{technique_name}_{dataset}_{service}_{model}.csv", index=False)
-    print(f"Results saved to evaluation/data/{technique_name}_{dataset}_{service}_{model}.csv.csv")
+    print(f"Results saved to evaluation/data/{technique_name}_{dataset}_{service}_{model}.csv")
     
 if __name__ == "__main__":
-    run_evaluation("PaL", "arithmetic_100", "azure", "gpt-35-turbo", 0.1, 200)
+    # Fix the testing parameters
+    DATASET = "wordProblems_100"
+    SERVICE = "azure"
+    MODEL = "gpt-35-turbo"
+    TEMPERATURE = 0
+    MAX_TOKEN = 200
     
-
+    # for technique_name in ["Baseline", "PaL"]:
+    #     print(f"Running the evaluation for the {technique_name} technique on the {DATASET} dataset using the {MODEL} model.")
+    #     run_evaluation(technique_name, DATASET, SERVICE, MODEL, TEMPERATURE, MAX_TOKEN)
+    #     print("Finished.")
+    
+    # Evaluate Baseline
+    print(f"Evaluating the Baseline technique on the {DATASET} dataset using the GPT-3.5-turbo model.")
+    run_evaluation("Baseline", DATASET, SERVICE, MODEL, TEMPERATURE, MAX_TOKEN)
+    print("Finished.")
+    
+    # Evaluate PaL
+    print(f"Evaluating the PaL technique on the {DATASET} dataset using the GPT-3.5-turbo model.")
+    run_evaluation("PaL", DATASET, SERVICE, MODEL, TEMPERATURE, MAX_TOKEN)
+    print("Finished.")
 
 
 
