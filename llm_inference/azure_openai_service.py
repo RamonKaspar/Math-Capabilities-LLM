@@ -24,4 +24,4 @@ class AzureOpenAIService(LLMInterface):
         response_message = response.choices[0].message.content
         completion_tokens_used = response.usage.completion_tokens
         prompt_tokens_used = response.usage.prompt_tokens
-        return response_message, completion_tokens_used, prompt_tokens_used
+        return response_message, prompt_tokens_used, completion_tokens_used
