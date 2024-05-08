@@ -107,10 +107,12 @@ class TechniqueInterface:
         answer, reasoning, prompt_tokens, completion_tokens = self.query(question)  
         data = {
             "technique": self.name,
+            "dataset": self.dataset,
             "question": question,
             "answer": answer,
             "reasoning": reasoning,
             "model": self.model,
+            "service": self.service,
             "temperature": self.temperature,
             "prompt_tokens": prompt_tokens,
             "completion_tokens": completion_tokens,
