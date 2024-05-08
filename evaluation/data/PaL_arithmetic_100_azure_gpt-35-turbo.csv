@@ -1,0 +1,641 @@
+technique,dataset,question,answer,reasoning,model,service,temperature,prompt_tokens,completion_tokens,correct_answer,category,subcategory,latency_in_seconds
+PaL,arithmetic,0.1*3.0=,0.30000000000000004,"
+def solution():
+    """"""Calculate the product of 0.1 and 3.0.""""""
+    result = 0.1 * 3.0
+    return result",gpt-35-turbo,azure,0,443,36,0.3,Arithmetic,arithmetic_mixed,0.7101647853851318
+PaL,arithmetic,88254×26228=,2314725912.0,"
+def solution():
+    """"""Calculate the product of 88254 and 26228.""""""
+    result = 88254 * 26228
+    return result",gpt-35-turbo,azure,0,441,32,2314725912.0,Arithmetic,arithmetic_mixed,0.625267505645752
+PaL,arithmetic,37739*66015=,2491340085.0,"
+def solution():
+    """"""Calculate the product of 37739 and 66015.""""""
+    result = 37739 * 66015
+    return result",gpt-35-turbo,azure,0,441,32,2491340085.0,Arithmetic,arithmetic_mixed,0.5813946723937988
+PaL,arithmetic,5^4=,625.0,"
+def solution():
+    """"""Calculate 5 raised to the power of 4.""""""
+    result = 5 ** 4
+    return result",gpt-35-turbo,azure,0,439,29,625.0,Arithmetic,arithmetic_mixed,0.5858495235443115
+PaL,arithmetic,721-847=,-126.0,"
+def solution():
+    """"""Calculate the difference between 721 and 847.""""""
+    result = 721 - 847
+    return result",gpt-35-turbo,azure,0,439,28,-126.0,Arithmetic,arithmetic_mixed,0.8101780414581299
+PaL,arithmetic,774426524175+721318944497=,1495745468672.0,"
+def solution():
+    """"""Calculate the sum of 774426524175 and 721318944497.""""""
+    result = 774426524175 + 721318944497
+    return result",gpt-35-turbo,azure,0,445,40,1495745468672.0,Arithmetic,arithmetic_mixed,0.6741476058959961
+PaL,arithmetic,7^4=,2401.0,"
+def solution():
+    """"""Calculate 7 raised to the power of 4.""""""
+    result = 7 ** 4
+    return result",gpt-35-turbo,azure,0,439,29,2401.0,Arithmetic,arithmetic_mixed,0.5645413398742676
+PaL,arithmetic,"What is next in 1964, 3923, 5880, 7835?",9790.0,"def solution():
+    """"""Find the next number in the sequence 1964, 3923, 5880, 7835.""""""
+    sequence = [1964, 3923, 5880, 7835]
+    next_number = sequence[-1] + (sequence[-1] - sequence[-2])
+    return next_number",gpt-35-turbo,azure,0,454,70,9788.0,Arithmetic,sequence_next_term,1.240199089050293
+PaL,arithmetic,"What comes next: 17, 49, 129, 281, 529, 897, 1409?",1921.0,"def solution():
+    """"""Find the next number in the sequence 17, 49, 129, 281, 529, 897, 1409.""""""
+    sequence = [17, 49, 129, 281, 529, 897, 1409]
+    next_number = sequence[-1] + (sequence[-1] - sequence[-2])
+    return next_number",gpt-35-turbo,azure,0,460,82,2089.0,Arithmetic,sequence_next_term,1.5340163707733154
+PaL,arithmetic,"What is the next term in -1691, -1690, -1689, -1688?",-1687.0,"
+def solution():
+    """"""Find the next term in the sequence -1691, -1690, -1689, -1688.""""""
+    sequence = [-1691, -1690, -1689, -1688]
+    next_term = sequence[-1] + 1
+    return next_term",gpt-35-turbo,azure,0,456,64,-1687.0,Arithmetic,sequence_next_term,0.9143033027648926
+PaL,arithmetic,"What is the next term in -1341, -2675, -3997, -5301, -6581, -7831?",-9081.0,"def solution():
+    """"""Find the next term in the sequence -1341, -2675, -3997, -5301, -6581, -7831.""""""
+    sequence = [-1341, -2675, -3997, -5301, -6581, -7831]
+    next_term = sequence[-1] - (sequence[-2] - sequence[-1])
+    return next_term",gpt-35-turbo,azure,0,464,86,-9045.0,Arithmetic,sequence_next_term,2.24377179145813
+PaL,arithmetic,"What is the next term in 12, 24, 38, 54, 72, 92, 114?",136.0,"def solution():
+    """"""Find the next term in the sequence 12, 24, 38, 54, 72, 92, 114.""""""
+    sequence = [12, 24, 38, 54, 72, 92, 114]
+    next_term = sequence[-1] + (sequence[-1] - sequence[-2])
+    return next_term",gpt-35-turbo,azure,0,461,80,138.0,Arithmetic,sequence_next_term,1.7073748111724854
+PaL,arithmetic,"What is the next term in 1070, 4273, 9610, 17081?",24552.0,"def solution():
+    """"""Find the next term in the sequence 1070, 4273, 9610, 17081.""""""
+    sequence = [1070, 4273, 9610, 17081]
+    next_term = sequence[-1] + (sequence[-1] - sequence[-2])
+    return next_term",gpt-35-turbo,azure,0,456,70,26686.0,Arithmetic,sequence_next_term,1.7073144912719727
+PaL,arithmetic,"What comes next: -75, -80, -85, -90?",-95.0,"
+def solution():
+    """"""Find the next term in the sequence -75, -80, -85, -90.""""""
+    sequence = [-75, -80, -85, -90]
+    next_term = sequence[-1] - 5
+    return next_term",gpt-35-turbo,azure,0,450,56,-95.0,Arithmetic,sequence_next_term,1.125915288925171
+PaL,arithmetic,Calculate -13 - 40.103.,-53.103,"
+def solution():
+    """"""Calculate the subtraction of -13 and 40.103.""""""
+    result = -13 - 40.103
+    return result",gpt-35-turbo,azure,0,443,32,-53.103,Arithmetic,add_or_sub,0.9350335597991943
+PaL,arithmetic,Add together -18.766737 and -0.5.,-19.266737,"
+def solution():
+    """"""Add -18.766737 and -0.5.""""""
+    result = -18.766737 + -0.5
+    return result",gpt-35-turbo,azure,0,447,35,-19.266737,Arithmetic,add_or_sub,0.6877057552337646
+PaL,arithmetic,What is -0.3 minus 1991087?,-1991087.3,"
+def solution():
+    """"""Calculate -0.3 minus 1991087.""""""
+    result = -0.3 - 1991087
+    return result",gpt-35-turbo,azure,0,446,33,-1991087.3,Arithmetic,add_or_sub,0.7904903888702393
+PaL,arithmetic,Subtract -1 from -467.,-466.0,"
+def solution():
+    """"""Subtract -1 from -467.""""""
+    result = -467 - (-1)
+    return result",gpt-35-turbo,azure,0,441,26,-466.0,Arithmetic,add_or_sub,0.7032949924468994
+PaL,arithmetic,What is the distance between 0.7 and -1843?,1843.7,"
+def solution():
+    """"""Calculate the distance between 0.7 and -1843.""""""
+    distance = abs(0.7 - (-1843))
+    return distance",gpt-35-turbo,azure,0,448,35,1843.7,Arithmetic,add_or_sub,0.9282917976379395
+PaL,arithmetic,What is -84217 minus -5?,-84212.0,"
+def solution():
+    """"""Calculate -84217 minus -5.""""""
+    result = -84217 - (-5)
+    return result",gpt-35-turbo,azure,0,443,27,-84212.0,Arithmetic,add_or_sub,0.7514777183532715
+PaL,arithmetic,What is 221 take away 0.2?,220.8,"
+def solution():
+    """"""Calculate the subtraction of 0.2 from 221.""""""
+    result = 221 - 0.2
+    return result",gpt-35-turbo,azure,0,445,32,220.8,Arithmetic,add_or_sub,0.747920036315918
+PaL,arithmetic,0 - (10 - (4 + 5)),-1.0,"
+def solution():
+    """"""Calculate the expression 0 - (10 - (4 + 5)).""""""
+    result = 0 - (10 - (4 + 5))
+    return result",gpt-35-turbo,azure,0,446,40,-1.0,Arithmetic,add_sub_multiple,1.207808256149292
+PaL,arithmetic,0 - 2 - (4 - (-5 + 11)),0.0,"
+def solution():
+    """"""Calculate the expression 0 - 2 - (4 - (-5 + 11)).""""""
+    result = 0 - 2 - (4 - (-5 + 11))
+    return result",gpt-35-turbo,azure,0,449,46,0.0,Arithmetic,add_sub_multiple,1.0543339252471924
+PaL,arithmetic,Evaluate -7 + (-7 - -2) - -5 - -9.,2.0,"
+def solution():
+    """"""Evaluate the expression -7 + (-7 - -2) - -5 - -9.""""""
+    result = -7 + (-7 - -2) - -5 - -9
+    return result",gpt-35-turbo,azure,0,451,47,2.0,Arithmetic,add_sub_multiple,0.7985210418701172
+PaL,arithmetic,Calculate (3 - (-4 - -3)) + -4.,0.0,"
+def solution():
+    """"""Calculate the expression (3 - (-4 - -3)) + -4.""""""
+    result = (3 - (-4 - -3)) + -4
+    return result",gpt-35-turbo,azure,0,448,41,0.0,Arithmetic,add_sub_multiple,0.6023399829864502
+PaL,arithmetic,Calculate 1 - (4 - 8 - -8).,-3.0,"
+def solution():
+    """"""Calculate the expression 1 - (4 - 8 - -8).""""""
+    result = 1 - (4 - 8 - -8)
+    return result",gpt-35-turbo,azure,0,447,40,-3.0,Arithmetic,add_sub_multiple,0.6807212829589844
+PaL,arithmetic,Calculate -8 + 3 - (1 + -4 - 0).,-2.0,"
+def solution():
+    """"""Calculate the expression -8 + 3 - (1 + -4 - 0).""""""
+    result = -8 + 3 - (1 + -4 - 0)
+    return result",gpt-35-turbo,azure,0,450,46,-2.0,Arithmetic,add_sub_multiple,0.8182613849639893
+PaL,arithmetic,What is 9 - 2 - 11 - (-1 - 1)?,-2.0,"
+def solution():
+    """"""Calculate the result of the expression 9 - 2 - 11 - (-1 - 1).""""""
+    result = 9 - 2 - 11 - (-1 - 1)
+    return result",gpt-35-turbo,azure,0,451,49,-2.0,Arithmetic,add_sub_multiple,0.90338134765625
+PaL,arithmetic,-6405 divided by -105,61.0,"
+def solution():
+    """"""Calculate -6405 divided by -105.""""""
+    dividend = -6405
+    divisor = -105
+    quotient = dividend / divisor
+    return quotient",gpt-35-turbo,azure,0,441,38,61.0,Arithmetic,div,0.7001316547393799
+PaL,arithmetic,Calculate -4450 divided by 178.,-25.0,"
+def solution():
+    """"""Calculate -4450 divided by 178.""""""
+    result = -4450 / 178
+    return result",gpt-35-turbo,azure,0,443,28,-25.0,Arithmetic,div,0.5729289054870605
+PaL,arithmetic,263 divided by 1,263.0,"
+def solution():
+    """"""Calculate the division of 263 by 1.""""""
+    result = 263 / 1
+    return result",gpt-35-turbo,azure,0,440,28,263.0,Arithmetic,div,0.6686241626739502
+PaL,arithmetic,Calculate -732 divided by 4.,-183.0,"
+def solution():
+    """"""Calculate -732 divided by 4.""""""
+    result = -732 / 4
+    return result",gpt-35-turbo,azure,0,442,26,-183.0,Arithmetic,div,0.7809672355651855
+PaL,arithmetic,What is -44030 divided by -1190?,37.0,"
+def solution():
+    """"""Calculate the division of -44030 by -1190.""""""
+    result = -44030 / -1190
+    return result",gpt-35-turbo,azure,0,445,32,37.0,Arithmetic,div,0.7825679779052734
+PaL,arithmetic,What is -546 divided by 6?,-91.0,"
+def solution():
+    """"""Calculate the division of -546 by 6.""""""
+    result = -546 / 6
+    return result",gpt-35-turbo,azure,0,443,28,-91.0,Arithmetic,div,0.5749046802520752
+PaL,arithmetic,Calculate -102 divided by 2.,-51.0,"
+def solution():
+    """"""Calculate -102 divided by 2.""""""
+    result = -102 / 2
+    return result",gpt-35-turbo,azure,0,442,26,-51.0,Arithmetic,div,0.6558966636657715
+PaL,arithmetic,What is 5 times -34?,-170.0,"
+def solution():
+    """"""Calculate 5 multiplied by -34.""""""
+    result = 5 * -34
+    return result",gpt-35-turbo,azure,0,442,26,-170.0,Arithmetic,mul,0.5606100559234619
+PaL,arithmetic,What is 427 times 0?,0.0,"
+def solution():
+    """"""Calculate the product of 427 and 0.""""""
+    result = 427 * 0
+    return result",gpt-35-turbo,azure,0,442,28,0.0,Arithmetic,mul,0.6418836116790771
+PaL,arithmetic,What is 1247 times 0.5?,623.5,"
+def solution():
+    """"""Calculate 1247 multiplied by 0.5.""""""
+    result = 1247 * 0.5
+    return result",gpt-35-turbo,azure,0,445,32,623.5,Arithmetic,mul,0.8138434886932373
+PaL,arithmetic,Work out 0 * -3.4.,-0.0,"
+def solution():
+    """"""Calculate the product of 0 and -3.4.""""""
+    result = 0 * -3.4
+    return result",gpt-35-turbo,azure,0,444,32,0.0,Arithmetic,mul,0.8159475326538086
+PaL,arithmetic,-2167 times 3,-6501.0,"
+def solution():
+    """"""Calculate -2167 multiplied by 3.""""""
+    result = -2167 * 3
+    return result",gpt-35-turbo,azure,0,440,28,-6501.0,Arithmetic,mul,0.7590279579162598
+PaL,arithmetic,-45 * 66,-2970.0,"
+def solution():
+    """"""Calculate -45 multiplied by 66.""""""
+    result = -45 * 66
+    return result",gpt-35-turbo,azure,0,439,26,-2970.0,Arithmetic,mul,0.5876474380493164
+PaL,arithmetic,What is the product of 0.3 and -81?,-24.3,"
+def solution():
+    """"""Calculate the product of 0.3 and -81.""""""
+    result = 0.3 * -81
+    return result",gpt-35-turbo,azure,0,447,32,-24.3,Arithmetic,mul,0.6366143226623535
+PaL,arithmetic,Evaluate -3*(-3)/(-27)*-15.,5.0,"
+def solution():
+    """"""Evaluate the expression -3*(-3)/(-27)*-15.""""""
+    result = -3 * (-3) / (-27) * -15
+    return result",gpt-35-turbo,azure,0,446,40,5.0,Arithmetic,mul_div_multiple,0.6837761402130127
+PaL,arithmetic,What is (2/16*-4)/((-2)/(-8))?,-2.0,"
+def solution():
+    """"""Calculate the expression (2/16*-4)/((-2)/(-8)).""""""
+    result = (2/16*-4)/((-2)/(-8))
+    return result",gpt-35-turbo,azure,0,449,42,-2.0,Arithmetic,mul_div_multiple,0.8006789684295654
+PaL,arithmetic,(-47)/(-188)*(-24)/2,-3.0,"
+def solution():
+    """"""Calculate the expression (-47)/(-188)*(-24)/2.""""""
+    result = (-47) / (-188) * (-24) / 2
+    return result",gpt-35-turbo,azure,0,444,41,-3.0,Arithmetic,mul_div_multiple,0.9468140602111816
+PaL,arithmetic,Calculate 1/(-12)*-4*-15.,-5.0,"
+def solution():
+    """"""Calculate the expression 1/(-12) * -4 * -15.""""""
+    result = 1 / (-12) * -4 * -15
+    return result",gpt-35-turbo,azure,0,446,41,-5.0,Arithmetic,mul_div_multiple,1.359602928161621
+PaL,arithmetic,(-3)/((-18)/4)*-3,-2.0,"
+def solution():
+    """"""Calculate the expression (-3)/((-18)/4)*-3.""""""
+    result = (-3) / ((-18) / 4) * (-3)
+    return result",gpt-35-turbo,azure,0,444,42,-2.0,Arithmetic,mul_div_multiple,0.9565248489379883
+PaL,arithmetic,What is -1*(-6)/(-12)*2?,-1.0,"
+def solution():
+    """"""Calculate the expression -1*(-6)/(-12)*2.""""""
+    result = -1 * (-6) / (-12) * 2
+    return result",gpt-35-turbo,azure,0,446,39,-1.0,Arithmetic,mul_div_multiple,0.7756953239440918
+PaL,arithmetic,Evaluate (-1)/((-8)/(48/(-3))).,-2.0,"
+def solution():
+    """"""Evaluate the expression (-1)/((-8)/(48/(-3))).""""""
+    result = (-1) / ((-8) / (48 / (-3)))
+    return result",gpt-35-turbo,azure,0,446,42,-2.0,Arithmetic,mul_div_multiple,0.8253607749938965
+PaL,arithmetic,How many millilitres are there in 910.4399 litres?,910439.9,"
+def solution():
+    """"""Convert 910.4399 litres to millilitres.""""""
+    litres = 910.4399
+    millilitres = litres * 1000
+    return millilitres",gpt-35-turbo,azure,0,449,43,910439.9,Arithmetic,conversion,0.8684897422790527
+PaL,arithmetic,What is fifty-five halves of a kilometer in meters?,27500.0,"
+def solution():
+    """"""Convert fifty-five halves of a kilometer to meters.""""""
+    kilometers = 55 / 2
+    meters = kilometers * 1000
+    return meters",gpt-35-turbo,azure,0,446,38,27500.0,Arithmetic,conversion,1.033038854598999
+PaL,arithmetic,What is 1.946047l in millilitres?,1946.047,"
+def solution():
+    """"""Convert 1.946047 liters to milliliters.""""""
+    liters = 1.946047
+    milliliters = liters * 1000
+    return milliliters",gpt-35-turbo,azure,0,447,43,1946.047,Arithmetic,conversion,1.3167879581451416
+PaL,arithmetic,What is 0.929527 centuries in millennia?,9.295269999999999,"
+def solution():
+    """"""Convert 0.929527 centuries to millennia.""""""
+    centuries = 0.929527
+    millennia = centuries / 0.1
+    return millennia",gpt-35-turbo,azure,0,445,38,0.0929527,Arithmetic,conversion,0.9850730895996094
+PaL,arithmetic,How many millilitres are there in one twentieth of a litre?,50.0,"
+def solution():
+    """"""Calculate the number of millilitres in one twentieth of a litre.""""""
+    litre = 1000  # 1 litre is equal to 1000 millilitres
+    one_twentieth_litre = litre / 20
+    return one_twentieth_litre",gpt-35-turbo,azure,0,448,60,50.0,Arithmetic,conversion,1.4087109565734863
+PaL,arithmetic,What is one tenth of a milligram in nanograms?,100000.0,"
+def solution():
+    """"""Convert one tenth of a milligram to nanograms.""""""
+    milligram = 0.1
+    nanogram = milligram * 1000000
+    return nanogram",gpt-35-turbo,azure,0,446,42,100000.0,Arithmetic,conversion,0.7862324714660645
+PaL,arithmetic,What is 2/125 of a meter in millimeters?,16.0,"
+def solution():
+    """"""Convert 2/125 of a meter to millimeters.""""""
+    meter = 2/125
+    millimeters = meter * 1000
+    return millimeters",gpt-35-turbo,azure,0,447,40,16.0,Arithmetic,conversion,0.9073805809020996
+PaL,arithmetic,How many minutes are there between 2:12 PM and 3:43 PM?,91.0,"
+def solution():
+    """"""Calculate the number of minutes between 2:12 PM and 3:43 PM.""""""
+    start_hour = 14  # 2 PM in 24-hour format
+    start_minute = 12
+    end_hour = 15    # 3 PM in 24-hour format
+    end_minute = 43
+
+    minutes_between = (end_hour * 60 + end_minute) - (start_hour * 60 + start_minute)
+    return minutes_between",gpt-35-turbo,azure,0,452,101,91.0,Arithmetic,time,2.24200701713562
+PaL,arithmetic,How many minutes are there between 10:12 PM and 5:36 AM?,444.0,"
+def solution():
+    """"""Calculate the number of minutes between 10:12 PM and 5:36 AM.""""""
+    start_hour = 22  # 10 PM in 24-hour format
+    start_minute = 12
+    end_hour = 5    # 5 AM in 24-hour format
+    end_minute = 36
+
+    # Convert start and end times to minutes
+    start_minutes = start_hour * 60 + start_minute
+    end_minutes = end_hour * 60 + end_minute
+
+    # Calculate the difference in minutes
+    if end_minutes >= start_minutes:
+        minutes_between = end_minutes - start_minutes
+    else:
+        minutes_between = (24 * 60 - start_minutes) + end_minutes
+
+    return minutes_between",gpt-35-turbo,azure,0,452,158,444.0,Arithmetic,time,3.453368902206421
+PaL,arithmetic,How many minutes are there between 12:25 AM and 7:35 AM?,430.0,"
+def solution():
+    """"""Calculate the number of minutes between 12:25 AM and 7:35 AM.""""""
+    start_hour = 0   # 12 AM in 24-hour format
+    start_minute = 25
+    end_hour = 7
+    end_minute = 35
+
+    total_minutes_start = start_hour * 60 + start_minute
+    total_minutes_end = end_hour * 60 + end_minute
+
+    minutes_between = total_minutes_end - total_minutes_start
+    return minutes_between",gpt-35-turbo,azure,0,452,106,430.0,Arithmetic,time,1.501833438873291
+PaL,arithmetic,How many minutes are there between 11:23 AM and 12:03 PM?,40.0,"
+def solution():
+    """"""Calculate the number of minutes between 11:23 AM and 12:03 PM.""""""
+    start_hour = 11
+    start_minute = 23
+    end_hour = 12
+    end_minute = 3
+
+    total_minutes_start = start_hour * 60 + start_minute
+    total_minutes_end = end_hour * 60 + end_minute
+
+    minutes_between = total_minutes_end - total_minutes_start
+    return minutes_between",gpt-35-turbo,azure,0,452,96,40.0,Arithmetic,time,2.226773738861084
+PaL,arithmetic,How many minutes are there between 12:40 AM and 3:18 AM?,158.0,"
+def solution():
+    """"""Calculate the number of minutes between 12:40 AM and 3:18 AM.""""""
+    start_hour = 0   # 12 AM in 24-hour format
+    start_minute = 40
+    end_hour = 3
+    end_minute = 18
+
+    total_minutes_start = start_hour * 60 + start_minute
+    total_minutes_end = end_hour * 60 + end_minute
+
+    minutes_between = total_minutes_end - total_minutes_start
+    return minutes_between",gpt-35-turbo,azure,0,452,106,158.0,Arithmetic,time,2.173877716064453
+PaL,arithmetic,How many minutes are there between 5:28 PM and 6:20 PM?,52.0,"
+def solution():
+    """"""Calculate the number of minutes between 5:28 PM and 6:20 PM.""""""
+    start_hour = 17  # 5 PM in 24-hour format
+    start_minute = 28
+    end_hour = 18    # 6 PM in 24-hour format
+    end_minute = 20
+
+    minutes_between = (end_hour * 60 + end_minute) - (start_hour * 60 + start_minute)
+    return minutes_between",gpt-35-turbo,azure,0,452,101,52.0,Arithmetic,time,2.29949688911438
+PaL,arithmetic,How many minutes are there between 11:16 PM and 10:18 AM?,-58.0,"
+def solution():
+    """"""Calculate the number of minutes between 11:16 PM and 10:18 AM.""""""
+    start_hour = 23  # 11 PM in 24-hour format
+    start_minute = 16
+    end_hour = 10
+    end_minute = 18
+    minutes_in_hour = 60
+    minutes_between = ((end_hour + 12) * minutes_in_hour + end_minute) - (start_hour * minutes_in_hour + start_minute)
+    return minutes_between",gpt-35-turbo,azure,0,452,105,662.0,Arithmetic,time,1.7273290157318115
+PaL,arithmetic,What is the remainder when 50 is divided by 18?,14.0,"
+def solution():
+    """"""Find the remainder when 50 is divided by 18.""""""
+    dividend = 50
+    divisor = 18
+    remainder = dividend % divisor
+    return remainder",gpt-35-turbo,azure,0,447,40,14.0,Arithmetic,div_remainder,0.6873326301574707
+PaL,arithmetic,What is the remainder when 956 is divided by 287?,95.0,"
+def solution():
+    """"""Find the remainder when 956 is divided by 287.""""""
+    dividend = 956
+    divisor = 287
+    remainder = dividend % divisor
+    return remainder",gpt-35-turbo,azure,0,447,40,95.0,Arithmetic,div_remainder,0.9397671222686768
+PaL,arithmetic,What is the remainder when 2198 is divided by 44?,42.0,"
+def solution():
+    """"""Find the remainder when 2198 is divided by 44.""""""
+    dividend = 2198
+    divisor = 44
+    remainder = dividend % divisor
+    return remainder",gpt-35-turbo,azure,0,448,42,42.0,Arithmetic,div_remainder,0.8652374744415283
+PaL,arithmetic,Calculate the remainder when 1903 is divided by 212.,207.0,"
+def solution():
+    """"""Calculate the remainder when 1903 is divided by 212.""""""
+    dividend = 1903
+    divisor = 212
+    remainder = dividend % divisor
+    return remainder",gpt-35-turbo,azure,0,447,42,207.0,Arithmetic,div_remainder,1.1116833686828613
+PaL,arithmetic,Calculate the remainder when 12707 is divided by 71.,69.0,"
+def solution():
+    """"""Calculate the remainder when 12707 is divided by 71.""""""
+    dividend = 12707
+    divisor = 71
+    remainder = dividend % divisor
+    return remainder",gpt-35-turbo,azure,0,447,42,69.0,Arithmetic,div_remainder,0.9072320461273193
+PaL,arithmetic,What is the remainder when 129 is divided by 61?,7.0,"
+def solution():
+    """"""Find the remainder when 129 is divided by 61.""""""
+    dividend = 129
+    divisor = 61
+    remainder = dividend % divisor
+    return remainder",gpt-35-turbo,azure,0,447,40,7.0,Arithmetic,div_remainder,0.6424214839935303
+PaL,arithmetic,Calculate the remainder when 147 is divided by 23.,9.0,"
+def solution():
+    """"""Calculate the remainder when 147 is divided by 23.""""""
+    dividend = 147
+    divisor = 23
+    remainder = dividend % divisor
+    return remainder",gpt-35-turbo,azure,0,446,40,9.0,Arithmetic,div_remainder,1.1069753170013428
+PaL,arithmetic,What is the highest common factor of 800 and 350?,50.0,"
+import math
+
+def solution():
+    """"""Find the highest common factor of 800 and 350.""""""
+    hcf = math.gcd(800, 350)
+    return hcf",gpt-35-turbo,azure,0,447,38,50.0,Arithmetic,gcd,0.7964072227478027
+PaL,arithmetic,Calculate the highest common factor of 21342 and 12.,6.0,"
+import math
+
+def solution():
+    """"""Calculate the highest common factor of 21342 and 12.""""""
+    hcf = math.gcd(21342, 12)
+    return hcf",gpt-35-turbo,azure,0,447,40,6.0,Arithmetic,gcd,0.7663960456848145
+PaL,arithmetic,What is the greatest common factor of 48 and 1520?,16.0,"
+import math
+
+def solution():
+    """"""Find the greatest common factor of 48 and 1520.""""""
+    number1 = 48
+    number2 = 1520
+    greatest_common_factor = math.gcd(number1, number2)
+    return greatest_common_factor",gpt-35-turbo,azure,0,448,56,16.0,Arithmetic,gcd,1.6946961879730225
+PaL,arithmetic,Calculate the greatest common divisor of 1155 and 616.,77.0,"
+import math
+
+def solution():
+    """"""Calculate the greatest common divisor of 1155 and 616.""""""
+    gcd = math.gcd(1155, 616)
+    return gcd",gpt-35-turbo,azure,0,447,38,77.0,Arithmetic,gcd,0.8753199577331543
+PaL,arithmetic,What is the highest common factor of 32 and 55?,1.0,"
+import math
+
+def solution():
+    """"""Find the highest common factor of 32 and 55.""""""
+    hcf = math.gcd(32, 55)
+    return hcf",gpt-35-turbo,azure,0,447,38,1.0,Arithmetic,gcd,0.8000173568725586
+PaL,arithmetic,What is the greatest common factor of 5037 and 69?,69.0,"
+import math
+
+def solution():
+    """"""Find the greatest common factor of 5037 and 69.""""""
+    number1 = 5037
+    number2 = 69
+    greatest_common_factor = math.gcd(number1, number2)
+    return greatest_common_factor",gpt-35-turbo,azure,0,448,56,69.0,Arithmetic,gcd,1.638746738433838
+PaL,arithmetic,Calculate the greatest common divisor of 44 and 154.,22.0,"
+import math
+
+def solution():
+    """"""Calculate the greatest common divisor of 44 and 154.""""""
+    gcd = math.gcd(44, 154)
+    return gcd",gpt-35-turbo,azure,0,446,36,22.0,Arithmetic,gcd,1.1015443801879883
+PaL,arithmetic,Calculate the least common multiple of 24498 and 8.,97992.0,"
+import math
+
+def solution():
+    """"""Calculate the least common multiple of 24498 and 8.""""""
+    lcm = (24498 * 8) // math.gcd(24498, 8)
+    return lcm",gpt-35-turbo,azure,0,447,46,97992.0,Arithmetic,lcm,1.5435245037078857
+PaL,arithmetic,Calculate the common denominator of 115/582 and -4/11.,6402.0,"To find the common denominator of two fractions, we need to find the least common multiple (LCM) of their denominators. Here's the Python code to calculate the common denominator:
+
+```python
+import math
+
+def solution():
+    """"""Calculate the common denominator of 115/582 and -4/11.""""""
+    denominator1 = 582
+    denominator2 = 11
+
+    lcm = (denominator1 * denominator2) // math.gcd(denominator1, denominator2)
+    return lcm
+```
+
+In this code, we import the `math` module to use the `gcd` function, which calculates the greatest common divisor. We then calculate the LCM by dividing the product of the two denominators by their GCD.",gpt-35-turbo,azure,0,449,152,6402.0,Arithmetic,lcm,4.441026449203491
+PaL,arithmetic,What is the least common multiple of 6728 and 40?,33640.0,"
+import math
+
+def solution():
+    """"""Find the least common multiple of 6728 and 40.""""""
+    lcm = (6728 * 40) // math.gcd(6728, 40)
+    return lcm",gpt-35-turbo,azure,0,448,46,33640.0,Arithmetic,lcm,1.162060260772705
+PaL,arithmetic,Calculate the lowest common multiple of 4 and 460.,460.0,"
+import math
+
+def solution():
+    """"""Calculate the lowest common multiple of 4 and 460.""""""
+    lcm = (4 * 460) // math.gcd(4, 460)
+    return lcm",gpt-35-turbo,azure,0,446,43,460.0,Arithmetic,lcm,0.7534606456756592
+PaL,arithmetic,What is the common denominator of -59/120 and -29/24?,2880.0,"To find the common denominator of two fractions, we need to find the least common multiple (LCM) of their denominators.
+
+def solution():
+    """"""Find the common denominator of -59/120 and -29/24.""""""
+    denominator1 = 120
+    denominator2 = 24
+
+    # Find the least common multiple (LCM) of the denominators
+    lcm = denominator1 * denominator2
+
+    return lcm",gpt-35-turbo,azure,0,450,88,120.0,Arithmetic,lcm,1.8368542194366455
+PaL,arithmetic,What is the common denominator of -93/58 and -5/58?,58.0,"To find the common denominator of two fractions, we need to find the least common multiple (LCM) of their denominators. In this case, the denominators are both 58.
+
+def solution():
+    """"""Find the common denominator of -93/58 and -5/58.""""""
+    denominator1 = 58
+    denominator2 = 58
+    common_denominator = denominator1  # Since the denominators are the same, the common denominator is the same as either denominator
+    return common_denominator",gpt-35-turbo,azure,0,450,104,58.0,Arithmetic,lcm,2.6750686168670654
+PaL,arithmetic,Calculate the smallest common multiple of 286 and 364.,4004.0,"
+import math
+
+def solution():
+    """"""Calculate the smallest common multiple of 286 and 364.""""""
+    lcm = (286 * 364) // math.gcd(286, 364)
+    return lcm",gpt-35-turbo,azure,0,446,43,4004.0,Arithmetic,lcm,0.8213026523590088
+PaL,arithmetic,What is the units digit of 8196?,6.0,"
+def solution():
+    """"""Find the units digit of the number 8196.""""""
+    number = 8196
+    units_digit = number % 10
+    return units_digit",gpt-35-turbo,azure,0,444,37,6.0,Arithmetic,place_value,0.7327063083648682
+PaL,arithmetic,What is the tens digit of 3848?,4.0,"
+def solution():
+    """"""Find the tens digit of the number 3848.""""""
+    number = 3848
+    tens_digit = (number // 10) % 10
+    return tens_digit",gpt-35-turbo,azure,0,444,42,4.0,Arithmetic,place_value,0.8915774822235107
+PaL,arithmetic,What is the hundreds digit of 2079?,0.0,"
+def solution():
+    """"""Find the hundreds digit of the number 2079.""""""
+    number = 2079
+    hundreds_digit = (number // 100) % 10
+    return hundreds_digit",gpt-35-turbo,azure,0,444,42,0.0,Arithmetic,place_value,1.012190580368042
+PaL,arithmetic,What is the tens digit of 1599?,9.0,"
+def solution():
+    """"""Find the tens digit of the number 1599.""""""
+    number = 1599
+    tens_digit = (number // 10) % 10
+    return tens_digit",gpt-35-turbo,azure,0,444,42,9.0,Arithmetic,place_value,0.8774616718292236
+PaL,arithmetic,What is the hundreds digit of 9001?,0.0,"
+def solution():
+    """"""Find the hundreds digit of the number 9001.""""""
+    number = 9001
+    hundreds_digit = (number // 100) % 10
+    return hundreds_digit",gpt-35-turbo,azure,0,444,42,0.0,Arithmetic,place_value,0.9457697868347168
+PaL,arithmetic,What is the hundreds digit of 30741?,7.0,"
+def solution():
+    """"""Find the hundreds digit of the number 30741.""""""
+    number = 30741
+    hundreds_digit = (number // 100) % 10
+    return hundreds_digit",gpt-35-turbo,azure,0,444,42,7.0,Arithmetic,place_value,0.896167516708374
+PaL,arithmetic,What is the units digit of 72672?,2.0,"
+def solution():
+    """"""Find the units digit of the number 72672.""""""
+    number = 72672
+    units_digit = number % 10
+    return units_digit",gpt-35-turbo,azure,0,444,37,2.0,Arithmetic,place_value,0.9688897132873535
+PaL,arithmetic,Round -147720 to the nearest one thousand.,-148000.0,"
+def solution():
+    """"""Round -147720 to the nearest one thousand.""""""
+    number = -147720
+    rounded_number = round(number, -3)
+    return rounded_number",gpt-35-turbo,azure,0,444,37,-148000.0,Arithmetic,round_number,0.829648494720459
+PaL,arithmetic,What is 0.57208 rounded to 1 dp?,0.6,"
+def solution():
+    """"""Round 0.57208 to 1 decimal place.""""""
+    number = 0.57208
+    rounded_number = round(number, 1)
+    return rounded_number",gpt-35-turbo,azure,0,447,41,0.6000000000000001,Arithmetic,round_number,0.7621574401855469
+PaL,arithmetic,What is 0.00117 rounded to four dps?,0.0012,"
+def solution():
+    """"""Round 0.00117 to four decimal places.""""""
+    number = 0.00117
+    rounded_number = round(number, 4)
+    return rounded_number",gpt-35-turbo,azure,0,446,40,0.0012,Arithmetic,round_number,0.8941302299499512
+PaL,arithmetic,Round 13.5 to the nearest 10.,10.0,"
+def solution():
+    """"""Round 13.5 to the nearest 10.""""""
+    number = 13.5
+    rounded_number = round(number / 10) * 10
+    return rounded_number",gpt-35-turbo,azure,0,445,43,10.0,Arithmetic,round_number,0.9681522846221924
+PaL,arithmetic,Round 4117.6 to the nearest 10.,4120.0,"
+def solution():
+    """"""Round 4117.6 to the nearest 10.""""""
+    number = 4117.6
+    rounded_number = round(number, -1)
+    return rounded_number",gpt-35-turbo,azure,0,446,41,4120.0,Arithmetic,round_number,0.8321728706359863
+PaL,arithmetic,What is -892.7 rounded to the nearest 10?,-890.0,"
+def solution():
+    """"""Round -892.7 to the nearest 10.""""""
+    number = -892.7
+    rounded_number = round(number, -1)
+    return rounded_number",gpt-35-turbo,azure,0,447,39,-890.0,Arithmetic,round_number,1.1620383262634277
+PaL,arithmetic,What is -491.93 rounded to 0 dps?,-492.0,"
+def solution():
+    """"""Round -491.93 to 0 decimal places.""""""
+    number = -491.93
+    rounded_number = round(number, 0)
+    return rounded_number",gpt-35-turbo,azure,0,446,39,-492.0,Arithmetic,round_number,0.8663499355316162
+PaL,arithmetic,Convert 80319.95 kilograms to micrograms.,80319950000000.0,"
+def solution():
+    """"""Convert 80319.95 kilograms to micrograms.""""""
+    kilograms = 80319.95
+    micrograms = kilograms * 1000000000
+    return micrograms",gpt-35-turbo,azure,0,445,42,80319950000000.0,Arithmetic,conversion,1.272113561630249
+PaL,arithmetic,Calculate the smallest common multiple of 7272 and 909.,7272.0,"
+import math
+
+def solution():
+    """"""Calculate the smallest common multiple of 7272 and 909.""""""
+    lcm = (7272 * 909) // math.gcd(7272, 909)
+    return lcm",gpt-35-turbo,azure,0,447,46,7272.0,Arithmetic,lcm,0.8203086853027344
