@@ -2,6 +2,10 @@
 
 This project aims to evaluate existing prompting and in-context learning techniques for LLMs on arithmetic skills and math word problem (MWP) solving capabilities. The focus is on arithmetic tasks that a 10-year-old pupil must be able to solve. For this purpose, we use [the dataset we created for arithmetic operations and MWPs](https://github.com/RamonKaspar/MathDataset-ElementarySchool) (sampled from existing datasets).
 
+## Implementation of Multiple Techniques
+
+For detailed information on how the various techniques are implemented, as well as instructions on how to add new techniques, please refer to the README in the `techniques` folder.
+
 ## Benchmark Dataset
 
 ### Arithmetic
@@ -48,7 +52,7 @@ This table gives an overview of all techniques we evaluated. The column `Paper` 
             <td>-</td>
             <td>-</td>
             <td>-</td>
-            <td>We used the simple user prompt: "Put the solution as a single number within \solution{}.</td>
+            <td>We used the single instrution "Just return the answer to the problem." and the few-shot solutions are just the numbers.</td>
         </tr>
         <tr>
             <td><a href="https://github.com/GanjinZero/math401-llm">Math-401</a></td>
