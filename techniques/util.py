@@ -32,3 +32,70 @@ def create_prompt_gpt35(system_prompt: str, introduction: str, question_prelude:
     # Prepare the final question that has to be answeted
     messages.append({"role": "user", "content": question_prelude + question})
     return messages
+    
+
+
+import func_timeout
+
+# Code is taken from here: https://github.com/XuZhao0/Model-Selection-Reasoning/blob/main/src/tool.py
+def execute_solution_function(code_string: str):
+    """
+    Executes Python code that is expected to define and return the result of a function named 'solution'.
+    The function compiles the code in a restricted environment and attempts to call 'solution()'.
+    
+    Args:
+        code (str): A string of Python code which should contain a function definition called 'solution'.
+    
+    Returns:
+        The return value of the 'solution()' function if successfully called. Returns None if the function
+        does not exist, if an error occurs during its execution, or if the code does not adhere to safety constraints.
+    """
+    def execute(x, code_return):
+        try:
+            exec(x)
+            locals_ = locals()
+            # 
+            solution = locals_.get('solution', None)
+            if solution is not None:
+                return solution()
+            else:
+                executed_code = 'import math\n' + 'import datetime\n' + \
+                    '\n'.join([xx[4:]
+                                for xx in x.strip().split('\n')[1:-1]])
+                exec(executed_code)
+                locals_ = locals()
+                return locals_.get(code_return, None)
+
+        except Exception as exp:
+            print('Executing code error', exp)
+            return None
+
+    # === find code snippets between def solution(): and return ===
+    try:
+        code_list = code_string.strip().split('\n')
+
+        new_code_list = []
+        all_codes = []
+        code_return = 'ans'
+
+        for i in range(len(code_list)):
+            if code_list[i].strip() == 'def solution():':
+                new_code_list.append(code_list[i])
+                for j in range(i+1, len(code_list)):
+                    if code_list[j].startswith('    '):
+                        new_code_list.append(code_list[j])
+                    if 'return ' in code_list[j]:
+                        code_return = code_list[j].split('return ')[1].strip()
+                all_codes.append('\n'.join(new_code_list))
+                new_code_list = []
+        new_code = all_codes[-1]
+        ans = func_timeout.func_timeout(
+            3, execute, args=(new_code, code_return,))
+        ans = ans if ans is not None else ans
+    except func_timeout.FunctionTimedOut:
+        ans = None
+    try:
+        ans = float(ans) if ans is not None else ans
+    except:
+        ans = None
+    return ans
