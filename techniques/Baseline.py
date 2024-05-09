@@ -1,14 +1,17 @@
 from .TechniqueInterface import TechniqueInterface
 
+from .util import extract_number
+
 class Baseline(TechniqueInterface):
     
     def __init__(self, name: str, dataset: str, service: str, model: str, temperature: float, max_token: int):
         super().__init__(name, dataset, service, model, temperature, max_token)
     
     def query(self, question: str) -> tuple[float, str, int, int]:
-        # No post-processing needed for the baseline model
         response, prompt_tokens, completion_tokens = self.get_llm_response(question)
-        return response, None, prompt_tokens, completion_tokens
+        # Extract the answer from the response
+        answer = extract_number(response)   
+        return answer, None, prompt_tokens, completion_tokens
 
     def get_chat_introduction(self) -> str:
         return "Just return the answer to the problem."
