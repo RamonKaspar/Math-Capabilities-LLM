@@ -4,8 +4,8 @@ from .util import execute_solution_function
 
 class PaL(TechniqueInterface):
     
-    def __init__(self, name: str, dataset: str, service: str, model: str, temperature: float, max_token: int):
-        super().__init__(name, dataset, service, model, temperature, max_token)
+    def __init__(self, name: str, few_shot_prompting: bool, dataset: str, service: str, model: str, temperature: float, max_token: int):
+        super().__init__(name, few_shot_prompting, dataset, service, model, temperature, max_token)
     
     def query(self, question: str) -> tuple[float, str, int, int]:
         pal_code, prompt_tokens, completion_tokens = self.get_llm_response(question)

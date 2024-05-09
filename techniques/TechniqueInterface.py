@@ -13,6 +13,7 @@ class TechniqueInterface:
     
     Attributes:
         name (str): Identifier for the technique.
+        few_shot_prompting (bool): Flag to enable or disable few-shot prompting in the query.
         dataset (str): Category of dataset ('arithmetic', 'wordProblems', or 'geometry') which influences the prompting strategy.
         service (str): API service identifier used for LLM communication.
         model (str): Model identifier specifying the LLM to be queried.
@@ -35,12 +36,13 @@ class TechniqueInterface:
             Abstract method for retrieving pre-determined solutions for configured few-shot prompts.
     """
 
-    def __init__(self, name: str, dataset: str, service: str, model: str, temperature: float, max_token: int):
+    def __init__(self, name: str, few_shot_prompting: bool, dataset: str, service: str, model: str, temperature: float, max_token: int):
         """
         Initializes attributes and configures the LLM client for querying.
         """
         assert dataset in ['arithmetic', 'wordProblems', 'geometry'], "Invalid dataset type is specified."
         self.name = name
+        self.few_shot_prompting = few_shot_prompting
         self.service = service
         self.model = model
         self.temperature = temperature
@@ -48,7 +50,7 @@ class TechniqueInterface:
         self.dataset = dataset
         self.client = get_llm_service(service, model, temperature, max_token)
     
-    def get_llm_response(self, question) -> tuple[str, str, int, int]:
+    def get_llm_response(self, question: str) -> tuple[str, str, int, int]:
         """
         Sends a specified question to the configured LLM service and returns the raw response.
 
@@ -71,6 +73,7 @@ class TechniqueInterface:
             raise ValueError("You may have to adapt the function to your service provider.")
         
         messages = create_prompt_gpt35(
+            few_shot_prompting=self.few_shot_prompting,
             system_prompt = get_system_prompt(self.dataset), 
             introduction = self.get_chat_introduction(), 
             question_prelude = self.get_question_prelude(), 
@@ -107,6 +110,7 @@ class TechniqueInterface:
         answer, reasoning, prompt_tokens, completion_tokens = self.query(question)  
         data = {
             "technique": self.name,
+            "few_shot_prompting": self.few_shot_prompting,
             "dataset": self.dataset,
             "question": question,
             "answer": answer,
