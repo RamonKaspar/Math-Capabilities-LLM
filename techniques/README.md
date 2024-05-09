@@ -38,6 +38,13 @@ Below is a visualization illustrating how a prompt is constructed. In this examp
 
 ![Prompt building visualization](../assets/build_prompts_visualization.png)
 
+We distinguish between these two approaches:
+
+- **Few-shot prompting**: refers to providing the model with a small number of examples (shots) before asking it to perform a task. These examples serve as a guide for how the task should be completed.
+- **Zero-shot prompting** means the model is given a task without any prior examples. It relies solely on its pre-existing training to infer how to handle the task.
+
+If the flag `few_shot_prompting` is enabled, then the shots are added to the conversation, else, we only add the system prompt, introduction, question prelude and the actual question.
+
 ## Shared Utilities
 
 All techniques share common utilities defined in `util.py`. This file includes helper functions such as creating prompts, extracting solutions, running Python code snippets, etc. Be sure to make use of these utilities to avoid code duplication and maintain consistency across different implementations.

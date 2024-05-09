@@ -33,6 +33,11 @@ Here are a few examples from the dataset (in JSON format):
 
 ## Evaluated Techniques
 
+We distinguish between these two approaches:
+
+- **Few-shot prompting**: refers to providing the model with a small number of examples (shots) before asking it to perform a task. These examples serve as a guide for how the task should be completed.
+- **Zero-shot prompting** means the model is given a task without any prior examples. It relies solely on its pre-existing training to infer how to handle the task.
+
 This table gives an overview of all techniques we evaluated. The column `Paper` cites the original source, and `Implementation` is the source of the implementation we used.
 
 <table border="1" style="border-collapse: collapse; width: 100%;">
