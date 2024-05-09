@@ -1,0 +1,1953 @@
+technique,few_shot_prompting,dataset,question,answer,reasoning,model,service,temperature,prompt_tokens,completion_tokens,correct_answer,category,subcategory,latency_in_seconds
+PaL,False,wordProblems,"Paco 's Countertop Company purchased pieces of marble from a quarry . The weights of the pieces they purchased were 0.3333333333333333 ton , 0.3333333333333333 ton , and 0.08333333333333333 ton . How many tons of marble did Paco 's Countertop Company purchase in all ? ",,"To find the total weight of marble purchased by Paco's Countertop Company, we can simply add up the weights of the individual pieces. Here's the Python code to calculate the total weight:
+
+```python
+weight1 = 0.3333333333333333
+weight2 = 0.3333333333333333
+weight3 = 0.08333333333333333
+
+total_weight = weight1 + weight2 + weight3
+
+print(""Paco's Countertop Company purchased"", total_weight, ""tons of marble in total."")
+```
+
+When you run this code, it will output:
+
+```
+Paco's Countertop Company purchased 0.75 tons of marble in total.
+```
+
+So, Paco's Countertop Company purchased 0.75 tons of marble in total.",gpt-35-turbo,azure,0,128,169,0.75,Word Problems,add_sub,3.9630885124206543
+PaL,False,wordProblems,"While playing a video game , Paul scored 3103 points . He and his cousin together have a total of 5816 points . How many points does Paul 's cousin have ? ",,"To find out how many points Paul's cousin has, we can subtract Paul's score from the total score of both of them.
+
+Here's the Python code to solve this problem:
+
+```python
+paul_score = 3103
+total_score = 5816
+
+cousin_score = total_score - paul_score
+
+print(""Paul's cousin has"", cousin_score, ""points."")
+```
+
+When you run this code, it will output:
+
+```
+Paul's cousin has 2713 points.
+```
+
+So, Paul's cousin has 2713 points.",gpt-35-turbo,azure,0,89,114,2713.0,Word Problems,add_sub,1.8896784782409668
+PaL,False,wordProblems,A worker at a medical lab is studying blood samples . 2 samples contained a total of 7341 blood cells . The first sample contained 4221 blood cells . How many blood cells were in the second sample ? ,,"To find the number of blood cells in the second sample, we can subtract the number of blood cells in the first sample from the total number of blood cells.
+
+Here's the Python code to solve this problem:
+
+```python
+total_cells = 7341
+first_sample_cells = 4221
+
+second_sample_cells = total_cells - first_sample_cells
+
+print(""The second sample contained"", second_sample_cells, ""blood cells."")
+```
+
+When you run this code, it will output:
+
+```
+The second sample contained 3120 blood cells.
+```
+
+So, the second sample contained 3120 blood cells.",gpt-35-turbo,azure,0,96,124,3120.0,Word Problems,add_sub,2.4634554386138916
+PaL,False,wordProblems,Tim has 44 books . Sam has 52 books . How many books do they have together ? ,,"To solve this math problem using Python, you can simply add the number of books Tim has (44) to the number of books Sam has (52). Here's the Python code to calculate the total number of books they have together:
+
+```python
+tim_books = 44
+sam_books = 52
+
+total_books = tim_books + sam_books
+
+print(""Tim and Sam have"", total_books, ""books together."")
+```
+
+When you run this code, it will output:
+
+```
+Tim and Sam have 96 books together.
+```",gpt-35-turbo,azure,0,72,109,96.0,Word Problems,add_sub,1.5691993236541748
+PaL,False,wordProblems,"A ship full of grain crashes into a coral reef . By the time the ship is fixed , 49952 tons of grain have spilled into the water . Only 918 tons of grain remain onboard . How many tons of grain did the ship originally contain ? ",,"To find out how many tons of grain the ship originally contained, we can subtract the amount of grain that remains onboard from the total amount of grain that spilled into the water.
+
+Here's the Python code to solve this problem:
+
+```python
+spilled_grain = 49952
+remaining_grain = 918
+
+original_grain = spilled_grain + remaining_grain
+
+print(""The ship originally contained"", original_grain, ""tons of grain."")
+```
+
+When you run this code, it will output:
+
+```
+The ship originally contained 50870 tons of grain.
+```
+
+So, the ship originally contained 50870 tons of grain.",gpt-35-turbo,azure,0,103,132,50870.0,Word Problems,add_sub,2.591269016265869
+PaL,False,wordProblems,"Joan 's high school played 864 baseball games this year , 128 of the games were played at night . She attended 395 games . How many baseball games did Joan miss ? ",,"To find out how many baseball games Joan missed, we can subtract the number of games she attended from the total number of games played.
+
+Here's the Python code to solve this problem:
+
+```python
+total_games = 864
+night_games = 128
+attended_games = 395
+
+missed_games = total_games - attended_games
+print(""Joan missed"", missed_games, ""baseball games."")
+```
+
+When you run this code, it will output:
+
+```
+Joan missed 469 baseball games.
+```
+
+So Joan missed 469 baseball games.",gpt-35-turbo,azure,0,89,114,469.0,Word Problems,add_sub,2.0396320819854736
+PaL,False,wordProblems,"Benny received 79 dollars and 9 movie tickets for his birthday . He went to a sporting goods store and bought a baseball glove , baseball , and bat . He had 32 dollars over , how much did he spent on the baseball gear ? ",,"To solve this problem in Python, we can subtract the amount Benny has left from the total amount he received to find out how much he spent on the baseball gear. Here's the code:
+
+```python
+total_amount_received = 79
+number_of_tickets = 9
+amount_left = 32
+
+amount_spent = total_amount_received - amount_left
+print(""Benny spent"", amount_spent, ""dollars on the baseball gear."")
+```
+
+When you run this code, it will output:
+
+```
+Benny spent 47 dollars on the baseball gear.
+```",gpt-35-turbo,azure,0,101,116,47.0,Word Problems,add_sub,1.7342214584350586
+PaL,False,wordProblems,"Kevin bought 2 watermelons . The first watermelon was 9.91 pounds , and the second watermelon was 4.11 pounds . How many pounds of watermelon did Kevin buy ? ",,"To solve this problem in Python, you can simply add the weights of the two watermelons together. Here's the code:
+
+```python
+weight_watermelon1 = 9.91
+weight_watermelon2 = 4.11
+
+total_weight = weight_watermelon1 + weight_watermelon2
+
+print(""Kevin bought"", total_weight, ""pounds of watermelon."")
+```
+
+When you run this code, it will output:
+
+```
+Kevin bought 14.02 pounds of watermelon.
+```
+
+So, Kevin bought a total of 14.02 pounds of watermelon.",gpt-35-turbo,azure,0,93,120,14.02,Word Problems,add_sub,3.049377918243408
+PaL,False,wordProblems,"Mary found 45 seashells , Melanie found 23 seashells , and Jason found 32 seashells on the beach . When they cleaned them , they discovered that 31 were cracked . How many seashells did they find together ? ",,"To solve this problem in Python, you can add up the number of seashells found by each person and then subtract the number of cracked seashells. Here's the code:
+
+```python
+mary_seashells = 45
+melanie_seashells = 23
+jason_seashells = 32
+cracked_seashells = 31
+
+total_seashells = mary_seashells + melanie_seashells + jason_seashells - cracked_seashells
+
+print(""They found"", total_seashells, ""seashells together."")
+```
+
+When you run this code, it will output:
+
+```
+They found 69 seashells together.
+```
+
+So, they found a total of 69 seashells together.",gpt-35-turbo,azure,0,103,157,100.0,Word Problems,add_sub,3.1406407356262207
+PaL,False,wordProblems,There are 9 oak trees currently in the park . Park workers had to cut down 2 oak trees that were damaged . How many oak trees will the park have when the workers are finished ? ,,"To solve this problem in Python, you can subtract the number of oak trees that were cut down from the initial number of oak trees in the park. Here's the code:
+
+```python
+initial_oak_trees = 9
+cut_down_oak_trees = 2
+
+remaining_oak_trees = initial_oak_trees - cut_down_oak_trees
+
+print(""The park will have"", remaining_oak_trees, ""oak trees when the workers are finished."")
+```
+
+When you run this code, it will output:
+
+```
+The park will have 7 oak trees when the workers are finished.
+```",gpt-35-turbo,azure,0,91,122,7.0,Word Problems,add_sub,2.2574267387390137
+PaL,False,wordProblems,There are 9 pencils and 4 rulers in the drawer . Sally took 4 pencils out of the drawer . How many pencils are there now ? ,,"Sure! Here's the Python code to solve the problem:
+
+```python
+pencils = 9
+rulers = 4
+
+sally_pencils_taken = 4
+
+pencils -= sally_pencils_taken
+
+print(""There are"", pencils, ""pencils now."")
+```
+
+When you run this code, it will output:
+
+```
+There are 5 pencils now.
+```
+
+So, after Sally took 4 pencils out of the drawer, there are now 5 pencils left.",gpt-35-turbo,azure,0,82,106,5.0,Word Problems,add_sub,2.560621738433838
+PaL,False,wordProblems,"Alyssa went to 11 soccer games this year , but missed 12 . She went to 13 games last year and plans to go to 15 games next year . How many soccer games will Alyssa go to in all ? ",,"To solve this problem in Python, we can use simple arithmetic operations. Here's the code:
+
+```python
+this_year_games = 11
+missed_games = 12
+last_year_games = 13
+next_year_games = 15
+
+total_games = this_year_games + last_year_games + next_year_games - missed_games
+print(""Alyssa will go to"", total_games, ""soccer games in all."")
+```
+
+When you run this code, it will output:
+
+```
+Alyssa will go to 27 soccer games in all.
+```
+
+So, Alyssa will go to a total of 27 soccer games.",gpt-35-turbo,azure,0,99,131,39.0,Word Problems,add_sub,2.577711820602417
+PaL,False,wordProblems,"Michelle began her pizza delivery route with 0.5 tank of gas in her car . When she made it back to the pizzeria , 0.16666666666666666 tank of gas was . How much gas did Michelle use ? ",,"To find out how much gas Michelle used, we can subtract the final amount of gas from the initial amount of gas. Here's the Python code to calculate it:
+
+```python
+initial_gas = 0.5
+final_gas = 0.16666666666666666
+
+used_gas = initial_gas - final_gas
+print(""Michelle used"", used_gas, ""tank of gas."")
+```
+
+When you run this code, it will output:
+
+```
+Michelle used 0.33333333333333334 tank of gas.
+```
+
+So, Michelle used approximately 0.333 tank of gas.",gpt-35-turbo,azure,0,102,123,0.333333333333333,Word Problems,add_sub,2.233950138092041
+PaL,False,wordProblems,A restaurant served 9 hot dogs during lunch and 2 during dinner today . It served 5 of them yesterday . How many hot dogs were served today ? ,,"To solve this problem in Python, you can add the number of hot dogs served during lunch and dinner today, and then add the number served yesterday. Here's the code:
+
+```python
+hot_dogs_lunch = 9
+hot_dogs_dinner = 2
+hot_dogs_yesterday = 5
+
+total_hot_dogs = hot_dogs_lunch + hot_dogs_dinner + hot_dogs_yesterday
+
+print(""The total number of hot dogs served today is"", total_hot_dogs)
+```
+
+When you run this code, it will output:
+
+```
+The total number of hot dogs served today is 16
+```
+
+So, 16 hot dogs were served today.",gpt-35-turbo,azure,0,84,143,11.0,Word Problems,add_sub,2.3159356117248535
+PaL,False,wordProblems,A truck carrying 4.1 pounds of sand travels to a construction yard and loses 2.4 pounds of sand along the way . How much sand does the truck have when it arrives at the yard ? ,,"Sure! Here's the Python code to solve the math problem:
+
+```python
+initial_sand = 4.1
+lost_sand = 2.4
+
+remaining_sand = initial_sand - lost_sand
+
+print(""The truck has"", remaining_sand, ""pounds of sand when it arrives at the yard."")
+```
+
+When you run this code, it will output:
+
+```
+The truck has 1.7 pounds of sand when it arrives at the yard.
+```
+
+So, the truck has 1.7 pounds of sand when it arrives at the yard.",gpt-35-turbo,azure,0,94,120,1.7000000000000002,Word Problems,add_sub,1.8960771560668945
+PaL,False,wordProblems,There are 43 maple trees and 22 orange trees currently in the park . Park workers will plant maple trees today . When the workers are finished there will be 54 maple trees in the park . How many maple trees did the workers plant today ? ,,"To solve this problem in Python, we can subtract the initial number of maple trees from the final number of maple trees to find out how many trees the workers planted today. Here's the code:
+
+```python
+initial_maple_trees = 43
+final_maple_trees = 54
+
+maple_trees_planted_today = final_maple_trees - initial_maple_trees
+
+print(""The workers planted"", maple_trees_planted_today, ""maple trees today."")
+```
+
+When you run this code, it will output:
+
+```
+The workers planted 11 maple trees today.
+```",gpt-35-turbo,azure,0,102,117,11.0,Word Problems,add_sub,2.0237033367156982
+PaL,False,wordProblems,Gordon bought 3.42 pounds of fruit for a class party . The class ate 2.2 pounds of the fruit . How much fruit is ? ,,"To find out how much fruit is left, we can subtract the amount eaten from the amount bought. Here's the Python code to solve this problem:
+
+```python
+bought = 3.42
+ate = 2.2
+
+left = bought - ate
+
+print(""The amount of fruit left is:"", left, ""pounds"")
+```
+
+When you run this code, it will output:
+
+```
+The amount of fruit left is: 1.22 pounds
+```
+
+So, there is 1.22 pounds of fruit left.",gpt-35-turbo,azure,0,83,111,1.22,Word Problems,add_sub,1.9715125560760498
+PaL,False,wordProblems,Joan picked 37 oranges and Sara picked 10 oranges . Alyssa picked 30 pears . How many oranges were picked in total ? ,,"To solve this problem in Python, you can simply add the number of oranges picked by each person. Here's the code:
+
+```python
+joan_oranges = 37
+sara_oranges = 10
+alyssa_pears = 30
+
+total_oranges = joan_oranges + sara_oranges
+
+print(""The total number of oranges picked is:"", total_oranges)
+```
+
+When you run this code, it will output:
+
+```
+The total number of oranges picked is: 47
+```
+
+So, the total number of oranges picked is 47.",gpt-35-turbo,azure,0,80,119,47.0,Word Problems,add_sub,1.9304180145263672
+PaL,False,wordProblems,Jason has 18 books and he has read 9 of them . Mary has 42 books . How many books do they have together ? ,,"To solve this problem in Python, you can simply add the number of books Jason has (18) with the number of books Mary has (42). Here's the code:
+
+```python
+jason_books = 18
+mary_books = 42
+
+total_books = jason_books + mary_books
+
+print(""Jason and Mary have a total of"", total_books, ""books together."")
+```
+
+When you run this code, it will output:
+
+```
+Jason and Mary have a total of 60 books together.
+```",gpt-35-turbo,azure,0,80,105,60.0,Word Problems,add_sub,2.740868330001831
+PaL,False,wordProblems,Sally had 13 peaches at her roadside fruit dish . She went to the orchard and picked peaches to stock up . There are now 55 peaches . how many did she pick ? ,,"To find out how many peaches Sally picked, we can subtract the initial number of peaches from the final number of peaches. Here's the Python code to solve this problem:
+
+```python
+initial_peaches = 13
+final_peaches = 55
+
+picked_peaches = final_peaches - initial_peaches
+
+print(""Sally picked"", picked_peaches, ""peaches."")
+```
+
+When you run this code, it will output:
+
+```
+Sally picked 42 peaches.
+```
+
+So, Sally picked 42 peaches from the orchard.",gpt-35-turbo,azure,0,92,117,42.0,Word Problems,add_sub,2.5284183025360107
+PaL,False,wordProblems,Sandy had 36 pennies and 31 nickels in her bank . Her dad borrowed 20 nickels from Sandy . How many nickels does she have now ? ,,"Sure! Here's the Python code to solve the math problem:
+
+```python
+pennies = 36
+nickels = 31
+
+# Subtract the borrowed nickels from the total nickels
+nickels -= 20
+
+# Print the updated number of nickels
+print(""Sandy now has"", nickels, ""nickels."")
+```
+
+When you run this code, it will output:
+
+```
+Sandy now has 11 nickels.
+```
+
+So, Sandy now has 11 nickels after her dad borrowed 20 nickels from her.",gpt-35-turbo,azure,0,86,115,11.0,Word Problems,add_sub,3.029001235961914
+PaL,False,wordProblems,Dan 's cat had kittens and 5 had spots . He gave 7 to Tim and 4 to Jason . He now has 5 kittens . How many kittens did he have to start with ? ,,"To solve this problem in Python, we can use the equation:
+
+Total kittens = Kittens with spots + Kittens given to Tim + Kittens given to Jason + Remaining kittens
+
+Let's write the code to calculate the total number of kittens Dan had to start with:
+
+```python
+kittens_with_spots = 5
+kittens_given_to_tim = 7
+kittens_given_to_jason = 4
+remaining_kittens = 5
+
+total_kittens = kittens_with_spots + kittens_given_to_tim + kittens_given_to_jason + remaining_kittens
+
+print(""Dan had"", total_kittens, ""kittens to start with."")
+```
+
+When you run this code, it will output:
+
+```
+Dan had 21 kittens to start with.
+```
+
+So, Dan had 21 kittens to start with.",gpt-35-turbo,azure,0,93,176,16.0,Word Problems,add_sub,4.084163188934326
+PaL,False,wordProblems,There are 5 scissors and 3 pencils in the drawer . Jason placed 4 scissors in the drawer . How many scissors are now there in total ? ,,"To solve this problem in Python, you can use the addition operator to add the number of scissors already in the drawer (5) with the number of scissors Jason placed (4). Here's the code:
+
+```python
+scissors_in_drawer = 5
+scissors_placed_by_jason = 4
+
+total_scissors = scissors_in_drawer + scissors_placed_by_jason
+
+print(""The total number of scissors in the drawer is:"", total_scissors)
+```
+
+When you run this code, it will output:
+
+```
+The total number of scissors in the drawer is: 9
+```
+
+So, there are now 9 scissors in total in the drawer.",gpt-35-turbo,azure,0,83,137,9.0,Word Problems,add_sub,1.5691676139831543
+PaL,False,wordProblems,There are 7 dogwood trees currently in the park . Park workers will plant 5 dogwood trees today and 4 dogwood trees tomorrow . It took 8 workers to finish the work . How many dogwood trees will the park have when the workers are finished ? ,,"To solve this problem in Python, we can use the following code:
+
+```python
+current_trees = 7
+trees_planted_today = 5
+trees_planted_tomorrow = 4
+workers = 8
+
+total_trees = current_trees + trees_planted_today + trees_planted_tomorrow
+
+print(""The park will have"", total_trees, ""dogwood trees when the workers are finished."")
+```
+
+When you run this code, it will output:
+
+```
+The park will have 16 dogwood trees when the workers are finished.
+```
+
+So, the park will have 16 dogwood trees when the workers are finished.",gpt-35-turbo,azure,0,107,132,16.0,Word Problems,add_sub,2.6996355056762695
+PaL,False,wordProblems,"Jessica spent $ 10.22 on a cat toy , and a cage cost her $ 11.73 . What was the total cost of Jessica 's purchases ? ",,"To find the total cost of Jessica's purchases, we can simply add the cost of the cat toy and the cost of the cage. Here's the Python code to calculate it:
+
+```python
+cat_toy_cost = 10.22
+cage_cost = 11.73
+
+total_cost = cat_toy_cost + cage_cost
+
+print(""The total cost of Jessica's purchases is:"", total_cost)
+```
+
+When you run this code, it will output:
+
+```
+The total cost of Jessica's purchases is: 21.95
+```
+
+So, the total cost of Jessica's purchases is $21.95.",gpt-35-turbo,azure,0,86,128,21.95,Word Problems,add_sub,2.370368719100952
+PaL,False,wordProblems,Jason has 676 Pokemon cards . Alyssa bought 224 of Jason 's Pokemon cards . How many Pokemon cards does Jason have now ? ,,"To solve this problem in Python, you can subtract the number of cards Alyssa bought from the total number of cards Jason had initially. Here's the code:
+
+```python
+jason_cards = 676
+alyssa_cards = 224
+
+jason_cards -= alyssa_cards
+
+print(""Jason now has"", jason_cards, ""Pokemon cards."")
+```
+
+When you run this code, it will output:
+
+```
+Jason now has 452 Pokemon cards.
+```",gpt-35-turbo,azure,0,80,95,452.0,Word Problems,add_sub,1.5111064910888672
+PaL,False,wordProblems,"Alyssa has 37 blue balloons , Sandy has 28 blue balloons , and Sally has 39 blue balloons . How many blue balloons do they have in all ? ",,"To solve this problem in Python, you can simply add up the number of blue balloons each person has. Here's the code:
+
+```python
+# Number of blue balloons each person has
+alyssa_balloons = 37
+sandy_balloons = 28
+sally_balloons = 39
+
+# Calculate the total number of blue balloons
+total_balloons = alyssa_balloons + sandy_balloons + sally_balloons
+
+# Print the result
+print(""The total number of blue balloons is:"", total_balloons)
+```
+
+When you run this code, it will output:
+
+```
+The total number of blue balloons is: 104
+```
+
+So, Alyssa, Sandy, and Sally have a total of 104 blue balloons.",gpt-35-turbo,azure,0,85,162,104.0,Word Problems,add_sub,3.0897915363311768
+PaL,False,wordProblems,Sandy 's dog had 8 puppies and 4 had spots . She gave 4 to her friends . How many puppies does she now have ? ,4.0,"To solve this problem in Python, you can use the following code:
+
+```python
+puppies = 8
+spots = 4
+given_to_friends = 4
+
+remaining_puppies = puppies - given_to_friends
+print(""Sandy now has"", remaining_puppies, ""puppies."")
+```
+
+This code initializes the variables `puppies`, `spots`, and `given_to_friends` with their respective values. Then, it calculates the number of remaining puppies by subtracting the number given to friends from the total number of puppies. Finally, it prints the result using the `print()` function.",gpt-35-turbo,azure,0,82,122,4.0,Word Problems,add_sub,1.3946797847747803
+PaL,False,wordProblems,Sally had 8 pennies and 7 nickels in her bank . Her dad gave her 9 nickels and her mother gave her 2 nickels . How many nickels does Sally have now ? ,,"Sure! Here's the Python code to solve the math problem:
+
+```python
+pennies = 8
+nickels = 7
+
+dad_nickels = 9
+mom_nickels = 2
+
+total_nickels = nickels + dad_nickels + mom_nickels
+
+print(""Sally has"", total_nickels, ""nickels now."")
+```
+
+When you run this code, it will output:
+
+```
+Sally has 18 nickels now.
+```
+
+So, Sally has 18 nickels now.",gpt-35-turbo,azure,0,94,108,18.0,Word Problems,add_sub,1.6913354396820068
+PaL,False,wordProblems,"Joan spent $ 15 on shorts and $ 14.82 on a jacket , and $ 12.51 on a shirt . She went to 3 shops . In total , how much money did Joan spend on clothing ? ",,"To solve this problem in Python, you can simply add up the amounts spent on shorts, jacket, and shirt. Here's the code:
+
+```python
+shorts_cost = 15
+jacket_cost = 14.82
+shirt_cost = 12.51
+
+total_cost = shorts_cost + jacket_cost + shirt_cost
+
+print(""Joan spent $"", total_cost, ""on clothing."")
+```
+
+When you run this code, it will output:
+
+```
+Joan spent $ 42.33 on clothing.
+```",gpt-35-turbo,azure,0,98,107,42.33,Word Problems,add_sub,2.034597873687744
+PaL,False,wordProblems,Tom found 5 seashells on the beach . he gave Jessica 2 of the seashells . How many seashells does he now have ? ,,"Sure! Here's the Python code to solve the problem:
+
+```python
+# Number of seashells Tom found
+seashells_found = 5
+
+# Number of seashells Tom gave to Jessica
+seashells_given = 2
+
+# Calculate the number of seashells Tom now has
+seashells_now = seashells_found - seashells_given
+
+# Print the result
+print(""Tom now has"", seashells_now, ""seashells."")
+```
+
+When you run this code, it will output:
+
+```
+Tom now has 3 seashells.
+```
+
+So, Tom now has 3 seashells after giving 2 to Jessica.",gpt-35-turbo,azure,0,84,141,3.0,Word Problems,add_sub,1.8269739151000977
+PaL,False,wordProblems,Keith picked 3 pears and Jason picked 2 pears from the pear tree . Joan picked 5 apples from the apple tree . How many pears were picked in total ? ,,"To solve this problem in Python, you can simply add the number of pears picked by Keith and Jason. Here's the code:
+
+```python
+keith_pears = 3
+jason_pears = 2
+
+total_pears = keith_pears + jason_pears
+
+print(""Total pears picked:"", total_pears)
+```
+
+When you run this code, it will output:
+
+```
+Total pears picked: 5
+```
+
+So, the total number of pears picked in this scenario is 5.",gpt-35-turbo,azure,0,89,111,5.0,Word Problems,add_sub,2.263944387435913
+PaL,False,wordProblems,"There were a total of 8 football games this year , 4 are played at night . Keith missed 4 of the games . How many football games did Keith go to in total ? ",,"To solve this problem in Python, you can subtract the number of games Keith missed from the total number of games.
+
+Here's the Python code to calculate the number of football games Keith went to:
+
+```python
+total_games = 8
+games_at_night = 4
+games_missed = 4
+
+games_attended = total_games - games_missed
+print(""Keith went to"", games_attended, ""football games in total."")
+```
+
+When you run this code, it will output:
+
+```
+Keith went to 4 football games in total.
+```
+
+So, Keith went to 4 football games in total.",gpt-35-turbo,azure,0,90,128,4.0,Word Problems,add_sub,1.4729676246643066
+PaL,False,wordProblems," Paul had saved up 4 dollars. If he received another 11 dollars for his allowance, how many 5 dollar toys could he buy? ",,"Sure! Here's the Python code to solve the problem:
+
+```python
+# Paul's initial savings
+savings = 4
+
+# Paul's allowance
+allowance = 11
+
+# Cost of each toy
+toy_cost = 5
+
+# Calculate the number of toys Paul can buy
+num_toys = (savings + allowance) // toy_cost
+
+# Print the result
+print(""Paul can buy"", num_toys, ""5-dollar toys."")
+```
+
+When you run this code, it will output:
+
+```
+Paul can buy 3 5-dollar toys.
+```
+
+So, Paul can buy 3 five-dollar toys with his savings and allowance.",gpt-35-turbo,azure,0,82,136,3.0,Word Problems,multi_step,2.091660499572754
+PaL,False,wordProblems," While shopping for music online, Isabel bought 6 country albums and 2 pop albums. Each album came with a lyric sheet and had 9 songs. How many songs did Isabel buy total? ",,"To solve this problem in Python, you can multiply the number of albums by the number of songs per album. Here's the code:
+
+```python
+country_albums = 6
+pop_albums = 2
+songs_per_album = 9
+
+total_songs = (country_albums + pop_albums) * songs_per_album
+
+print(""Isabel bought a total of"", total_songs, ""songs."")
+```
+
+When you run this code, it will output:
+
+```
+Isabel bought a total of 72 songs.
+```
+
+So, Isabel bought a total of 72 songs.",gpt-35-turbo,azure,0,92,122,72.0,Word Problems,multi_step,1.8328490257263184
+PaL,False,wordProblems, Edward was working as a sacker at a grocery store where he made 6 dollars an hour. On Monday he worked 3 hours and on Tuesday he worked 5 hours. How much money did Edward make in those two days? ,,"To calculate the total amount of money Edward made in those two days, we can multiply his hourly rate by the total number of hours he worked.
+
+Here's the Python code to solve this problem:
+
+```python
+hourly_rate = 6
+hours_worked_monday = 3
+hours_worked_tuesday = 5
+
+total_hours_worked = hours_worked_monday + hours_worked_tuesday
+total_money_made = hourly_rate * total_hours_worked
+
+print(""Edward made $"" + str(total_money_made) + "" in those two days."")
+```
+
+When you run this code, it will output:
+
+```
+Edward made $48 in those two days.
+```
+
+So, Edward made $48 in those two days.",gpt-35-turbo,azure,0,100,152,48.0,Word Problems,multi_step,2.7358386516571045
+PaL,False,wordProblems," Kaleb had 34 books. If he sold 17 of them and used the money he earned to buy 7 new books, how many books would Kaleb have? ",,"Sure! Here's the Python code to solve the math problem:
+
+```python
+books = 34
+books_sold = 17
+books_bought = 7
+
+books -= books_sold
+books += books_bought
+
+print(""Kaleb would have"", books, ""books."")
+```
+
+When you run this code, it will output:
+
+```
+Kaleb would have 24 books.
+```
+
+So, Kaleb would have 24 books after selling 17 and buying 7 new books.",gpt-35-turbo,azure,0,88,101,24.0,Word Problems,multi_step,1.9863204956054688
+PaL,False,wordProblems," Oliver made 35 dollars mowing lawns over the summer. If he spent 7 dollars buying new mower blades, how many 4 dollar games could he buy with the money he had left? ",4.0,"Sure! Here's the Python code to solve the problem:
+
+```python
+money_left = 35 - 7  # Calculate the money left after buying new mower blades
+games = money_left // 4  # Calculate the number of 4 dollar games that can be bought
+
+print(""Oliver can buy"", games, ""4 dollar games with the money he has left."")
+```
+
+When you run this code, it will output the number of 4 dollar games that Oliver can buy with the money he has left.",gpt-35-turbo,azure,0,93,106,7.0,Word Problems,multi_step,1.2744743824005127
+PaL,False,wordProblems," Mike is at the library helping put away books. There are 82 book to put away total but a librarian takes 10 of them and leaves Mike with the rest. If he can fit 9 books on a shelf, how many shelves will he need? ",8.0,"To solve this problem in Python, we can use the following code:
+
+```python
+total_books = 82
+books_taken = 10
+books_left = total_books - books_taken
+books_per_shelf = 9
+
+shelves_needed = books_left // books_per_shelf
+
+print(""Mike will need"", shelves_needed, ""shelves."")
+```
+
+This code calculates the number of books left after the librarian takes some, and then divides that number by the number of books that can fit on each shelf to determine the number of shelves needed. Finally, it prints the result.",gpt-35-turbo,azure,0,105,118,8.0,Word Problems,multi_step,1.3383128643035889
+PaL,False,wordProblems," There are 58 students trying out for the school's trivia teams. If 10 of them didn't get picked for the team and the rest were put into 8 groups, how many students would be in each group? ",,"Sure! Here's the Python code to solve the math problem:
+
+```python
+students = 58
+not_picked = 10
+picked = students - not_picked
+groups = 8
+
+students_per_group = picked // groups
+
+print(""The number of students in each group is:"", students_per_group)
+```
+
+When you run this code, it will output:
+
+```
+The number of students in each group is: 6
+```
+
+So, there would be 6 students in each group.",gpt-35-turbo,azure,0,98,104,6.0,Word Problems,multi_step,1.6931099891662598
+PaL,False,wordProblems," Ned was trying to expand his game collection. He bought 11 games from a friend and bought 22 more at a garage sale. If 19 of the games didn't work, how many good games did he end up with? ",,"Sure! Here's the Python code to solve the math problem:
+
+```python
+# Number of games bought from a friend
+games_from_friend = 11
+
+# Number of games bought at a garage sale
+games_at_garage_sale = 22
+
+# Number of games that didn't work
+games_not_working = 19
+
+# Calculate the number of good games
+good_games = games_from_friend + games_at_garage_sale - games_not_working
+
+# Print the result
+print(""Ned ended up with"", good_games, ""good games."")
+```
+
+When you run this code, it will output:
+
+```
+Ned ended up with 14 good games.
+```
+
+So, Ned ended up with 14 good games.",gpt-35-turbo,azure,0,100,151,14.0,Word Problems,multi_step,3.606513023376465
+PaL,False,wordProblems," Katie had 11 songs on her mp3 player. If she deleted 7 old songs from it and then added 24 new songs, how many songs does she have on her mp3 player? ",,"Sure! Here's the Python code to solve the problem:
+
+```python
+# Initial number of songs
+songs = 11
+
+# Deleting old songs
+songs -= 7
+
+# Adding new songs
+songs += 24
+
+# Printing the final number of songs
+print(""Katie has"", songs, ""songs on her mp3 player."")
+```
+
+When you run this code, it will output:
+
+```
+Katie has 28 songs on her mp3 player.
+```
+
+So, Katie has 28 songs on her mp3 player after deleting 7 old songs and adding 24 new songs.",gpt-35-turbo,azure,0,93,123,28.0,Word Problems,multi_step,2.350860118865967
+PaL,False,wordProblems," A waiter had 6 tables he was waiting on, with 3 women and 5 men at each table. How many customers total did the waiter have? ",,"To solve this problem in Python, you can multiply the number of tables by the number of customers at each table. Here's the code:
+
+```python
+tables = 6
+customers_per_table = 3 + 5  # 3 women + 5 men
+total_customers = tables * customers_per_table
+
+print(""The waiter had"", total_customers, ""customers in total."")
+```
+
+When you run this code, it will output:
+
+```
+The waiter had 48 customers in total.
+```
+
+So, the waiter had a total of 48 customers.",gpt-35-turbo,azure,0,85,117,48.0,Word Problems,multi_step,2.036606788635254
+PaL,False,wordProblems," The school cafeteria had 14 apples. If they used 13 to make lunch for the students and then bought 49 more, how many apples would they have? ",,"Sure! Here's the Python code to solve the math problem:
+
+```python
+apples_in_cafeteria = 14
+apples_used_for_lunch = 13
+apples_bought = 49
+
+total_apples = apples_in_cafeteria - apples_used_for_lunch + apples_bought
+
+print(""The school cafeteria would have"", total_apples, ""apples."")
+```
+
+When you run this code, it will output:
+
+```
+The school cafeteria would have 50 apples.
+```
+
+So, the school cafeteria would have 50 apples.",gpt-35-turbo,azure,0,86,116,50.0,Word Problems,multi_step,2.173588752746582
+PaL,False,wordProblems, Chloe was unboxing some of her old winter clothes. She found 4 boxes of clothing and inside each box there were 2 scarves and 6 mittens. How many pieces of winter clothing did Chloe have total? ,,"To solve this problem in Python, you can use the following code:
+
+```python
+# Number of boxes
+num_boxes = 4
+
+# Number of scarves in each box
+num_scarves_per_box = 2
+
+# Number of mittens in each box
+num_mittens_per_box = 6
+
+# Calculate the total number of scarves
+total_scarves = num_boxes * num_scarves_per_box
+
+# Calculate the total number of mittens
+total_mittens = num_boxes * num_mittens_per_box
+
+# Calculate the total number of winter clothing pieces
+total_clothing = total_scarves + total_mittens
+
+# Print the result
+print(""Chloe has a total of"", total_clothing, ""pieces of winter clothing."")
+```
+
+When you run this code, it will output:
+
+```
+Chloe has a total of 32 pieces of winter clothing.
+```
+
+So Chloe has a total of ",gpt-35-turbo,azure,0,98,200,32.0,Word Problems,multi_step,2.42364501953125
+PaL,False,wordProblems, Debby bought two coloring books. One had 16 pictures and the other had 40. After one week she had already colored 33 of the pictures. How many pictures does she still have to color? ,,"Sure! Here's the Python code to solve the math problem:
+
+```python
+book1_pictures = 16
+book2_pictures = 40
+colored_pictures = 33
+
+total_pictures = book1_pictures + book2_pictures
+pictures_left = total_pictures - colored_pictures
+
+print(""Debby still has"", pictures_left, ""pictures to color."")
+```
+
+When you run this code, it will output:
+
+```
+Debby still has 23 pictures to color.
+```
+
+So, Debby still has 23 pictures to color.",gpt-35-turbo,azure,0,95,120,23.0,Word Problems,multi_step,2.1987154483795166
+PaL,False,wordProblems, Oliver had 35 dollars. For his birthday he got 50 more dollars but spent 84 on a new game. How much money does he have now? ,,"To solve this problem in Python, you can use the following code:
+
+```python
+oliver_money = 35
+birthday_gift = 50
+game_cost = 84
+
+oliver_money += birthday_gift
+oliver_money -= game_cost
+
+print(""Oliver now has"", oliver_money, ""dollars."")
+```
+
+When you run this code, it will output:
+
+```
+Oliver now has 1 dollars.
+```
+
+Therefore, Oliver now has 1 dollar.",gpt-35-turbo,azure,0,85,98,1.0,Word Problems,multi_step,1.383955478668213
+PaL,False,wordProblems," Frank made 19 dollars mowing lawns over the summer. If he spent 11 dollars buying new mower blades, how many 2 dollar games could he buy with the money he had left? ",,"Sure! Here's the Python code to solve the problem:
+
+```python
+money_left = 19 - 11
+games = money_left // 2
+
+print(""Frank can buy"", games, ""2-dollar games with the money he has left."")
+```
+
+When you run this code, it will output:
+
+```
+Frank can buy 4 2-dollar games with the money he has left.
+```
+
+So, Frank can buy 4 2-dollar games with the money he has left after buying new mower blades.",gpt-35-turbo,azure,0,93,106,4.0,Word Problems,multi_step,2.048069953918457
+PaL,False,wordProblems," Bianca and her mom were picking carrots from their garden. Bianca picked 26 and her mother picked 15. If only 16 of the carrots were good, how many bad carrots did they have? ",,"To solve this problem in Python, you can subtract the number of good carrots from the total number of carrots picked. Here's the code:
+
+```python
+bianca_carrots = 26
+mom_carrots = 15
+good_carrots = 16
+
+total_carrots = bianca_carrots + mom_carrots
+bad_carrots = total_carrots - good_carrots
+
+print(""They had"", bad_carrots, ""bad carrots."")
+```
+
+When you run this code, it will output:
+
+```
+They had 25 bad carrots.
+```
+
+So, Bianca and her mom had 25 bad carrots.",gpt-35-turbo,azure,0,95,127,25.0,Word Problems,multi_step,2.1826958656311035
+PaL,False,wordProblems," The school cafeteria had 23 apples. If they used 20 to make lunch for the students and then bought 6 more, how many apples would they have? ",,"Sure! Here's the Python code to solve the math problem:
+
+```python
+apples_in_cafeteria = 23
+apples_used_for_lunch = 20
+apples_bought = 6
+
+total_apples = apples_in_cafeteria - apples_used_for_lunch + apples_bought
+
+print(""The school cafeteria would have"", total_apples, ""apples."")
+```
+
+When you run this code, it will output:
+
+```
+The school cafeteria would have 9 apples.
+```
+
+So, the school cafeteria would have 9 apples after using 20 to make lunch for the students and then buying 6 more.",gpt-35-turbo,azure,0,86,132,9.0,Word Problems,multi_step,2.0132968425750732
+PaL,False,wordProblems," The school cafeteria had 17 apples. If they used 2 to make lunch for the students and then bought 23 more, how many apples would they have? ",,"Sure! Here's the Python code to solve the math problem:
+
+```python
+apples = 17
+used_apples = 2
+bought_apples = 23
+
+total_apples = apples - used_apples + bought_apples
+
+print(""The school cafeteria would have"", total_apples, ""apples."")
+```
+
+When you run this code, it will output:
+
+```
+The school cafeteria would have 38 apples.
+```
+
+So, the school cafeteria would have 38 apples after using 2 to make lunch for the students and then buying 23 more.",gpt-35-turbo,azure,0,86,119,38.0,Word Problems,multi_step,1.6958045959472656
+PaL,False,wordProblems," A new building needed 10 windows. The builder had already installed 6 of them. If it takes 5 hours to install each window, how long will it take him to install the rest? ",,"To solve this problem in Python, we can use the formula:
+
+time_needed = (total_windows - installed_windows) * time_per_window
+
+Here's the Python code to calculate the time needed:
+
+```python
+total_windows = 10
+installed_windows = 6
+time_per_window = 5
+
+windows_left = total_windows - installed_windows
+time_needed = windows_left * time_per_window
+
+print(""It will take"", time_needed, ""hours to install the rest of the windows."")
+```
+
+When you run this code, it will output:
+
+```
+It will take 20 hours to install the rest of the windows.
+```
+
+So, it will take the builder 20 hours to install the remaining 4 windows.",gpt-35-turbo,azure,0,93,147,20.0,Word Problems,multi_step,2.589153528213501
+PaL,False,wordProblems," While on vacation, Nancy took 49 pictures at the zoo and 8 at the museum. If she later deleted 38 of the pictures, how many pictures from her vacation did she still have? ",,"Sure! Here's the Python code to solve the problem:
+
+```python
+zoo_pictures = 49
+museum_pictures = 8
+deleted_pictures = 38
+
+total_pictures = zoo_pictures + museum_pictures
+remaining_pictures = total_pictures - deleted_pictures
+
+print(""Nancy still has"", remaining_pictures, ""pictures from her vacation."")
+```
+
+When you run this code, it will output:
+
+```
+Nancy still has 19 pictures from her vacation.
+```
+
+So Nancy still has 19 pictures from her vacation after deleting 38 of them.",gpt-35-turbo,azure,0,93,123,19.0,Word Problems,multi_step,1.9332127571105957
+PaL,False,wordProblems," There were 13 friends playing a video game online when 8 players quit. If each player left had 6 lives, how many lives did they have total? ",,"Sure! Here's the Python code to solve the math problem:
+
+```python
+# Number of friends initially
+initial_friends = 13
+
+# Number of friends who quit
+friends_quit = 8
+
+# Number of lives each player left had
+lives_per_player = 6
+
+# Calculate the total number of lives
+total_lives = (initial_friends - friends_quit) * lives_per_player
+
+# Print the result
+print(""The total number of lives they have is:"", total_lives)
+```
+
+When you run this code, it will output:
+
+```
+The total number of lives they have is: 30
+```
+
+So, the friends who remained in the game had a total of 30 lives.",gpt-35-turbo,azure,0,86,147,30.0,Word Problems,multi_step,3.1854543685913086
+PaL,False,wordProblems," At the arcade Edward won 9 tickets. If he spent 4 tickets on a beanie and later won 4 more tickets, how many would he have? ",,"Sure! Here's the Python code to solve the math problem:
+
+```python
+# Initial number of tickets Edward won
+initial_tickets = 9
+
+# Number of tickets spent on a beanie
+tickets_spent = 4
+
+# Number of tickets won later
+tickets_won = 4
+
+# Calculate the final number of tickets Edward would have
+final_tickets = initial_tickets - tickets_spent + tickets_won
+
+# Print the final number of tickets
+print(""Edward would have"", final_tickets, ""tickets."")
+```
+
+When you run this code, it will output:
+
+```
+Edward would have 9 tickets.
+```
+
+So, Edward would still have 9 tickets after spending 4 tickets on a beanie and later winning 4 more tickets.",gpt-35-turbo,azure,0,86,155,9.0,Word Problems,multi_step,4.214137077331543
+PaL,False,wordProblems," Luke had 48 dollars in January. By March he had spent 11 dollars. If he got another 21 dollars from his mom, how much money would he have? ",,"To solve this problem in Python, you can use the following code:
+
+```python
+initial_money = 48
+money_spent = 11
+money_from_mom = 21
+
+final_money = initial_money - money_spent + money_from_mom
+
+print(""Luke would have"", final_money, ""dollars."")
+```
+
+When you run this code, it will output:
+
+```
+Luke would have 58 dollars.
+```
+
+So, Luke would have 58 dollars.",gpt-35-turbo,azure,0,88,98,58.0,Word Problems,multi_step,1.5703425407409668
+PaL,False,wordProblems," Roger had 25 books. If he sold 21 of them and used the money he earned to buy 30 new books, how many books would Roger have? ",,"Sure! Here's the Python code to solve the math problem:
+
+```python
+books = 25
+sold_books = 21
+new_books = 30
+
+remaining_books = books - sold_books + new_books
+
+print(""Roger would have"", remaining_books, ""books."")
+```
+
+When you run this code, it will output:
+
+```
+Roger would have 34 books.
+```
+
+So, Roger would have 34 books after selling 21 and buying 30 new books.",gpt-35-turbo,azure,0,86,98,34.0,Word Problems,multi_step,1.7620017528533936
+PaL,False,wordProblems," At the schools book fair Sam bought 13 adventure books and 17 mystery books. If 15 of the books were used, how many new books did he buy? ",15.0,"To solve this problem in Python, we can use the following code:
+
+```python
+adventure_books = 13
+mystery_books = 17
+used_books = 15
+
+new_books = (adventure_books + mystery_books) - used_books
+
+print(""Sam bought"", new_books, ""new books."")
+```
+
+This code first assigns the number of adventure books to the variable `adventure_books`, the number of mystery books to the variable `mystery_books`, and the number of used books to the variable `used_books`.
+
+Then, it calculates the number of new books by adding the number of adventure books and mystery books, and subtracting the number of used books.
+
+Finally, it prints the result using the `print()` function.",gpt-35-turbo,azure,0,87,151,15.0,Word Problems,multi_step,2.830355644226074
+PaL,False,wordProblems," Bianca earned 5 points for each bag of cans she recycled. If she had 17 bags, but didn't recycle 8 of them, how many points would she have earned? ",,"Sure! Here's the Python code to solve the problem:
+
+```python
+bags_recycled = 17 - 8
+points_earned = bags_recycled * 5
+
+print(""Bianca would have earned"", points_earned, ""points."")
+```
+
+When you run this code, it will output:
+
+```
+Bianca would have earned 45 points.
+```
+
+So, Bianca would have earned 45 points if she recycled all the bags except for 8.",gpt-35-turbo,azure,0,91,99,45.0,Word Problems,multi_step,1.8531246185302734
+PaL,False,wordProblems," At the town carnival Oliver rode the ferris wheel 5 times and the bumper cars 4 times. If each ride cost 7 tickets, how many tickets did he use? ",63.0,"To solve this problem in Python, you can use the following code:
+
+```python
+ferris_wheel_rides = 5
+bumper_cars_rides = 4
+ride_cost = 7
+
+total_tickets = (ferris_wheel_rides + bumper_cars_rides) * ride_cost
+
+print(""Oliver used"", total_tickets, ""tickets."")
+```
+
+This code assigns the number of ferris wheel rides to the variable `ferris_wheel_rides`, the number of bumper car rides to the variable `bumper_cars_rides`, and the cost of each ride to the variable `ride_cost`. Then, it calculates the total number of tickets used by multiplying the sum of ferris wheel rides and bumper car rides by the ride cost. Finally, it prints the result.",gpt-35-turbo,azure,0,89,164,63.0,Word Problems,multi_step,3.5236730575561523
+PaL,False,wordProblems," Dave was helping the cafeteria workers pick up lunch trays, but he could only carry 9 trays at a time. If he had to pick up 17 trays from one table and 55 trays from another, how many trips will he make? ",,"To solve this problem in Python, we can use the division operator (`/`) to divide the total number of trays by the maximum number of trays Dave can carry in one trip. We can then use the `math.ceil()` function to round up the result to the nearest whole number, as Dave cannot make a fraction of a trip.
+
+Here's the Python code to solve the problem:
+
+```python
+import math
+
+trays_table1 = 17
+trays_table2 = 55
+max_trays_per_trip = 9
+
+total_trays = trays_table1 + trays_table2
+trips = math.ceil(total_trays / max_trays_per_trip)
+
+print(""Dave will make"", trips, ""trips."")
+```
+
+When you run this code, it will output:
+
+```
+Dave will make 8 trips.
+```
+
+Therefore, Dave will make 8 trips to pick up all the trays.",gpt-35-turbo,azure,0,102,185,8.0,Word Problems,multi_step,3.6864662170410156
+PaL,False,wordProblems," A waiter at 'The Greasy Spoon' restaurant had 26 customers to wait on. During the lunch rush he added another 27 customers. If 27 of the customers didn't leave him a tip, how many customers did leave a tip? ",,"Sure! Here's the Python code to solve the problem:
+
+```python
+initial_customers = 26
+additional_customers = 27
+total_customers = initial_customers + additional_customers
+customers_without_tip = 27
+customers_with_tip = total_customers - customers_without_tip
+
+print(""The number of customers who left a tip:"", customers_with_tip)
+```
+
+When you run this code, it will output:
+
+```
+The number of customers who left a tip: 26
+```
+
+So, 26 customers left a tip.",gpt-35-turbo,azure,0,103,112,26.0,Word Problems,multi_step,3.3694584369659424
+PaL,False,wordProblems," A trivia team had 15 members total, but during a game 6 members didn't show up. If each member that did show up scored 3 points, how many points were scored total? ",,"Sure! Here's the Python code to solve the math problem:
+
+```python
+total_members = 15
+members_not_showing_up = 6
+points_per_member = 3
+
+members_showing_up = total_members - members_not_showing_up
+total_points = members_showing_up * points_per_member
+
+print(""Total points scored:"", total_points)
+```
+
+When you run this code, it will output:
+
+```
+Total points scored: 27
+```
+
+So, the trivia team scored a total of 27 points.",gpt-35-turbo,azure,0,93,109,27.0,Word Problems,multi_step,2.3422679901123047
+PaL,False,wordProblems, A store had 120 coloring books in stock. They ended up putting them on sale and getting rid of 39 of them. The put the ones they still had onto shelves with 9 on each shelf. How many shelves did they use? ,,"Sure! Here's the Python code to solve the math problem:
+
+```python
+books_in_stock = 120
+books_sold = 39
+books_remaining = books_in_stock - books_sold
+books_per_shelf = 9
+
+shelves_used = books_remaining // books_per_shelf
+
+print(""The store used"", shelves_used, ""shelves."")
+```
+
+When you run this code, it will output:
+
+```
+The store used 11 shelves.
+```
+
+So, the store used 11 shelves to display the remaining coloring books.",gpt-35-turbo,azure,0,102,110,9.0,Word Problems,multi_step,1.9076955318450928
+PaL,False,wordProblems," Adam had 48 books. If he sold 19 of them and used the money he earned to buy 38 new books, how many books would Adam have? ",,"Sure! Here's the Python code to solve the problem:
+
+```python
+books = 48
+books_sold = 19
+books_bought = 38
+
+books -= books_sold
+books += books_bought
+
+print(""Adam would have"", books, ""books."")
+```
+
+When you run this code, it will output:
+
+```
+Adam would have 67 books.
+```
+
+So, Adam would have 67 books after selling 19 and buying 38 new books.",gpt-35-turbo,azure,0,86,97,67.0,Word Problems,multi_step,2.641390085220337
+PaL,False,wordProblems," The cafeteria had 75 apples. For lunch they handed out 19 to students and decided to use the rest to make pies. If each pie takes 8 apples, how many pies could they make? ",,"Sure! Here's the Python code to solve the math problem:
+
+```python
+apples_in_cafeteria = 75
+apples_handed_out = 19
+apples_for_pies = apples_in_cafeteria - apples_handed_out
+pies = apples_for_pies // 8
+
+print(""The cafeteria can make"", pies, ""pies."")
+```
+
+When you run this code, it will output:
+
+```
+The cafeteria can make 8 pies.
+```
+
+So, the cafeteria can make 8 pies using the remaining apples.",gpt-35-turbo,azure,0,94,112,7.0,Word Problems,multi_step,2.4410400390625
+PaL,False,wordProblems,The school is planning a field trip. The school has 67 classrooms. There are 66 students in each classroom in the school. If there are 6 seats on each school bus How many buses are needed to take the trip?,737.0,"To solve this problem in Python, we can use the following code:
+
+```python
+classrooms = 67
+students_per_classroom = 66
+seats_per_bus = 6
+
+total_students = classrooms * students_per_classroom
+buses_needed = total_students // seats_per_bus
+
+print(""Number of buses needed:"", buses_needed)
+```
+
+This code calculates the total number of students by multiplying the number of classrooms by the number of students per classroom. Then, it divides the total number of students by the number of seats per bus using the floor division operator `//` to get the number of buses needed. Finally, it prints the result.",gpt-35-turbo,azure,0,98,133,737.0,Word Problems,challenge,2.3823912143707275
+PaL,False,wordProblems,5 red peaches and 11 green peaches are in the basket. How many more green peaches than red peaches are in the basket?,,"Sure! Here's the Python code to solve the math problem:
+
+```python
+red_peaches = 5
+green_peaches = 11
+
+more_green_peaches = green_peaches - red_peaches
+
+print(""There are"", more_green_peaches, ""more green peaches than red peaches in the basket."")
+```
+
+When you run this code, it will output:
+
+```
+There are 6 more green peaches than red peaches in the basket.
+```
+
+So, there are 6 more green peaches than red peaches in the basket.",gpt-35-turbo,azure,0,82,116,6.0,Word Problems,challenge,1.3017160892486572
+PaL,False,wordProblems,Mom buys 51 white t - shirts. If white t - shirts can be purchased in packages of 3 How many packages will she have?,,"Sure! Here's the Python code to solve the problem:
+
+```python
+white_t_shirts = 51
+package_size = 3
+
+packages = white_t_shirts // package_size
+
+print(""Mom will have"", packages, ""packages of white t-shirts."")
+```
+
+When you run this code, it will output:
+
+```
+Mom will have 17 packages of white t-shirts.
+```
+
+So, Mom will have 17 packages of white t-shirts.",gpt-35-turbo,azure,0,80,94,17.0,Word Problems,challenge,1.8407163619995117
+PaL,False,wordProblems,Emily is making bead necklaces for her friends. Each necklace takes 8 beads and she has 16 beads. How many necklaces can Emily make?,,"To solve this problem in Python, we can use integer division to find the number of necklaces Emily can make.
+
+Here's the Python code to calculate the number of necklaces Emily can make:
+
+```python
+beads_per_necklace = 8
+total_beads = 16
+
+num_necklaces = total_beads // beads_per_necklace
+
+print(""Emily can make"", num_necklaces, ""necklaces."")
+```
+
+When you run this code, it will output:
+
+```
+Emily can make 2 necklaces.
+```
+
+So, Emily can make 2 necklaces with the given number of beads.",gpt-35-turbo,azure,0,82,131,2.0,Word Problems,challenge,1.5116944313049316
+PaL,False,wordProblems,"7 red peaches, 71 yellow peaches and 8 green peaches are in the basket. How many more green peaches than red peaches are in the basket?",,"To solve this problem in Python, you can subtract the number of red peaches from the number of green peaches. Here's the code:
+
+```python
+red_peaches = 7
+yellow_peaches = 71
+green_peaches = 8
+
+more_green_than_red = green_peaches - red_peaches
+
+print(""There are"", more_green_than_red, ""more green peaches than red peaches in the basket."")
+```
+
+When you run this code, it will output:
+
+```
+There are 1 more green peaches than red peaches in the basket.
+```
+
+So, there is 1 more green peach than red peach in the basket.",gpt-35-turbo,azure,0,88,137,1.0,Word Problems,challenge,3.4546897411346436
+PaL,False,wordProblems,4 birds and 3 storks were sitting on the fence. 6 more storks came to join them. How many more storks than birds are sitting on the fence?,,"Sure! Here's the Python code to solve the math problem:
+
+```python
+birds = 4
+storks = 3
+
+# Calculate the total number of birds and storks sitting on the fence
+total_birds_and_storks = birds + storks
+
+# Additional storks joining
+additional_storks = 6
+
+# Calculate the total number of storks after the additional ones joined
+total_storks = storks + additional_storks
+
+# Calculate the difference between the total number of storks and birds
+difference = total_storks - total_birds_and_storks
+
+print(""The number of additional storks than birds sitting on the fence is:"", difference)
+```
+
+When you run this code, it will output:
+
+```
+The number of additional storks than birds sitting on the fence is: 5
+```
+
+So, there are 5 more storks than birds sitting on the fence.",gpt-35-turbo,azure,0,88,188,5.0,Word Problems,challenge,3.125166893005371
+PaL,False,wordProblems,Jessie weighed 114 kilograms. After she started to go jogging everyday she lost 50 kilograms in the first week and 60 kilograms in the second week. How much does she weigh now?,,"To solve this problem in Python, we can subtract the total weight lost from the initial weight of Jessie. Here's the code:
+
+```python
+initial_weight = 114
+weight_lost_week1 = 50
+weight_lost_week2 = 60
+
+current_weight = initial_weight - weight_lost_week1 - weight_lost_week2
+
+print(""Jessie's current weight is"", current_weight, ""kilograms."")
+```
+
+When you run this code, it will output:
+
+```
+Jessie's current weight is 4 kilograms.
+```
+
+Therefore, Jessie currently weighs 4 kilograms.",gpt-35-turbo,azure,0,89,118,4.0,Word Problems,challenge,3.4784719944000244
+PaL,False,wordProblems,We ordered some pizzas. Each pizza has 2 slices. If there were a total of 28 slices How many pizzas did we order?,,"To solve this problem in Python, we can use the concept of division. We divide the total number of slices by the number of slices per pizza to find the number of pizzas.
+
+Here's the Python code to solve this problem:
+
+```python
+total_slices = 28
+slices_per_pizza = 2
+
+num_pizzas = total_slices // slices_per_pizza
+
+print(""We ordered"", num_pizzas, ""pizzas."")
+```
+
+When you run this code, it will output:
+
+```
+We ordered 14 pizzas.
+```
+
+So, we ordered 14 pizzas.",gpt-35-turbo,azure,0,79,119,14.0,Word Problems,challenge,2.7262141704559326
+PaL,False,wordProblems,Luke played a trivia game and scored 154 points. If he gained the 11 points in each round How many rounds did he play?,,"To find out how many rounds Luke played, we can divide his total score by the number of points gained in each round. Here's the Python code to solve this problem:
+
+```python
+score = 154
+points_per_round = 11
+
+rounds_played = score // points_per_round
+
+print(""Luke played"", rounds_played, ""rounds."")
+```
+
+When you run this code, it will output:
+
+```
+Luke played 14 rounds.
+```
+
+So, Luke played 14 rounds in the trivia game.",gpt-35-turbo,azure,0,79,108,14.0,Word Problems,challenge,1.713336706161499
+PaL,False,wordProblems,In Haley's class some boys love to play marbles. If Haley has 10 marbles and she gave 5 marbles to each boy How many boys did she give the marbles to?,,"To solve this problem in Python, we can use the division operator (`/`) to find the number of boys. Here's the code:
+
+```python
+haleys_marbles = 10
+marbles_per_boy = 5
+
+num_boys = haleys_marbles / marbles_per_boy
+
+print(""Haley gave marbles to"", num_boys, ""boys."")
+```
+
+When you run this code, it will output:
+
+```
+Haley gave marbles to 2.0 boys.
+```
+
+Since the result is a float, we can assume that Haley gave marbles to 2 boys.",gpt-35-turbo,azure,0,91,129,2.0,Word Problems,challenge,1.8509712219238281
+PaL,False,wordProblems,Paco had 22 sweet cookies and 75 salty cookies. He ate 15 sweet cookies and 54 salty cookies. How many sweet cookies did Paco have left?,,"Sure! Here's the Python code to solve the problem:
+
+```python
+sweet_cookies = 22
+salty_cookies = 75
+
+ate_sweet_cookies = 15
+ate_salty_cookies = 54
+
+remaining_sweet_cookies = sweet_cookies - ate_sweet_cookies
+
+print(""Paco has"", remaining_sweet_cookies, ""sweet cookies left."")
+```
+
+When you run this code, it will output:
+
+```
+Paco has 7 sweet cookies left.
+```
+
+So, Paco has 7 sweet cookies left after eating 15 sweet cookies.",gpt-35-turbo,azure,0,86,115,7.0,Word Problems,challenge,2.430055856704712
+PaL,False,wordProblems,Randy has some blocks. He uses 52 blocks to build a tower. If there are 38 blocks left How many blocks did he have at the start?,,"To solve this problem in Python, we can use the equation:
+
+Total blocks at the start = Blocks used to build the tower + Blocks left
+
+Here's the Python code to calculate the number of blocks Randy had at the start:
+
+```python
+blocks_used = 52
+blocks_left = 38
+
+blocks_at_start = blocks_used + blocks_left
+
+print(""Randy had"", blocks_at_start, ""blocks at the start."")
+```
+
+When you run this code, it will output:
+
+```
+Randy had 90 blocks at the start.
+```
+
+So, Randy had 90 blocks at the start.",gpt-35-turbo,azure,0,83,124,90.0,Word Problems,challenge,1.7560417652130127
+PaL,False,wordProblems,The Ferris wheel in paradise park has 6 seats. Each seat can hold 14 people. If there are 16 people on the wheel right now How many more people can join the wheel?,,"To solve this problem in Python, we can use the following code:
+
+```python
+# Define the number of seats on the Ferris wheel
+seats = 6
+
+# Define the capacity of each seat
+seat_capacity = 14
+
+# Define the current number of people on the wheel
+current_people = 16
+
+# Calculate the total capacity of the Ferris wheel
+total_capacity = seats * seat_capacity
+
+# Calculate the number of people that can still join the wheel
+remaining_capacity = total_capacity - current_people
+
+# Print the result
+print(""The number of people that can still join the wheel is:"", remaining_capacity)
+```
+
+When you run this code, it will output:
+
+```
+The number of people that can still join the wheel is: 58
+```
+
+So, there are 58 more people who can join the Ferris wheel.",gpt-35-turbo,azure,0,91,176,68.0,Word Problems,challenge,4.674820899963379
+PaL,False,wordProblems,Every day Ryan spends 6 hours on learning english and 5 hours on learning chinese. If he learns for 2 days How many hours does he spend on learning english in all?,,"To solve this problem in Python, you can use the following code:
+
+```python
+english_hours_per_day = 6
+days = 2
+
+total_english_hours = english_hours_per_day * days
+
+print(""Ryan spends"", total_english_hours, ""hours on learning English in total."")
+```
+
+When you run this code, it will output:
+
+```
+Ryan spends 12 hours on learning English in total.
+```
+
+So, Ryan spends 12 hours on learning English in total over 2 days.",gpt-35-turbo,azure,0,88,104,12.0,Word Problems,challenge,1.543457269668579
+PaL,False,wordProblems,Paul got a box of 457 erasers and 617 crayons for his birthday. At the end of the school year he only had 523 crayons left while not having lost a single eraser. How many more crayons than erasers did he have left?,,"To solve this problem in Python, we can subtract the number of erasers from the number of crayons left. Here's the code:
+
+```python
+erasers = 457
+crayons = 617
+crayons_left = 523
+
+difference = crayons_left - erasers
+
+print(""Paul had"", difference, ""more crayons than erasers left."")
+```
+
+When you run this code, it will output:
+
+```
+Paul had 66 more crayons than erasers left.
+```
+
+So, Paul had 66 more crayons than erasers left at the end of the school year.",gpt-35-turbo,azure,0,106,126,66.0,Word Problems,challenge,2.201262950897217
+PaL,False,wordProblems,Emily is making bead necklaces for her friends where each necklace takes 5 beads. She made 4 necklaces. How many beads did Emily have?,,"To solve this problem in Python, you can multiply the number of necklaces by the number of beads per necklace. Here's the code:
+
+```python
+necklaces = 4
+beads_per_necklace = 5
+
+total_beads = necklaces * beads_per_necklace
+
+print(""Emily had"", total_beads, ""beads."")
+```
+
+When you run this code, it will output:
+
+```
+Emily had 20 beads.
+```",gpt-35-turbo,azure,0,82,96,20.0,Word Problems,challenge,2.0819737911224365
+PaL,False,wordProblems,A grocery store had 4 bottles of diet soda. If they had 79 more bottles of regular soda than diet soda How many bottles of regular soda did they have?,,"Sure! Here's the Python code to solve the math problem:
+
+```python
+diet_soda = 4
+regular_soda = diet_soda + 79
+
+print(""The grocery store had"", regular_soda, ""bottles of regular soda."")
+```
+
+When you run this code, it will output:
+
+```
+The grocery store had 83 bottles of regular soda.
+```
+
+So, the grocery store had 83 bottles of regular soda.",gpt-35-turbo,azure,0,85,93,83.0,Word Problems,challenge,2.1771488189697266
+PaL,False,wordProblems,There are 18 bananas in Philip's banana collection. If the bananas are organized into groups of size 2 How many groups are there?,,"To solve this problem in Python, you can use the division operator (`/`) to divide the total number of bananas by the group size. Here's the code:
+
+```python
+bananas = 18
+group_size = 2
+
+groups = bananas / group_size
+
+print(""The number of groups is:"", groups)
+```
+
+When you run this code, it will output:
+
+```
+The number of groups is: 9.0
+```
+
+So, there are 9 groups of size 2 in Philip's banana collection.",gpt-35-turbo,azure,0,79,109,9.0,Word Problems,challenge,2.6838924884796143
+PaL,False,wordProblems,Randy has 90 blocks. He uses 89 blocks to build a house and 63 blocks to build a tower. How many more blocks did he use to build the house than he did to build the tower?,,"To solve this problem in Python, you can subtract the number of blocks used to build the tower from the number of blocks used to build the house. Here's the code:
+
+```python
+house_blocks = 89
+tower_blocks = 63
+
+more_blocks = house_blocks - tower_blocks
+
+print(""Randy used"", more_blocks, ""more blocks to build the house than he did to build the tower."")
+```
+
+When you run this code, it will output:
+
+```
+Randy used 26 more blocks to build the house than he did to build the tower.
+```",gpt-35-turbo,azure,0,94,117,26.0,Word Problems,challenge,1.9996283054351807
+PaL,False,wordProblems,For the walls of the house he would use 13 large planks of wood. If each plank of wood needs 17 pieces of nails to be secured and in addition 8 nails are needed for some smaller planks. How many nails does John need for the house wall?,,"To calculate the total number of nails needed for the house wall, we can multiply the number of large planks by the number of nails needed for each plank and then add the additional nails needed for the smaller planks.
+
+Here's the Python code to solve this problem:
+
+```python
+large_planks = 13
+nails_per_large_plank = 17
+additional_nails = 8
+
+total_nails = (large_planks * nails_per_large_plank) + additional_nails
+
+print(""John needs"", total_nails, ""nails for the house wall."")
+```
+
+When you run this code, it will output:
+
+```
+John needs 229 nails for the house wall.
+```
+
+So, John needs 229 nails for the house wall.",gpt-35-turbo,azure,0,107,156,229.0,Word Problems,challenge,2.420811891555786
+PaL,False,wordProblems,Emily is making bead necklaces for her friends. She made 11 necklaces and each necklace takes 28 beads. How many beads did Emily have?,,"To solve this problem in Python, you can multiply the number of necklaces by the number of beads per necklace. Here's the code:
+
+```python
+num_necklaces = 11
+beads_per_necklace = 28
+
+total_beads = num_necklaces * beads_per_necklace
+
+print(""Emily had"", total_beads, ""beads."")
+```
+
+When you run this code, it will output:
+
+```
+Emily had 308 beads.
+```",gpt-35-turbo,azure,0,82,100,308.0,Word Problems,challenge,1.4170632362365723
+PaL,False,wordProblems,Baker made 110 cakes. He sold 75 of them. Then he made 76 more cakes. How many cakes would baker still have?,,"Sure! Here's the Python code to solve the math problem:
+
+```python
+cakes_made = 110
+cakes_sold = 75
+cakes_made_after_sold = 76
+
+cakes_remaining = cakes_made - cakes_sold + cakes_made_after_sold
+
+print(""The baker would still have"", cakes_remaining, ""cakes."")
+```
+
+When you run this code, it will output:
+
+```
+The baker would still have 111 cakes.
+```
+
+So, the baker would still have 111 cakes.",gpt-35-turbo,azure,0,80,104,111.0,Word Problems,challenge,2.011160135269165
+PaL,False,wordProblems,Josh had some marbles in his collection. He lost 21 marbles. If he has 12 marbles now How many marbles did he have in his collection?,,"To solve this problem in Python, we can use a simple equation. Let's assume the number of marbles Josh had in his collection is represented by the variable `x`. 
+
+According to the problem, he lost 21 marbles, so we subtract 21 from `x`. Then, we set the result equal to 12, as he now has 12 marbles. 
+
+The equation can be written as:
+
+x - 21 = 12
+
+To find the value of `x`, we can rearrange the equation:
+
+x = 12 + 21
+
+Now, let's write the Python code to solve this problem:
+
+```python
+lost_marbles = 21
+current_marbles = 12
+
+total_marbles = current_marbles + lost_marbles
+
+print(""Josh had"", total_marbles, ""marbles in his collection."")
+```
+
+When you run this code, it will output:
+
+```
+Josh had 33 marbles in his collection.
+```
+
+",gpt-35-turbo,azure,0,86,200,33.0,Word Problems,challenge,5.040079832077026
+PaL,False,wordProblems,Baker made 157 cakes and 169 pastries. If he sold 158 cakes and 147 pastries How many more cakes than pastries did baker sell?,,"To solve this problem in Python, you can subtract the number of pastries sold from the number of cakes sold. Here's the code:
+
+```python
+cakes_made = 157
+pastries_made = 169
+
+cakes_sold = 158
+pastries_sold = 147
+
+cakes_difference = cakes_sold - pastries_sold
+
+print(""Baker sold"", cakes_difference, ""more cakes than pastries."")
+```
+
+When you run this code, it will output:
+
+```
+Baker sold 11 more cakes than pastries.
+```",gpt-35-turbo,azure,0,84,111,11.0,Word Problems,challenge,1.9317512512207031
+PaL,False,wordProblems,Faye was placing her pencils into rows with 5 pencils in each row. If she had 35 pencils and 7 crayons How many rows could she make?,,"To solve this problem in Python, we can use the division operator (`/`) to find the number of rows Faye can make.
+
+Here's the Python code to solve the problem:
+
+```python
+pencils = 35
+crayons = 7
+pencils_per_row = 5
+
+total_items = pencils + crayons
+rows = total_items // pencils_per_row
+
+print(""Faye can make"", rows, ""rows."")
+```
+
+When you run this code, it will output:
+
+```
+Faye can make 8 rows.
+```
+
+So, Faye can make 8 rows with 5 pencils in each row.",gpt-35-turbo,azure,0,85,133,7.0,Word Problems,challenge,2.1124560832977295
+PaL,False,wordProblems,Rachel's tree had 4 apples initially. She picked some apples and now there are 2 apples left on the tree. How many apples did rachel pick?,,"To find out how many apples Rachel picked, we can subtract the number of apples left on the tree from the initial number of apples.
+
+Here's the Python code to solve the problem:
+
+```python
+initial_apples = 4
+apples_left = 2
+
+apples_picked = initial_apples - apples_left
+
+print(""Rachel picked"", apples_picked, ""apples."")
+```
+
+When you run this code, it will output:
+
+```
+Rachel picked 2 apples.
+```
+
+So Rachel picked 2 apples.",gpt-35-turbo,azure,0,84,108,2.0,Word Problems,challenge,1.382913589477539
+PaL,False,wordProblems,If the cave is 919 feet deep and they need to travel 1307 feet How far is the end of the cave?,,"To find the distance to the end of the cave, we can subtract the depth of the cave from the total distance traveled. Here's the Python code to calculate it:
+
+```python
+cave_depth = 919
+distance_traveled = 1307
+
+distance_to_end = distance_traveled - cave_depth
+
+print(""The distance to the end of the cave is"", distance_to_end, ""feet."")
+```
+
+When you run this code, it will output:
+
+```
+The distance to the end of the cave is 388 feet.
+```
+
+So, the distance to the end of the cave is 388 feet.",gpt-35-turbo,azure,0,77,127,2226.0,Word Problems,challenge,2.5203866958618164
+PaL,False,wordProblems,"7 red peaches, 15 yellow peaches and 8 green peaches are in the basket. How many peaches are in the basket?",,"To solve this problem in Python, you can simply add the quantities of each color of peaches together. Here's the code:
+
+```python
+red_peaches = 7
+yellow_peaches = 15
+green_peaches = 8
+
+total_peaches = red_peaches + yellow_peaches + green_peaches
+
+print(""The total number of peaches in the basket is:"", total_peaches)
+```
+
+When you run this code, it will output:
+
+```
+The total number of peaches in the basket is: 30
+```
+
+So, there are 30 peaches in the basket.",gpt-35-turbo,azure,0,82,125,30.0,Word Problems,challenge,2.4327380657196045
+PaL,False,wordProblems,Allan and Jake brought 3 balloons to the park. If Allan brought 2 balloons How many balloons did Jake bring to the park?,,"To find out how many balloons Jake brought to the park, we can subtract the number of balloons Allan brought from the total number of balloons brought by both Allan and Jake.
+
+Here's the Python code to solve this problem:
+
+```python
+total_balloons = 3
+allan_balloons = 2
+
+jake_balloons = total_balloons - allan_balloons
+
+print(""Jake brought"", jake_balloons, ""balloons to the park."")
+```
+
+When you run this code, it will output:
+
+```
+Jake brought 1 balloons to the park.
+```
+
+So, Jake brought 1 balloon to the park.",gpt-35-turbo,azure,0,78,136,1.0,Word Problems,challenge,2.3771238327026367
+PaL,False,wordProblems,A farmer had 177 tomatoes and 12 potatoes in his garden. If he picked 53 tomatoes How many tomatoes and potatoes does he have left?,,"Sure! Here's the Python code to solve the problem:
+
+```python
+tomatoes = 177
+potatoes = 12
+
+picked_tomatoes = 53
+
+remaining_tomatoes = tomatoes - picked_tomatoes
+remaining_potatoes = potatoes
+
+print(""The farmer has"", remaining_tomatoes, ""tomatoes and"", remaining_potatoes, ""potatoes left."")
+```
+
+When you run this code, it will output:
+
+```
+The farmer has 124 tomatoes and 12 potatoes left.
+```
+
+So, after picking 53 tomatoes, the farmer has 124 tomatoes and 12 potatoes left in his garden.",gpt-35-turbo,azure,0,81,129,136.0,Word Problems,challenge,1.6147935390472412
+PaL,False,wordProblems,At the arcade Dave had won some tickets. He used 12 tickets to buy some toys. If he still has 14 tickets left How many tickets did Dave win at the arcade?,,"To find out how many tickets Dave won at the arcade, we can subtract the number of tickets he used to buy toys from the total number of tickets he has left.
+
+Here's the Python code to solve this problem:
+
+```python
+tickets_used = 12
+tickets_left = 14
+
+tickets_won = tickets_used + tickets_left
+print(""Dave won"", tickets_won, ""tickets at the arcade."")
+```
+
+When you run this code, it will output:
+
+```
+Dave won 26 tickets at the arcade.
+```
+
+So, Dave won 26 tickets at the arcade.",gpt-35-turbo,azure,0,88,120,26.0,Word Problems,challenge,2.237774133682251
+PaL,False,wordProblems,After resting they decided to go for a swim. The depth of the water is 5 times Ron's height. Dean is 11 feet shorter than Ron. If Ron stands at 12 feet How deep was the water?,,"To solve this problem in Python, we can use the given information to calculate the depth of the water. Here's the Python code to find the depth:
+
+```python
+ron_height = 12
+dean_height = ron_height - 11
+water_depth = ron_height * 5
+
+print(""The depth of the water is"", water_depth, ""feet."")
+```
+
+When you run this code, it will output:
+
+```
+The depth of the water is 60 feet.
+```
+
+So, the depth of the water is 60 feet.",gpt-35-turbo,azure,0,96,115,60.0,Word Problems,challenge,1.4583141803741455
+PaL,False,wordProblems,Emily is making bead necklaces for her friends. She had 2 beads and she was able to make 32 necklaces. How many beads did each necklace need?,,"To find out how many beads each necklace needs, we can divide the total number of beads by the number of necklaces.
+
+Here's the Python code to solve this problem:
+
+```python
+total_beads = 2
+total_necklaces = 32
+
+beads_per_necklace = total_beads / total_necklaces
+
+print(""Each necklace needs"", beads_per_necklace, ""beads."")
+```
+
+When you run this code, it will output:
+
+```
+Each necklace needs 0.0625 beads.
+```
+
+Since we can't have a fraction of a bead, we can round the result to the nearest whole number. Here's an updated version of the code that rounds the result:
+
+```python
+total_beads = 2
+total_necklaces = 32
+
+beads_per_necklace = round(total_beads / total_necklaces)
+
+print(""Each necklace needs"", beads_per_necklace, ""beads",gpt-35-turbo,azure,0,85,200,16.0,Word Problems,challenge,3.2705953121185303
+PaL,False,wordProblems," The school cafeteria had 17 apples. If they used 2 to make lunch for the students and then bought 23 more, how many apples would they have? ",,"Sure! Here's the Python code to solve the math problem:
+
+```python
+apples = 17
+used_apples = 2
+bought_apples = 23
+
+total_apples = apples - used_apples + bought_apples
+
+print(""The school cafeteria would have"", total_apples, ""apples."")
+```
+
+When you run this code, it will output:
+
+```
+The school cafeteria would have 38 apples.
+```
+
+So, the school cafeteria would have 38 apples after using 2 to make lunch for the students and then buying 23 more.",gpt-35-turbo,azure,0,86,119,38.0,Word Problems,multi_step,1.8087670803070068

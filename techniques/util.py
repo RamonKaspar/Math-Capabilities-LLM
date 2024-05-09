@@ -126,7 +126,7 @@ def execute_solution_function(code_string: str):
             # Use regex to find all numbers, capture the last one if exists
             numbers = re.findall(r"[-+]?\d*\.\d+|\d+", printed_output)
             ans = numbers[-1]
-    except Exception as e:
+    except:
         ans = None
     try:
         ans = float(ans) if ans is not None else ans

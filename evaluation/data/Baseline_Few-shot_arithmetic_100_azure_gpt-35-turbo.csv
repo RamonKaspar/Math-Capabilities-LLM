@@ -1,0 +1,101 @@
+technique,few_shot_prompting,dataset,question,answer,reasoning,model,service,temperature,prompt_tokens,completion_tokens,correct_answer,category,subcategory,latency_in_seconds
+Baseline,True,arithmetic,0.1*3.0=,0.3,,gpt-35-turbo,azure,0,172,3,0.3,Arithmetic,arithmetic_mixed,0.33290553092956543
+Baseline,True,arithmetic,88254×26228=,2314303512.0,,gpt-35-turbo,azure,0,170,20,2314725912.0,Arithmetic,arithmetic_mixed,0.751448392868042
+Baseline,True,arithmetic,37739*66015=,2492244685.0,,gpt-35-turbo,azure,0,170,7,2491340085.0,Arithmetic,arithmetic_mixed,0.3282155990600586
+Baseline,True,arithmetic,5^4=,625.0,,gpt-35-turbo,azure,0,168,1,625.0,Arithmetic,arithmetic_mixed,0.17429113388061523
+Baseline,True,arithmetic,721-847=,-126.0,,gpt-35-turbo,azure,0,168,2,-126.0,Arithmetic,arithmetic_mixed,0.22528505325317383
+Baseline,True,arithmetic,774426524175+721318944497=,1495745468672.0,,gpt-35-turbo,azure,0,174,9,1495745468672.0,Arithmetic,arithmetic_mixed,0.3733086585998535
+Baseline,True,arithmetic,7^4=,2401.0,,gpt-35-turbo,azure,0,168,2,2401.0,Arithmetic,arithmetic_mixed,0.17528533935546875
+Baseline,True,arithmetic,"What is next in 1964, 3923, 5880, 7835?",9784.0,,gpt-35-turbo,azure,0,183,2,9788.0,Arithmetic,sequence_next_term,0.2587752342224121
+Baseline,True,arithmetic,"What comes next: 17, 49, 129, 281, 529, 897, 1409?",2041.0,,gpt-35-turbo,azure,0,189,2,2089.0,Arithmetic,sequence_next_term,0.22621989250183105
+Baseline,True,arithmetic,"What is the next term in -1691, -1690, -1689, -1688?",-1687.0,,gpt-35-turbo,azure,0,185,3,-1687.0,Arithmetic,sequence_next_term,0.22446680068969727
+Baseline,True,arithmetic,"What is the next term in -1341, -2675, -3997, -5301, -6581, -7831?",-9041.0,,gpt-35-turbo,azure,0,193,3,-9045.0,Arithmetic,sequence_next_term,0.22397732734680176
+Baseline,True,arithmetic,"What is the next term in 12, 24, 38, 54, 72, 92, 114?",134.0,,gpt-35-turbo,azure,0,190,1,138.0,Arithmetic,sequence_next_term,0.16084074974060059
+Baseline,True,arithmetic,"What is the next term in 1070, 4273, 9610, 17081?",28930.0,,gpt-35-turbo,azure,0,185,2,26686.0,Arithmetic,sequence_next_term,0.26939916610717773
+Baseline,True,arithmetic,"What comes next: -75, -80, -85, -90?",-95.0,,gpt-35-turbo,azure,0,179,2,-95.0,Arithmetic,sequence_next_term,0.15556669235229492
+Baseline,True,arithmetic,Calculate -13 - 40.103.,-53.103,,gpt-35-turbo,azure,0,172,4,-53.103,Arithmetic,add_or_sub,0.287276029586792
+Baseline,True,arithmetic,Add together -18.766737 and -0.5.,-19.266737,,gpt-35-turbo,azure,0,176,5,-19.266737,Arithmetic,add_or_sub,0.33005475997924805
+Baseline,True,arithmetic,What is -0.3 minus 1991087?,-1991087.3,,gpt-35-turbo,azure,0,175,6,-1991087.3,Arithmetic,add_or_sub,0.3107776641845703
+Baseline,True,arithmetic,Subtract -1 from -467.,-466.0,,gpt-35-turbo,azure,0,170,2,-466.0,Arithmetic,add_or_sub,0.17369484901428223
+Baseline,True,arithmetic,What is the distance between 0.7 and -1843?,1843.7,,gpt-35-turbo,azure,0,177,18,1843.7,Arithmetic,add_or_sub,0.4801666736602783
+Baseline,True,arithmetic,What is -84217 minus -5?,-84212.0,,gpt-35-turbo,azure,0,172,3,-84212.0,Arithmetic,add_or_sub,0.17734766006469727
+Baseline,True,arithmetic,What is 221 take away 0.2?,220.8,,gpt-35-turbo,azure,0,174,3,220.8,Arithmetic,add_or_sub,0.2646474838256836
+Baseline,True,arithmetic,0 - (10 - (4 + 5)),-1.0,,gpt-35-turbo,azure,0,175,2,-1.0,Arithmetic,add_sub_multiple,0.32602906227111816
+Baseline,True,arithmetic,0 - 2 - (4 - (-5 + 11)),-2.0,,gpt-35-turbo,azure,0,178,2,0.0,Arithmetic,add_sub_multiple,0.20881247520446777
+Baseline,True,arithmetic,Evaluate -7 + (-7 - -2) - -5 - -9.,2.0,,gpt-35-turbo,azure,0,180,71,2.0,Arithmetic,add_sub_multiple,1.4523804187774658
+Baseline,True,arithmetic,Calculate (3 - (-4 - -3)) + -4.,6.0,,gpt-35-turbo,azure,0,177,1,0.0,Arithmetic,add_sub_multiple,0.17975163459777832
+Baseline,True,arithmetic,Calculate 1 - (4 - 8 - -8).,5.0,,gpt-35-turbo,azure,0,176,1,-3.0,Arithmetic,add_sub_multiple,0.14707040786743164
+Baseline,True,arithmetic,Calculate -8 + 3 - (1 + -4 - 0).,-2.0,,gpt-35-turbo,azure,0,179,2,-2.0,Arithmetic,add_sub_multiple,0.1506659984588623
+Baseline,True,arithmetic,What is 9 - 2 - 11 - (-1 - 1)?,-2.0,,gpt-35-turbo,azure,0,180,2,-2.0,Arithmetic,add_sub_multiple,0.10475730895996094
+Baseline,True,arithmetic,-6405 divided by -105,61.0,,gpt-35-turbo,azure,0,170,1,61.0,Arithmetic,div,0.11976885795593262
+Baseline,True,arithmetic,Calculate -4450 divided by 178.,-25.0,,gpt-35-turbo,azure,0,172,2,-25.0,Arithmetic,div,0.1294867992401123
+Baseline,True,arithmetic,263 divided by 1,263.0,,gpt-35-turbo,azure,0,169,1,263.0,Arithmetic,div,0.11968731880187988
+Baseline,True,arithmetic,Calculate -732 divided by 4.,-183.0,,gpt-35-turbo,azure,0,171,2,-183.0,Arithmetic,div,0.12922358512878418
+Baseline,True,arithmetic,What is -44030 divided by -1190?,37.0,,gpt-35-turbo,azure,0,174,1,37.0,Arithmetic,div,0.09487485885620117
+Baseline,True,arithmetic,What is -546 divided by 6?,-91.0,,gpt-35-turbo,azure,0,172,2,-91.0,Arithmetic,div,0.1437389850616455
+Baseline,True,arithmetic,Calculate -102 divided by 2.,-51.0,,gpt-35-turbo,azure,0,171,2,-51.0,Arithmetic,div,0.1604464054107666
+Baseline,True,arithmetic,What is 5 times -34?,-170.0,,gpt-35-turbo,azure,0,171,2,-170.0,Arithmetic,mul,0.1292250156402588
+Baseline,True,arithmetic,What is 427 times 0?,0.0,,gpt-35-turbo,azure,0,171,1,0.0,Arithmetic,mul,0.10082125663757324
+Baseline,True,arithmetic,What is 1247 times 0.5?,623.5,,gpt-35-turbo,azure,0,174,3,623.5,Arithmetic,mul,0.1601262092590332
+Baseline,True,arithmetic,Work out 0 * -3.4.,0.0,,gpt-35-turbo,azure,0,173,1,0.0,Arithmetic,mul,0.14899325370788574
+Baseline,True,arithmetic,-2167 times 3,-6501.0,,gpt-35-turbo,azure,0,169,3,-6501.0,Arithmetic,mul,0.14644455909729004
+Baseline,True,arithmetic,-45 * 66,-2970.0,,gpt-35-turbo,azure,0,168,3,-2970.0,Arithmetic,mul,0.13690710067749023
+Baseline,True,arithmetic,What is the product of 0.3 and -81?,-24.3,,gpt-35-turbo,azure,0,176,4,-24.3,Arithmetic,mul,0.14922046661376953
+Baseline,True,arithmetic,Evaluate -3*(-3)/(-27)*-15.,-15.0,,gpt-35-turbo,azure,0,175,2,5.0,Arithmetic,mul_div_multiple,0.15533041954040527
+Baseline,True,arithmetic,What is (2/16*-4)/((-2)/(-8))?,-1.0,,gpt-35-turbo,azure,0,178,2,-2.0,Arithmetic,mul_div_multiple,0.15018033981323242
+Baseline,True,arithmetic,(-47)/(-188)*(-24)/2,6.0,,gpt-35-turbo,azure,0,173,1,-3.0,Arithmetic,mul_div_multiple,0.12089920043945312
+Baseline,True,arithmetic,Calculate 1/(-12)*-4*-15.,10.0,,gpt-35-turbo,azure,0,175,1,-5.0,Arithmetic,mul_div_multiple,0.1531977653503418
+Baseline,True,arithmetic,(-3)/((-18)/4)*-3,6.0,,gpt-35-turbo,azure,0,173,1,-2.0,Arithmetic,mul_div_multiple,0.12127685546875
+Baseline,True,arithmetic,What is -1*(-6)/(-12)*2?,1.0,,gpt-35-turbo,azure,0,175,1,-1.0,Arithmetic,mul_div_multiple,0.12513470649719238
+Baseline,True,arithmetic,Evaluate (-1)/((-8)/(48/(-3))).,-6.0,,gpt-35-turbo,azure,0,175,2,-2.0,Arithmetic,mul_div_multiple,0.14386940002441406
+Baseline,True,arithmetic,How many millilitres are there in 910.4399 litres?,910439.9,,gpt-35-turbo,azure,0,178,5,910439.9,Arithmetic,conversion,0.20472121238708496
+Baseline,True,arithmetic,What is fifty-five halves of a kilometer in meters?,27500.0,,gpt-35-turbo,azure,0,175,42,27500.0,Arithmetic,conversion,0.9712777137756348
+Baseline,True,arithmetic,What is 1.946047l in millilitres?,1946.047,,gpt-35-turbo,azure,0,176,17,1946.047,Arithmetic,conversion,0.3245737552642822
+Baseline,True,arithmetic,What is 0.929527 centuries in millennia?,9.29527,,gpt-35-turbo,azure,0,174,4,0.0929527,Arithmetic,conversion,0.14644360542297363
+Baseline,True,arithmetic,How many millilitres are there in one twentieth of a litre?,50.0,,gpt-35-turbo,azure,0,177,1,50.0,Arithmetic,conversion,0.12208700180053711
+Baseline,True,arithmetic,What is one tenth of a milligram in nanograms?,100.0,,gpt-35-turbo,azure,0,175,14,100000.0,Arithmetic,conversion,0.42418575286865234
+Baseline,True,arithmetic,What is 2/125 of a meter in millimeters?,16.0,,gpt-35-turbo,azure,0,176,14,16.0,Arithmetic,conversion,0.3175811767578125
+Baseline,True,arithmetic,How many minutes are there between 2:12 PM and 3:43 PM?,91.0,,gpt-35-turbo,azure,0,181,1,91.0,Arithmetic,time,0.12199282646179199
+Baseline,True,arithmetic,How many minutes are there between 10:12 PM and 5:36 AM?,384.0,,gpt-35-turbo,azure,0,181,1,444.0,Arithmetic,time,0.1320788860321045
+Baseline,True,arithmetic,How many minutes are there between 12:25 AM and 7:35 AM?,370.0,,gpt-35-turbo,azure,0,181,1,430.0,Arithmetic,time,0.11865568161010742
+Baseline,True,arithmetic,How many minutes are there between 11:23 AM and 12:03 PM?,40.0,,gpt-35-turbo,azure,0,181,1,40.0,Arithmetic,time,0.12408566474914551
+Baseline,True,arithmetic,How many minutes are there between 12:40 AM and 3:18 AM?,158.0,,gpt-35-turbo,azure,0,181,1,158.0,Arithmetic,time,0.11031031608581543
+Baseline,True,arithmetic,How many minutes are there between 5:28 PM and 6:20 PM?,52.0,,gpt-35-turbo,azure,0,181,1,52.0,Arithmetic,time,0.15045404434204102
+Baseline,True,arithmetic,How many minutes are there between 11:16 PM and 10:18 AM?,542.0,,gpt-35-turbo,azure,0,181,1,662.0,Arithmetic,time,0.11361265182495117
+Baseline,True,arithmetic,What is the remainder when 50 is divided by 18?,14.0,,gpt-35-turbo,azure,0,176,1,14.0,Arithmetic,div_remainder,0.13268065452575684
+Baseline,True,arithmetic,What is the remainder when 956 is divided by 287?,78.0,,gpt-35-turbo,azure,0,176,1,95.0,Arithmetic,div_remainder,0.1320195198059082
+Baseline,True,arithmetic,What is the remainder when 2198 is divided by 44?,14.0,,gpt-35-turbo,azure,0,177,1,42.0,Arithmetic,div_remainder,0.13704848289489746
+Baseline,True,arithmetic,Calculate the remainder when 1903 is divided by 212.,147.0,,gpt-35-turbo,azure,0,176,15,207.0,Arithmetic,div_remainder,0.3170592784881592
+Baseline,True,arithmetic,Calculate the remainder when 12707 is divided by 71.,25.0,,gpt-35-turbo,azure,0,176,15,69.0,Arithmetic,div_remainder,0.4386436939239502
+Baseline,True,arithmetic,What is the remainder when 129 is divided by 61?,7.0,,gpt-35-turbo,azure,0,176,1,7.0,Arithmetic,div_remainder,0.15286827087402344
+Baseline,True,arithmetic,Calculate the remainder when 147 is divided by 23.,2.0,,gpt-35-turbo,azure,0,175,1,9.0,Arithmetic,div_remainder,0.14838647842407227
+Baseline,True,arithmetic,What is the highest common factor of 800 and 350?,50.0,,gpt-35-turbo,azure,0,176,1,50.0,Arithmetic,gcd,0.1249539852142334
+Baseline,True,arithmetic,Calculate the highest common factor of 21342 and 12.,6.0,,gpt-35-turbo,azure,0,176,1,6.0,Arithmetic,gcd,0.0998528003692627
+Baseline,True,arithmetic,What is the greatest common factor of 48 and 1520?,8.0,,gpt-35-turbo,azure,0,177,15,16.0,Arithmetic,gcd,0.3823864459991455
+Baseline,True,arithmetic,Calculate the greatest common divisor of 1155 and 616.,77.0,,gpt-35-turbo,azure,0,176,19,77.0,Arithmetic,gcd,0.46073150634765625
+Baseline,True,arithmetic,What is the highest common factor of 32 and 55?,1.0,,gpt-35-turbo,azure,0,176,1,1.0,Arithmetic,gcd,1.1425795555114746
+Baseline,True,arithmetic,What is the greatest common factor of 5037 and 69?,3.0,,gpt-35-turbo,azure,0,177,1,69.0,Arithmetic,gcd,0.12999677658081055
+Baseline,True,arithmetic,Calculate the greatest common divisor of 44 and 154.,22.0,,gpt-35-turbo,azure,0,175,14,22.0,Arithmetic,gcd,0.2107987403869629
+Baseline,True,arithmetic,Calculate the least common multiple of 24498 and 8.,97992.0,,gpt-35-turbo,azure,0,176,21,97992.0,Arithmetic,lcm,0.5289256572723389
+Baseline,True,arithmetic,Calculate the common denominator of 115/582 and -4/11.,582.0,,gpt-35-turbo,azure,0,178,17,6402.0,Arithmetic,lcm,0.32154107093811035
+Baseline,True,arithmetic,What is the least common multiple of 6728 and 40?,16960.0,,gpt-35-turbo,azure,0,177,17,33640.0,Arithmetic,lcm,0.28505802154541016
+Baseline,True,arithmetic,Calculate the lowest common multiple of 4 and 460.,920.0,,gpt-35-turbo,azure,0,175,14,460.0,Arithmetic,lcm,0.36182641983032227
+Baseline,True,arithmetic,What is the common denominator of -59/120 and -29/24?,240.0,,gpt-35-turbo,azure,0,179,17,120.0,Arithmetic,lcm,0.31203198432922363
+Baseline,True,arithmetic,What is the common denominator of -93/58 and -5/58?,58.0,,gpt-35-turbo,azure,0,179,17,58.0,Arithmetic,lcm,0.3241448402404785
+Baseline,True,arithmetic,Calculate the smallest common multiple of 286 and 364.,2002.0,,gpt-35-turbo,azure,0,175,15,4004.0,Arithmetic,lcm,0.3252074718475342
+Baseline,True,arithmetic,What is the units digit of 8196?,6.0,,gpt-35-turbo,azure,0,173,1,6.0,Arithmetic,place_value,0.0994725227355957
+Baseline,True,arithmetic,What is the tens digit of 3848?,4.0,,gpt-35-turbo,azure,0,173,1,4.0,Arithmetic,place_value,0.12258100509643555
+Baseline,True,arithmetic,What is the hundreds digit of 2079?,0.0,,gpt-35-turbo,azure,0,173,1,0.0,Arithmetic,place_value,0.10958290100097656
+Baseline,True,arithmetic,What is the tens digit of 1599?,9.0,,gpt-35-turbo,azure,0,173,1,9.0,Arithmetic,place_value,0.12413620948791504
+Baseline,True,arithmetic,What is the hundreds digit of 9001?,0.0,,gpt-35-turbo,azure,0,173,1,0.0,Arithmetic,place_value,0.09240841865539551
+Baseline,True,arithmetic,What is the hundreds digit of 30741?,0.0,,gpt-35-turbo,azure,0,173,1,7.0,Arithmetic,place_value,0.11135482788085938
+Baseline,True,arithmetic,What is the units digit of 72672?,2.0,,gpt-35-turbo,azure,0,173,1,2.0,Arithmetic,place_value,0.10860061645507812
+Baseline,True,arithmetic,Round -147720 to the nearest one thousand.,-148000.0,,gpt-35-turbo,azure,0,173,3,-148000.0,Arithmetic,round_number,0.13740301132202148
+Baseline,True,arithmetic,What is 0.57208 rounded to 1 dp?,0.6,,gpt-35-turbo,azure,0,176,3,0.6000000000000001,Arithmetic,round_number,0.1380922794342041
+Baseline,True,arithmetic,What is 0.00117 rounded to four dps?,0.0012,,gpt-35-turbo,azure,0,175,4,0.0012,Arithmetic,round_number,0.1494903564453125
+Baseline,True,arithmetic,Round 13.5 to the nearest 10.,10.0,,gpt-35-turbo,azure,0,174,1,10.0,Arithmetic,round_number,0.11245393753051758
+Baseline,True,arithmetic,Round 4117.6 to the nearest 10.,4110.0,,gpt-35-turbo,azure,0,175,2,4120.0,Arithmetic,round_number,0.09235620498657227
+Baseline,True,arithmetic,What is -892.7 rounded to the nearest 10?,-890.0,,gpt-35-turbo,azure,0,176,2,-890.0,Arithmetic,round_number,0.11865854263305664
+Baseline,True,arithmetic,What is -491.93 rounded to 0 dps?,-492.0,,gpt-35-turbo,azure,0,175,2,-492.0,Arithmetic,round_number,0.13959598541259766
+Baseline,True,arithmetic,Convert 80319.95 kilograms to micrograms.,80319950000.0,,gpt-35-turbo,azure,0,174,6,80319950000000.0,Arithmetic,conversion,0.23660850524902344
+Baseline,True,arithmetic,Calculate the smallest common multiple of 7272 and 909.,3313848.0,,gpt-35-turbo,azure,0,176,19,7272.0,Arithmetic,lcm,0.3472445011138916
