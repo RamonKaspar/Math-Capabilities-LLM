@@ -113,7 +113,7 @@ def execute_solution_function(code_string: str):
             if not triple_quote_blocks:
                 triple_quote_blocks = re.findall(r"'''(?:python)?(.*?)'''", code_string, flags=re.DOTALL)
             # Concatenate all extracted blocks for execution.
-            code_to_execute = '\n'.join(block.strip() for block in triple_quote_blocks) if triple_quote_blocks else code_string
+            code_to_execute = triple_quote_blocks[0] if triple_quote_blocks else code_string
             # Capture output printed to the console during execution.
             old_stdout = sys.stdout
             redirected_output = sys.stdout = io.StringIO()
