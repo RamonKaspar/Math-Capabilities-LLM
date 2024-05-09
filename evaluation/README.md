@@ -18,4 +18,4 @@ We deviate from using standard classification metrics such as True Positives (TP
   $$\text{Accuracy} = \frac{\text{Number of Correct Answers}}{\text{Total Number of Questions}} = \frac{\text{CA}}{\text{Total Number of Questions}}$$
 
 - **Precision**: - **Precision**: The proportion of correct answers among all the answers provided by the technique. This metric highlights the ability to avoid incorrect answers, with higher precision indicating a lower tendency to provide false information (i.e. a "hallucination").
-  $$\text{Precision} = \frac{\text{Number of Correct Answers}}{\text{Number of Correct Answers + Number of Incorrect Answers}} = \frac{\text{CA}}{\text{CA + IA}}$$
+  $$\text{Precision} = \frac{\text{Number of Correct Answers}}{\text{Number of Correct Answers + Number of Incorrect Answers}} = \frac{\text{CA}}{\text{CA + IC}}$$
