@@ -99,3 +99,41 @@ def execute_solution_function(code_string: str):
     except:
         ans = None
     return ans
+
+
+import re 
+
+def extract_number(answer_str: str, answer_prefix: str = None) -> float:
+    """
+    Attempts to extract a floating point number from a provided string. The number can either directly
+    follow a specified prefix, or be the last number found in the string if the prefix is not present or
+    fails to lead directly to a valid number.
+    
+    Args:
+        answer_str (str): The string from which to extract the number.
+        answer_prefix (str, optional): An optional prefix immediately preceding the number.
+
+    Returns:
+        float: The extracted number as a float. Returns the original string if no valid number is found.
+    """
+    # First, attempt to extract number directly following the optional prefix
+    if answer_prefix and answer_prefix in answer_str:
+        prefix_index = answer_str.index(answer_prefix) + len(answer_prefix)
+        post_prefix_substring = answer_str[prefix_index:]
+        numbers = re.findall(r"[-+]?[\d,]*\.?\d+", post_prefix_substring)
+        if numbers:
+            try:
+                # Assume the first number after the prefix is the intended answer
+                return float(numbers[0].replace(",", ""))
+            except ValueError:
+                pass  # If conversion fails, fallback to general extraction below
+                
+    # Fallback: Extract the last number found anywhere in the string
+    all_numbers = re.findall(r"[-+]?[\d,]*\.?\d+", answer_str)
+    if all_numbers:
+        try:
+            return float(all_numbers[-1].replace(",", ""))
+        except ValueError:
+            pass
+
+    return answer_str    # No numbers found
