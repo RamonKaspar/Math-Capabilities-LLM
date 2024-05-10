@@ -74,23 +74,33 @@ This table gives an overview of all techniques we evaluated. The column `Paper` 
         <tr>
             <th><strong>Name</strong></th>
             <th><strong>Paper</strong></th>
+            <th><strong>Variations</strong></th>
             <th><strong>Description</strong></th>
         </tr>
     </thead>
     <tbody>
         <tr>
-            <td>GPT-3.5-Turbo Baseline</a></td>
+            <td>GPT-3.5-Turbo Baseline (<code>Baseline.py</code>)</a></td>
             <td>TECHNICAL REPORT?</td>
+            <td>Few-shot and Zero-shot</td>
             <td>TODO</td>
         </tr>
         <tr>
-            <td>Chain-of-Thought (CoT)</a></td>
+            <td>Chain-of-Thought (<code>CoT.py</code>)</a></td>
             <td>J. Wei et al., “Chain-of-Thought Prompting Elicits Reasoning in Large Language Models.” arXiv, Jan. 10, 2023. Accessed: Mar. 22, 2024. [Online]. Available: http://arxiv.org/abs/2201.11903</td>
+            <td>Few-shot and Zero-shot</td>
             <td>TODO</td>
         </tr>
         <tr>
-            <td>Program-aided Language Models (PaL)</a></td>
+            <td>Program-aided Language Models (<code>PaL.py</code>)</a></td>
             <td>L. Gao et al., “PAL: Program-aided Language Models.” arXiv, Jan. 27, 2023. doi: 10.48550/arXiv.2211.10435.</td>
+            <td>Few-shot and Zero-shot</td>
             <td>TODO</td>
+        </tr>
+        <tr>
+            <td>Role-Play Prompting (<code>RolePlay.py</code>)</a></td>
+            <td>A. Kong et al., “Better Zero-Shot Reasoning with Role-Play Prompting.” arXiv, Mar. 13, 2024. Accessed: May 03, 2024. [Online]. Available: http://arxiv.org/abs/2308.07702</td>
+            <td>Only Zero-shot</td>
+            <td>Role-play prompting involves instructing a language model to adopt a specific persona (i.e. a Math teacher) to tailor its responses accordingly.</td>
         </tr>
 </table>
