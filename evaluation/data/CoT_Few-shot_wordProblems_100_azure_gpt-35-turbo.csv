@@ -1,0 +1,669 @@
+technique,few_shot_prompting,dataset,question,answer,reasoning,model,service,temperature,prompt_tokens,completion_tokens,correct_answer,category,subcategory,latency_in_seconds
+CoT,True,wordProblems,"Paco 's Countertop Company purchased pieces of marble from a quarry . The weights of the pieces they purchased were 0.3333333333333333 ton , 0.3333333333333333 ton , and 0.08333333333333333 ton . How many tons of marble did Paco 's Countertop Company purchase in all ? ",0.75,"Answer:
+Paco's Countertop Company purchased three pieces of marble.
+The weights of the pieces are 0.3333333333333333 ton, 0.3333333333333333 ton, and 0.08333333333333333 ton.
+To find the total weight, we add the weights of the three pieces together.
+0.3333333333333333 + 0.3333333333333333 + 0.08333333333333333 = 0.75 ton.
+Therefore, Paco's Countertop Company purchased a total of 0.75 ton of marble.",gpt-35-turbo,azure,0,706,127,0.75,Word Problems,add_sub,5.298053026199341
+CoT,True,wordProblems,"While playing a video game , Paul scored 3103 points . He and his cousin together have a total of 5816 points . How many points does Paul 's cousin have ? ",2713.0,"Answer:
+Paul scored 3103 points.
+Paul and his cousin together have a total of 5816 points.
+To find out how many points Paul's cousin has, we need to subtract Paul's score from the total score.
+So, Paul's cousin has 5816 - 3103 = 2713 points.
+Therefore, Paul's cousin has 2713 points.",gpt-35-turbo,azure,0,667,76,2713.0,Word Problems,add_sub,2.297872543334961
+CoT,True,wordProblems,A worker at a medical lab is studying blood samples . 2 samples contained a total of 7341 blood cells . The first sample contained 4221 blood cells . How many blood cells were in the second sample ? ,3120.0,"Answer:
+The first sample contained 4221 blood cells.
+The total number of blood cells in both samples is 7341.
+So the second sample must have 7341 - 4221 = 3120 blood cells.
+Therefore, the second sample contained 3120 blood cells.",gpt-35-turbo,azure,0,674,58,3120.0,Word Problems,add_sub,2.2713727951049805
+CoT,True,wordProblems,Tim has 44 books . Sam has 52 books . How many books do they have together ? ,96.0,"Answer:
+Tim has 44 books.
+Sam has 52 books.
+To find out how many books they have together, we add the number of books Tim has to the number of books Sam has.
+So, 44 + 52 = 96.
+Therefore, they have 96 books together.
+So the answer is 96.",gpt-35-turbo,azure,0,650,67,96.0,Word Problems,add_sub,2.8281044960021973
+CoT,True,wordProblems,"A ship full of grain crashes into a coral reef . By the time the ship is fixed , 49952 tons of grain have spilled into the water . Only 918 tons of grain remain onboard . How many tons of grain did the ship originally contain ? ",50870.0,"Answer:
+The ship originally contained x tons of grain.
+And 49952 tons of grain spilled into the water.
+So the remaining amount of grain onboard is x - 49952 tons.
+But we also know that only 918 tons of grain remain onboard.
+So we can set up the equation x - 49952 = 918.
+To solve for x, we add 49952 to both sides of the equation: x = 918 + 49952.
+Simplifying, we find that x = 50870.
+Therefore, the ship originally contained 50870 tons of grain.",gpt-35-turbo,azure,0,681,120,50870.0,Word Problems,add_sub,4.409729480743408
+CoT,True,wordProblems,"Joan 's high school played 864 baseball games this year , 128 of the games were played at night . She attended 395 games . How many baseball games did Joan miss ? ",341.0,"Answer:
+Joan's high school played 864 baseball games this year.
+Out of those, 128 were played at night.
+So, the number of games played during the day is 864 - 128 = 736.
+Joan attended 395 games.
+Therefore, the number of games she missed is 736 - 395 = 341.
+So, Joan missed 341 baseball games.",gpt-35-turbo,azure,0,667,80,469.0,Word Problems,add_sub,3.1921465396881104
+CoT,True,wordProblems,"Benny received 79 dollars and 9 movie tickets for his birthday . He went to a sporting goods store and bought a baseball glove , baseball , and bat . He had 32 dollars over , how much did he spent on the baseball gear ? ",32.0,"Answer:
+Benny received 79 dollars and 9 movie tickets for his birthday.
+Let's assume he spent x dollars on the baseball gear.
+After buying the baseball gear, he had 32 dollars left.
+So, the equation becomes: 79 - x - (cost of movie tickets) = 32.
+Since the cost of movie tickets is not given, we cannot solve for the exact amount Benny spent on the baseball gear.",gpt-35-turbo,azure,0,679,87,47.0,Word Problems,add_sub,2.959622621536255
+CoT,True,wordProblems,"Kevin bought 2 watermelons . The first watermelon was 9.91 pounds , and the second watermelon was 4.11 pounds . How many pounds of watermelon did Kevin buy ? ",14.02,"Answer:
+Kevin bought 2 watermelons.
+The first watermelon weighed 9.91 pounds.
+The second watermelon weighed 4.11 pounds.
+So the total weight of the watermelons is 9.91 + 4.11 = 14.02 pounds.
+Therefore, Kevin bought 14.02 pounds of watermelon.",gpt-35-turbo,azure,0,671,71,14.02,Word Problems,add_sub,2.4974968433380127
+CoT,True,wordProblems,"Mary found 45 seashells , Melanie found 23 seashells , and Jason found 32 seashells on the beach . When they cleaned them , they discovered that 31 were cracked . How many seashells did they find together ? ",69.0,"Answer:
+Mary found 45 seashells.
+Melanie found 23 seashells.
+Jason found 32 seashells.
+Together, they found 45 + 23 + 32 = 100 seashells.
+But 31 of them were cracked.
+So the total number of seashells they found together is 100 - 31 = 69.
+Therefore, they found 69 seashells together.",gpt-35-turbo,azure,0,681,86,100.0,Word Problems,add_sub,2.423245668411255
+CoT,True,wordProblems,There are 9 oak trees currently in the park . Park workers had to cut down 2 oak trees that were damaged . How many oak trees will the park have when the workers are finished ? ,7.0,"
+Answer:
+There are currently 9 oak trees in the park.
+The workers had to cut down 2 damaged oak trees.
+So after the workers are finished, the park will have 9 - 2 = 7 oak trees.
+So the answer is 7.",gpt-35-turbo,azure,0,669,55,7.0,Word Problems,add_sub,1.877070426940918
+CoT,True,wordProblems,There are 9 pencils and 4 rulers in the drawer . Sally took 4 pencils out of the drawer . How many pencils are there now ? ,5.0,"
+Answer:
+There were originally 9 pencils in the drawer.
+Sally took 4 pencils out of the drawer.
+So there are now 9 - 4 = 5 pencils left in the drawer.
+So the answer is 5.",gpt-35-turbo,azure,0,660,49,5.0,Word Problems,add_sub,1.7314748764038086
+CoT,True,wordProblems,"Alyssa went to 11 soccer games this year , but missed 12 . She went to 13 games last year and plans to go to 15 games next year . How many soccer games will Alyssa go to in all ? ",51.0,"
+Answer:
+Alyssa went to 11 soccer games this year.
+She missed 12 games.
+So the total number of games she could have gone to this year is 11 + 12 = 23 games.
+She went to 13 games last year.
+And she plans to go to 15 games next year.
+So the total number of games she will go to in all is 23 + 13 + 15 = 51 games.
+So the answer is 51.",gpt-35-turbo,azure,0,677,99,39.0,Word Problems,add_sub,3.4437334537506104
+CoT,True,wordProblems,"Michelle began her pizza delivery route with 0.5 tank of gas in her car . When she made it back to the pizzeria , 0.16666666666666666 tank of gas was . How much gas did Michelle use ? ",0.3333333333333333,"Answer:
+Michelle started with 0.5 tank of gas.
+And when she made it back to the pizzeria, she had 0.16666666666666666 tank of gas left.
+So she used 0.5 - 0.16666666666666666 = 0.33333333333333334 tank of gas.
+So the answer is 0.33333333333333334 tank of gas.",gpt-35-turbo,azure,0,680,89,0.333333333333333,Word Problems,add_sub,2.7692763805389404
+CoT,True,wordProblems,A restaurant served 9 hot dogs during lunch and 2 during dinner today . It served 5 of them yesterday . How many hot dogs were served today ? ,16.0,"Answer:
+The restaurant served 9 hot dogs during lunch today.
+And it served 2 hot dogs during dinner today.
+So in total, it served 9 + 2 = 11 hot dogs today.
+It also served 5 hot dogs yesterday.
+So the total number of hot dogs served today is 11 + 5 = 16.
+Therefore, the answer is 16.",gpt-35-turbo,azure,0,662,78,11.0,Word Problems,add_sub,2.531268358230591
+CoT,True,wordProblems,A truck carrying 4.1 pounds of sand travels to a construction yard and loses 2.4 pounds of sand along the way . How much sand does the truck have when it arrives at the yard ? ,1.7,"Answer:
+The truck started with 4.1 pounds of sand.
+And it lost 2.4 pounds of sand along the way.
+So the truck has 4.1 - 2.4 = 1.7 pounds of sand when it arrives at the yard.
+So the answer is 1.7 pounds.",gpt-35-turbo,azure,0,672,66,1.7000000000000002,Word Problems,add_sub,1.9593641757965088
+CoT,True,wordProblems,There are 43 maple trees and 22 orange trees currently in the park . Park workers will plant maple trees today . When the workers are finished there will be 54 maple trees in the park . How many maple trees did the workers plant today ? ,11.0,"Answer:
+There are currently 43 maple trees in the park.
+The workers will plant enough maple trees to make a total of 54 maple trees.
+So the workers will plant 54 - 43 = 11 maple trees today.
+Therefore, the workers will plant 11 maple trees today.",gpt-35-turbo,azure,0,680,59,11.0,Word Problems,add_sub,2.0199077129364014
+CoT,True,wordProblems,Gordon bought 3.42 pounds of fruit for a class party . The class ate 2.2 pounds of the fruit . How much fruit is ? ,1.22,"Answer:
+Gordon bought 3.42 pounds of fruit.
+The class ate 2.2 pounds of the fruit.
+So the amount of fruit left is 3.42 - 2.2 = 1.22 pounds.
+So the answer is 1.22 pounds.",gpt-35-turbo,azure,0,661,58,1.22,Word Problems,add_sub,1.4607007503509521
+CoT,True,wordProblems,Joan picked 37 oranges and Sara picked 10 oranges . Alyssa picked 30 pears . How many oranges were picked in total ? ,47.0,"Answer:
+Joan picked 37 oranges.
+Sara picked 10 oranges.
+So in total, they picked 37 + 10 = 47 oranges.
+Therefore, 47 oranges were picked in total.",gpt-35-turbo,azure,0,658,42,47.0,Word Problems,add_sub,1.3029029369354248
+CoT,True,wordProblems,Jason has 18 books and he has read 9 of them . Mary has 42 books . How many books do they have together ? ,51.0,"Answer:
+Jason has 18 books and he has read 9 of them.
+So he has 18 - 9 = 9 books left.
+Mary has 42 books.
+So together, they have 9 + 42 = 51 books.
+So the answer is 51.",gpt-35-turbo,azure,0,658,58,60.0,Word Problems,add_sub,1.6560578346252441
+CoT,True,wordProblems,Sally had 13 peaches at her roadside fruit dish . She went to the orchard and picked peaches to stock up . There are now 55 peaches . how many did she pick ? ,42.0,"Answer:
+Sally started with 13 peaches.
+And now she has 55 peaches.
+So she picked 55 - 13 = 42 peaches.
+So the answer is 42.",gpt-35-turbo,azure,0,670,41,42.0,Word Problems,add_sub,1.067112684249878
+CoT,True,wordProblems,Sandy had 36 pennies and 31 nickels in her bank . Her dad borrowed 20 nickels from Sandy . How many nickels does she have now ? ,11.0,"Answer:
+Sandy started with 31 nickels.
+Her dad borrowed 20 nickels from her.
+So she now has 31 - 20 = 11 nickels.
+So the answer is 11.",gpt-35-turbo,azure,0,664,43,11.0,Word Problems,add_sub,1.3392987251281738
+CoT,True,wordProblems,Dan 's cat had kittens and 5 had spots . He gave 7 to Tim and 4 to Jason . He now has 5 kittens . How many kittens did he have to start with ? ,16.0,"Answer:
+Dan's cat had 5 kittens with spots.
+He gave 7 to Tim and 4 to Jason.
+So he gave away a total of 7 + 4 = 11 kittens.
+Now he has 5 kittens left.
+Therefore, he started with 5 + 11 = 16 kittens.
+So the answer is 16.",gpt-35-turbo,azure,0,671,71,16.0,Word Problems,add_sub,1.8103644847869873
+CoT,True,wordProblems,There are 5 scissors and 3 pencils in the drawer . Jason placed 4 scissors in the drawer . How many scissors are now there in total ? ,9.0,"
+Answer:
+There were originally 5 scissors in the drawer.
+Jason placed 4 more scissors in the drawer.
+So now there are 5 + 4 = 9 scissors in total.
+So the answer is 9.",gpt-35-turbo,azure,0,661,46,9.0,Word Problems,add_sub,1.2362780570983887
+CoT,True,wordProblems,There are 7 dogwood trees currently in the park . Park workers will plant 5 dogwood trees today and 4 dogwood trees tomorrow . It took 8 workers to finish the work . How many dogwood trees will the park have when the workers are finished ? ,16.0,"Answer:
+There are currently 7 dogwood trees in the park.
+Today, 5 more dogwood trees will be planted.
+Tomorrow, 4 more dogwood trees will be planted.
+So in total, 5 + 4 = 9 dogwood trees will be planted.
+Therefore, the park will have 7 + 9 = 16 dogwood trees when the workers are finished.
+So the answer is 16.",gpt-35-turbo,azure,0,685,87,16.0,Word Problems,add_sub,3.5932135581970215
+CoT,True,wordProblems,"Jessica spent $ 10.22 on a cat toy , and a cage cost her $ 11.73 . What was the total cost of Jessica 's purchases ? ",21.95,"Answer:
+Jessica spent $10.22 on a cat toy.
+And she spent $11.73 on a cage.
+To find the total cost of Jessica's purchases, we add the two amounts together.
+So the total cost is $10.22 + $11.73 = $21.95.
+Therefore, the total cost of Jessica's purchases was $21.95.",gpt-35-turbo,azure,0,664,76,21.95,Word Problems,add_sub,2.291958808898926
+CoT,True,wordProblems,Jason has 676 Pokemon cards . Alyssa bought 224 of Jason 's Pokemon cards . How many Pokemon cards does Jason have now ? ,452.0,"Answer:
+Jason started with 676 Pokemon cards.
+Alyssa bought 224 of Jason's Pokemon cards.
+So Jason now has 676 - 224 = 452 Pokemon cards.
+So the answer is 452.",gpt-35-turbo,azure,0,658,44,452.0,Word Problems,add_sub,1.2940490245819092
+CoT,True,wordProblems,"Alyssa has 37 blue balloons , Sandy has 28 blue balloons , and Sally has 39 blue balloons . How many blue balloons do they have in all ? ",104.0,"Answer:
+Alyssa has 37 blue balloons.
+Sandy has 28 blue balloons.
+Sally has 39 blue balloons.
+To find the total number of blue balloons, we add the number of blue balloons each person has.
+So, 37 + 28 + 39 = 104.
+Therefore, they have a total of 104 blue balloons.
+So the answer is 104.",gpt-35-turbo,azure,0,663,80,104.0,Word Problems,add_sub,3.2976763248443604
+CoT,True,wordProblems,Sandy 's dog had 8 puppies and 4 had spots . She gave 4 to her friends . How many puppies does she now have ? ,4.0,"Answer:
+Sandy's dog had 8 puppies.
+Out of the 8 puppies, 4 had spots.
+So she gave 4 puppies to her friends.
+Therefore, she now has 8 - 4 = 4 puppies left.
+So the answer is 4.",gpt-35-turbo,azure,0,660,56,4.0,Word Problems,add_sub,1.6417512893676758
+CoT,True,wordProblems,Sally had 8 pennies and 7 nickels in her bank . Her dad gave her 9 nickels and her mother gave her 2 nickels . How many nickels does Sally have now ? ,18.0,"Answer:
+Sally started with 7 nickels.
+Her dad gave her 9 more nickels.
+So she had 7 + 9 = 16 nickels.
+Then her mother gave her 2 more nickels.
+So she had 16 + 2 = 18 nickels in total.
+So the answer is 18.",gpt-35-turbo,azure,0,672,69,18.0,Word Problems,add_sub,2.6631109714508057
+CoT,True,wordProblems,"Joan spent $ 15 on shorts and $ 14.82 on a jacket , and $ 12.51 on a shirt . She went to 3 shops . In total , how much money did Joan spend on clothing ? ",42.33,"Answer:
+Joan spent $15 on shorts.
+She spent $14.82 on a jacket.
+She spent $12.51 on a shirt.
+In total, she spent $15 + $14.82 + $12.51 = $42.33 on clothing.
+So the answer is $42.33.",gpt-35-turbo,azure,0,676,64,42.33,Word Problems,add_sub,3.143683671951294
+CoT,True,wordProblems,Tom found 5 seashells on the beach . he gave Jessica 2 of the seashells . How many seashells does he now have ? ,3.0,"Answer:
+Tom started with 5 seashells.
+Then he gave Jessica 2 of the seashells.
+So he now has 5 - 2 = 3 seashells.
+So the answer is 3.",gpt-35-turbo,azure,0,662,46,3.0,Word Problems,add_sub,1.5902998447418213
+CoT,True,wordProblems,Keith picked 3 pears and Jason picked 2 pears from the pear tree . Joan picked 5 apples from the apple tree . How many pears were picked in total ? ,5.0,"Answer:
+Keith picked 3 pears.
+Jason picked 2 pears.
+So in total, they picked 3 + 2 = 5 pears.
+Joan picked 5 apples, not pears.
+So the total number of pears picked is 5.
+So the answer is 5.",gpt-35-turbo,azure,0,667,63,5.0,Word Problems,add_sub,2.3878097534179688
+CoT,True,wordProblems,"There were a total of 8 football games this year , 4 are played at night . Keith missed 4 of the games . How many football games did Keith go to in total ? ",0.0,"
+Answer:
+There were a total of 8 football games this year.
+Out of these, 4 were played at night.
+So the remaining 8 - 4 = 4 games were played during the day.
+Keith missed 4 of the games.
+Therefore, Keith went to 4 - 4 = 0 football games in total.
+So the answer is 0.",gpt-35-turbo,azure,0,668,77,4.0,Word Problems,add_sub,2.6555700302124023
+CoT,True,wordProblems," Paul had saved up 4 dollars. If he received another 11 dollars for his allowance, how many 5 dollar toys could he buy? ",3.0,"Answer:
+Paul started with 4 dollars.
+Then he received 11 more dollars for his allowance.
+So he has a total of 4 + 11 = 15 dollars.
+Each toy costs 5 dollars.
+To find out how many toys he can buy, we divide the total amount of money he has by the cost of each toy: 15 / 5 = 3.
+Therefore, Paul can buy 3 five-dollar toys.
+So the answer is 3.",gpt-35-turbo,azure,0,660,96,3.0,Word Problems,multi_step,4.3875203132629395
+CoT,True,wordProblems," While shopping for music online, Isabel bought 6 country albums and 2 pop albums. Each album came with a lyric sheet and had 9 songs. How many songs did Isabel buy total? ",72.0,"Answer:
+Isabel bought 6 country albums and 2 pop albums.
+Each album had 9 songs.
+So the total number of songs in the country albums is 6 * 9 = 54.
+And the total number of songs in the pop albums is 2 * 9 = 18.
+Therefore, Isabel bought a total of 54 + 18 = 72 songs.
+So the answer is 72.",gpt-35-turbo,azure,0,670,86,72.0,Word Problems,multi_step,3.8808188438415527
+CoT,True,wordProblems, Edward was working as a sacker at a grocery store where he made 6 dollars an hour. On Monday he worked 3 hours and on Tuesday he worked 5 hours. How much money did Edward make in those two days? ,48.0,"Answer:
+Edward made 6 dollars per hour.
+On Monday, he worked 3 hours.
+So he made 6 * 3 = 18 dollars on Monday.
+On Tuesday, he worked 5 hours.
+So he made 6 * 5 = 30 dollars on Tuesday.
+Therefore, Edward made a total of 18 + 30 = 48 dollars in those two days.
+So the answer is 48 dollars.",gpt-35-turbo,azure,0,678,87,48.0,Word Problems,multi_step,3.3658318519592285
+CoT,True,wordProblems," Kaleb had 34 books. If he sold 17 of them and used the money he earned to buy 7 new books, how many books would Kaleb have? ",24.0,"Answer:
+Kaleb started with 34 books.
+He sold 17 of them, so he had 34 - 17 = 17 books left.
+Then he used the money he earned to buy 7 new books.
+So he had 17 + 7 = 24 books in total.
+Therefore, Kaleb would have 24 books.",gpt-35-turbo,azure,0,666,70,24.0,Word Problems,multi_step,3.373291015625
+CoT,True,wordProblems," Oliver made 35 dollars mowing lawns over the summer. If he spent 7 dollars buying new mower blades, how many 4 dollar games could he buy with the money he had left? ",7.0,"Answer:
+Oliver made 35 dollars mowing lawns.
+He spent 7 dollars on new mower blades.
+So he had 35 - 7 = 28 dollars left.
+Each game costs 4 dollars.
+To find out how many games he can buy, we divide the money he has left by the cost of each game: 28 / 4 = 7.
+Therefore, Oliver can buy 7 games with the money he has left.
+So the answer is 7.",gpt-35-turbo,azure,0,671,99,7.0,Word Problems,multi_step,4.665878772735596
+CoT,True,wordProblems," Mike is at the library helping put away books. There are 82 book to put away total but a librarian takes 10 of them and leaves Mike with the rest. If he can fit 9 books on a shelf, how many shelves will he need? ",8.0,"Answer:
+There are 82 books to put away.
+But the librarian takes 10 of them, so Mike is left with 82 - 10 = 72 books.
+If Mike can fit 9 books on a shelf, he will need 72 / 9 = 8 shelves.
+So the answer is 8.",gpt-35-turbo,azure,0,683,66,8.0,Word Problems,multi_step,2.840073823928833
+CoT,True,wordProblems," There are 58 students trying out for the school's trivia teams. If 10 of them didn't get picked for the team and the rest were put into 8 groups, how many students would be in each group? ",6.0,"Answer:
+There were originally 58 students trying out for the trivia teams.
+And 10 of them didn't get picked for the team.
+So the number of students who got picked for the team is 58 - 10 = 48.
+These 48 students were put into 8 groups.
+To find out how many students are in each group, we divide the total number of students by the number of groups.
+So 48 divided by 8 equals 6.
+Therefore, there would be 6 students in each group.
+So the answer is 6.",gpt-35-turbo,azure,0,676,114,6.0,Word Problems,multi_step,3.6562750339508057
+CoT,True,wordProblems," Ned was trying to expand his game collection. He bought 11 games from a friend and bought 22 more at a garage sale. If 19 of the games didn't work, how many good games did he end up with? ",14.0,"
+Answer:
+Ned bought 11 games from a friend.
+And he bought 22 more at a garage sale.
+So he bought a total of 11 + 22 = 33 games.
+But 19 of the games didn't work.
+So he ended up with 33 - 19 = 14 good games.
+So the answer is 14.",gpt-35-turbo,azure,0,678,73,14.0,Word Problems,multi_step,3.1208648681640625
+CoT,True,wordProblems," Katie had 11 songs on her mp3 player. If she deleted 7 old songs from it and then added 24 new songs, how many songs does she have on her mp3 player? ",28.0,"
+Answer:
+Katie started with 11 songs on her mp3 player.
+Then she deleted 7 old songs.
+So she had 11 - 7 = 4 songs left.
+After deleting the old songs, she added 24 new songs.
+So she now has 4 + 24 = 28 songs on her mp3 player.
+So the answer is 28.",gpt-35-turbo,azure,0,671,77,28.0,Word Problems,multi_step,2.5277998447418213
+CoT,True,wordProblems," A waiter had 6 tables he was waiting on, with 3 women and 5 men at each table. How many customers total did the waiter have? ",48.0,"Answer:
+The waiter had 6 tables.
+And each table had 3 women and 5 men.
+So each table had a total of 3 + 5 = 8 customers.
+Therefore, the waiter had a total of 6 * 8 = 48 customers.
+So the answer is 48.",gpt-35-turbo,azure,0,663,63,48.0,Word Problems,multi_step,2.4855847358703613
+CoT,True,wordProblems," The school cafeteria had 14 apples. If they used 13 to make lunch for the students and then bought 49 more, how many apples would they have? ",50.0,"Answer:
+The school cafeteria started with 14 apples.
+Then they used 13 to make lunch for the students.
+So they had 14 - 13 = 1 apple left.
+Then they bought 49 more apples.
+So they would have 1 + 49 = 50 apples in total.
+So the answer is 50.",gpt-35-turbo,azure,0,664,68,50.0,Word Problems,multi_step,2.729477882385254
+CoT,True,wordProblems, Chloe was unboxing some of her old winter clothes. She found 4 boxes of clothing and inside each box there were 2 scarves and 6 mittens. How many pieces of winter clothing did Chloe have total? ,32.0,"
+Answer:
+Chloe found 4 boxes of clothing.
+Inside each box, there were 2 scarves and 6 mittens.
+So in each box, there were a total of 2 + 6 = 8 pieces of winter clothing.
+Therefore, in 4 boxes, there were a total of 4 * 8 = 32 pieces of winter clothing.
+So the answer is 32.",gpt-35-turbo,azure,0,676,83,32.0,Word Problems,multi_step,3.7092435359954834
+CoT,True,wordProblems, Debby bought two coloring books. One had 16 pictures and the other had 40. After one week she had already colored 33 of the pictures. How many pictures does she still have to color? ,23.0,"
+Answer:
+Debby bought two coloring books.
+One had 16 pictures and the other had 40.
+So she had a total of 16 + 40 = 56 pictures.
+After one week, she had colored 33 pictures.
+So she still has 56 - 33 = 23 pictures to color.
+So the answer is 23.",gpt-35-turbo,azure,0,673,73,23.0,Word Problems,multi_step,3.3161418437957764
+CoT,True,wordProblems, Oliver had 35 dollars. For his birthday he got 50 more dollars but spent 84 on a new game. How much money does he have now? ,1.0,"
+Answer:
+Oliver started with 35 dollars.
+Then he got 50 more dollars for his birthday.
+So he had 35 + 50 = 85 dollars.
+But he spent 84 dollars on a new game.
+So he now has 85 - 84 = 1 dollar left.
+So the answer is 1.",gpt-35-turbo,azure,0,663,68,1.0,Word Problems,multi_step,2.117861747741699
+CoT,True,wordProblems," Frank made 19 dollars mowing lawns over the summer. If he spent 11 dollars buying new mower blades, how many 2 dollar games could he buy with the money he had left? ",4.0,"Answer:
+Frank made 19 dollars mowing lawns.
+He spent 11 dollars on new mower blades.
+So he had 19 - 11 = 8 dollars left.
+Each game costs 2 dollars.
+So he can buy 8 / 2 = 4 games with the money he had left.
+So the answer is 4.",gpt-35-turbo,azure,0,671,70,4.0,Word Problems,multi_step,3.063685655593872
+CoT,True,wordProblems," Bianca and her mom were picking carrots from their garden. Bianca picked 26 and her mother picked 15. If only 16 of the carrots were good, how many bad carrots did they have? ",25.0,"Answer:
+Bianca picked 26 carrots and her mother picked 15 carrots.
+So they picked a total of 26 + 15 = 41 carrots.
+Out of these, only 16 were good.
+Therefore, they had 41 - 16 = 25 bad carrots.
+So the answer is 25.",gpt-35-turbo,azure,0,673,65,25.0,Word Problems,multi_step,2.8486125469207764
+CoT,True,wordProblems," The school cafeteria had 23 apples. If they used 20 to make lunch for the students and then bought 6 more, how many apples would they have? ",9.0,"Answer:
+The school cafeteria started with 23 apples.
+They used 20 apples to make lunch for the students.
+So they had 23 - 20 = 3 apples left.
+Then they bought 6 more apples.
+So they had 3 + 6 = 9 apples in total.
+So the answer is 9.",gpt-35-turbo,azure,0,664,67,9.0,Word Problems,multi_step,2.9350457191467285
+CoT,True,wordProblems," The school cafeteria had 17 apples. If they used 2 to make lunch for the students and then bought 23 more, how many apples would they have? ",38.0,"Answer:
+The school cafeteria started with 17 apples.
+They used 2 apples to make lunch for the students.
+So they had 17 - 2 = 15 apples left.
+Then they bought 23 more apples.
+So they had 15 + 23 = 38 apples in total.
+So the answer is 38.",gpt-35-turbo,azure,0,664,67,38.0,Word Problems,multi_step,2.858130931854248
+CoT,True,wordProblems," A new building needed 10 windows. The builder had already installed 6 of them. If it takes 5 hours to install each window, how long will it take him to install the rest? ",20.0,"Answer:
+The builder needed to install 10 windows in total.
+And he had already installed 6 of them.
+So he still needs to install 10 - 6 = 4 windows.
+And it takes 5 hours to install each window.
+So it will take him 5 * 4 = 20 hours to install the rest.
+So the answer is 20 hours.",gpt-35-turbo,azure,0,671,77,20.0,Word Problems,multi_step,2.728637218475342
+CoT,True,wordProblems," While on vacation, Nancy took 49 pictures at the zoo and 8 at the museum. If she later deleted 38 of the pictures, how many pictures from her vacation did she still have? ",19.0,"
+Answer:
+Nancy took 49 pictures at the zoo and 8 at the museum.
+So she took a total of 49 + 8 = 57 pictures.
+Then she deleted 38 pictures.
+So she still had 57 - 38 = 19 pictures from her vacation.
+So the answer is 19.",gpt-35-turbo,azure,0,671,66,19.0,Word Problems,multi_step,2.7531371116638184
+CoT,True,wordProblems," There were 13 friends playing a video game online when 8 players quit. If each player left had 6 lives, how many lives did they have total? ",30.0,"Answer:
+There were originally 13 friends playing the game.
+And 8 players quit.
+So there were 13 - 8 = 5 players left.
+Each player had 6 lives.
+So the total number of lives they had is 5 * 6 = 30 lives.
+So the answer is 30.",gpt-35-turbo,azure,0,664,65,30.0,Word Problems,multi_step,2.12662410736084
+CoT,True,wordProblems," At the arcade Edward won 9 tickets. If he spent 4 tickets on a beanie and later won 4 more tickets, how many would he have? ",9.0,"
+Answer:
+Edward won 9 tickets.
+Then he spent 4 tickets on a beanie.
+So he had 9 - 4 = 5 tickets left.
+Later, he won 4 more tickets.
+So he had 5 + 4 = 9 tickets again.
+So the answer is 9.",gpt-35-turbo,azure,0,664,64,9.0,Word Problems,multi_step,1.8585872650146484
+CoT,True,wordProblems," Luke had 48 dollars in January. By March he had spent 11 dollars. If he got another 21 dollars from his mom, how much money would he have? ",58.0,"
+Answer:
+Luke started with 48 dollars in January.
+Then he spent 11 dollars by March.
+So he had 48 - 11 = 37 dollars left.
+After that, he got another 21 dollars from his mom.
+So he would have 37 + 21 = 58 dollars.
+So the answer is 58.",gpt-35-turbo,azure,0,666,69,58.0,Word Problems,multi_step,2.5440781116485596
+CoT,True,wordProblems," Roger had 25 books. If he sold 21 of them and used the money he earned to buy 30 new books, how many books would Roger have? ",34.0,"Answer:
+Roger started with 25 books.
+He sold 21 of them, so he had 25 - 21 = 4 books left.
+Then he used the money he earned to buy 30 new books.
+So he now has 4 + 30 = 34 books.
+Therefore, Roger would have 34 books.
+So the answer is 34.",gpt-35-turbo,azure,0,664,74,34.0,Word Problems,multi_step,2.7756049633026123
+CoT,True,wordProblems," At the schools book fair Sam bought 13 adventure books and 17 mystery books. If 15 of the books were used, how many new books did he buy? ",15.0,"
+Answer:
+Sam bought 13 adventure books and 17 mystery books, so he bought a total of 13 + 17 = 30 books.
+Out of these 30 books, 15 were used, so he has 30 - 15 = 15 new books.
+Therefore, Sam bought 15 new books.",gpt-35-turbo,azure,0,665,66,15.0,Word Problems,multi_step,2.5006353855133057
+CoT,True,wordProblems," Bianca earned 5 points for each bag of cans she recycled. If she had 17 bags, but didn't recycle 8 of them, how many points would she have earned? ",45.0,"
+Answer:
+Bianca earned 5 points for each bag of cans she recycled.
+She had 17 bags, but didn't recycle 8 of them.
+So she recycled 17 - 8 = 9 bags.
+Therefore, she would have earned 9 * 5 = 45 points.
+So the answer is 45.",gpt-35-turbo,azure,0,669,69,45.0,Word Problems,multi_step,2.789536237716675
+CoT,True,wordProblems," At the town carnival Oliver rode the ferris wheel 5 times and the bumper cars 4 times. If each ride cost 7 tickets, how many tickets did he use? ",63.0,"Answer:
+Oliver rode the ferris wheel 5 times and the bumper cars 4 times.
+Each ride cost 7 tickets.
+So for the ferris wheel, he used 5 * 7 = 35 tickets.
+And for the bumper cars, he used 4 * 7 = 28 tickets.
+Therefore, Oliver used a total of 35 + 28 = 63 tickets.
+So the answer is 63.",gpt-35-turbo,azure,0,667,88,63.0,Word Problems,multi_step,3.124314308166504
+CoT,True,wordProblems," Dave was helping the cafeteria workers pick up lunch trays, but he could only carry 9 trays at a time. If he had to pick up 17 trays from one table and 55 trays from another, how many trips will he make? ",8.0,"Answer:
+Dave can carry 9 trays at a time.
+He needs to pick up 17 trays from one table and 55 trays from another.
+So in total, he needs to pick up 17 + 55 = 72 trays.
+Since he can only carry 9 trays at a time, he will need to make 72 / 9 = 8 trips.
+So the answer is 8 trips.",gpt-35-turbo,azure,0,680,84,8.0,Word Problems,multi_step,2.983609676361084
+CoT,True,wordProblems," A waiter at 'The Greasy Spoon' restaurant had 26 customers to wait on. During the lunch rush he added another 27 customers. If 27 of the customers didn't leave him a tip, how many customers did leave a tip? ",26.0,"Answer:
+The waiter started with 26 customers.
+Then he added another 27 customers.
+So he had a total of 26 + 27 = 53 customers.
+Out of the 53 customers, 27 didn't leave a tip.
+Therefore, the number of customers who did leave a tip is 53 - 27 = 26.
+So the answer is 26.",gpt-35-turbo,azure,0,681,77,26.0,Word Problems,multi_step,3.867187261581421
+CoT,True,wordProblems," A trivia team had 15 members total, but during a game 6 members didn't show up. If each member that did show up scored 3 points, how many points were scored total? ",27.0,"
+Answer:
+The trivia team had 15 members total.
+But 6 members didn't show up.
+So the number of members that did show up is 15 - 6 = 9.
+And each member that showed up scored 3 points.
+So the total number of points scored is 9 * 3 = 27.
+So the answer is 27.",gpt-35-turbo,azure,0,671,75,27.0,Word Problems,multi_step,3.627033233642578
+CoT,True,wordProblems, A store had 120 coloring books in stock. They ended up putting them on sale and getting rid of 39 of them. The put the ones they still had onto shelves with 9 on each shelf. How many shelves did they use? ,9.0,"Answer:
+The store started with 120 coloring books.
+They got rid of 39 of them.
+So they had 120 - 39 = 81 coloring books left.
+They put 9 coloring books on each shelf.
+So they used 81 / 9 = 9 shelves.
+So the answer is 9.",gpt-35-turbo,azure,0,680,65,9.0,Word Problems,multi_step,4.093854665756226
+CoT,True,wordProblems," Adam had 48 books. If he sold 19 of them and used the money he earned to buy 38 new books, how many books would Adam have? ",67.0,"
+Answer:
+Adam started with 48 books.
+He sold 19 of them, so he had 48 - 19 = 29 books left.
+Then he used the money he earned to buy 38 new books.
+So he had 29 + 38 = 67 books in total.
+So the answer is 67.",gpt-35-turbo,azure,0,664,67,67.0,Word Problems,multi_step,2.9074976444244385
+CoT,True,wordProblems," The cafeteria had 75 apples. For lunch they handed out 19 to students and decided to use the rest to make pies. If each pie takes 8 apples, how many pies could they make? ",7.0,"Answer:
+The cafeteria started with 75 apples.
+They handed out 19 apples to students.
+So they had 75 - 19 = 56 apples left.
+Each pie takes 8 apples.
+So they can make 56 / 8 = 7 pies.
+So the answer is 7.",gpt-35-turbo,azure,0,672,61,7.0,Word Problems,multi_step,2.7647695541381836
+CoT,True,wordProblems,The school is planning a field trip. The school has 67 classrooms. There are 66 students in each classroom in the school. If there are 6 seats on each school bus How many buses are needed to take the trip?,737.0,"Answer:
+The school has 67 classrooms.
+And there are 66 students in each classroom.
+So the total number of students in the school is 67 * 66 = 4422.
+If there are 6 seats on each school bus, then the number of buses needed is 4422 / 6 = 737.
+So the answer is 737.",gpt-35-turbo,azure,0,676,74,737.0,Word Problems,challenge,4.637535810470581
+CoT,True,wordProblems,5 red peaches and 11 green peaches are in the basket. How many more green peaches than red peaches are in the basket?,6.0,"Answer:
+There are 5 red peaches and 11 green peaches in the basket.
+To find out how many more green peaches than red peaches are in the basket, we need to subtract the number of red peaches from the number of green peaches.
+So, 11 - 5 = 6.
+Therefore, there are 6 more green peaches than red peaches in the basket.",gpt-35-turbo,azure,0,660,84,6.0,Word Problems,challenge,3.397542953491211
+CoT,True,wordProblems,Mom buys 51 white t - shirts. If white t - shirts can be purchased in packages of 3 How many packages will she have?,17.0,"Answer:
+Mom bought 51 white t-shirts.
+White t-shirts can be purchased in packages of 3.
+To find out how many packages she will have, we need to divide the total number of t-shirts by the number of t-shirts in each package.
+So, 51 divided by 3 equals 17.
+Therefore, she will have 17 packages of white t-shirts.
+So the answer is 17.",gpt-35-turbo,azure,0,658,84,17.0,Word Problems,challenge,2.782637119293213
+CoT,True,wordProblems,Emily is making bead necklaces for her friends. Each necklace takes 8 beads and she has 16 beads. How many necklaces can Emily make?,2.0,"Answer:
+Emily has 16 beads.
+And each necklace takes 8 beads.
+So to find out how many necklaces Emily can make, we divide the total number of beads by the number of beads needed for each necklace.
+16 ÷ 8 = 2.
+Therefore, Emily can make 2 necklaces.
+So the answer is 2.",gpt-35-turbo,azure,0,660,71,2.0,Word Problems,challenge,3.043774127960205
+CoT,True,wordProblems,"7 red peaches, 71 yellow peaches and 8 green peaches are in the basket. How many more green peaches than red peaches are in the basket?",1.0,"Answer:
+There are 7 red peaches and 8 green peaches in the basket.
+So there are 8 - 7 = 1 more green peach than red peach in the basket.
+So the answer is 1.",gpt-35-turbo,azure,0,666,47,1.0,Word Problems,challenge,1.8852405548095703
+CoT,True,wordProblems,4 birds and 3 storks were sitting on the fence. 6 more storks came to join them. How many more storks than birds are sitting on the fence?,9.0,"Answer:
+There were originally 4 birds and 3 storks sitting on the fence.
+Then 6 more storks came to join them.
+So now there are 4 birds + 3 storks + 6 storks = 13 birds and storks on the fence.
+To find out how many more storks than birds are sitting on the fence, we need to subtract the number of birds from the total number of birds and storks.
+So 13 - 4 = 9 more storks than birds are sitting on the fence.
+So the answer is 9.",gpt-35-turbo,azure,0,666,118,5.0,Word Problems,challenge,4.587484359741211
+CoT,True,wordProblems,Jessie weighed 114 kilograms. After she started to go jogging everyday she lost 50 kilograms in the first week and 60 kilograms in the second week. How much does she weigh now?,4.0,"
+Answer:
+Jessie started weighing 114 kilograms.
+In the first week, she lost 50 kilograms.
+So after the first week, she weighed 114 - 50 = 64 kilograms.
+In the second week, she lost 60 kilograms.
+So after the second week, she weighed 64 - 60 = 4 kilograms.
+Therefore, she weighs 4 kilograms now.
+So the answer is 4.",gpt-35-turbo,azure,0,667,85,4.0,Word Problems,challenge,2.6534767150878906
+CoT,True,wordProblems,We ordered some pizzas. Each pizza has 2 slices. If there were a total of 28 slices How many pizzas did we order?,14.0,"Answer:
+Each pizza has 2 slices.
+And there were a total of 28 slices.
+So the number of pizzas can be found by dividing the total number of slices by the number of slices per pizza.
+28 slices / 2 slices per pizza = 14 pizzas.
+So we ordered 14 pizzas.
+So the answer is 14.",gpt-35-turbo,azure,0,657,69,14.0,Word Problems,challenge,2.151130199432373
+CoT,True,wordProblems,Luke played a trivia game and scored 154 points. If he gained the 11 points in each round How many rounds did he play?,14.0,"Answer:
+Luke scored 154 points in total.
+And he gained 11 points in each round.
+So the number of rounds he played can be found by dividing the total points by the points gained in each round.
+154 ÷ 11 = 14.
+Therefore, Luke played 14 rounds.
+So the answer is 14.",gpt-35-turbo,azure,0,657,67,14.0,Word Problems,challenge,2.3477606773376465
+CoT,True,wordProblems,In Haley's class some boys love to play marbles. If Haley has 10 marbles and she gave 5 marbles to each boy How many boys did she give the marbles to?,2.0,"Answer:
+Haley started with 10 marbles.
+And she gave 5 marbles to each boy.
+So the number of boys she gave marbles to is 10 / 5 = 2.
+So she gave the marbles to 2 boys.
+So the answer is 2.",gpt-35-turbo,azure,0,669,60,2.0,Word Problems,challenge,2.4559929370880127
+CoT,True,wordProblems,Paco had 22 sweet cookies and 75 salty cookies. He ate 15 sweet cookies and 54 salty cookies. How many sweet cookies did Paco have left?,7.0,"Answer:
+Paco started with 22 sweet cookies.
+And he ate 15 sweet cookies.
+So after eating 15 sweet cookies, he had 22 - 15 = 7 sweet cookies left.
+So the answer is 7.",gpt-35-turbo,azure,0,664,48,7.0,Word Problems,challenge,1.7714500427246094
+CoT,True,wordProblems,Randy has some blocks. He uses 52 blocks to build a tower. If there are 38 blocks left How many blocks did he have at the start?,90.0,"Answer:
+Let's assume Randy had x blocks at the start.
+He used 52 blocks to build a tower, so he had x - 52 blocks left.
+According to the problem, he had 38 blocks left.
+So we can set up the equation x - 52 = 38.
+To solve for x, we can add 52 to both sides of the equation: x - 52 + 52 = 38 + 52.
+This simplifies to x = 90.
+Therefore, Randy had 90 blocks at the start.
+So the answer is 90.",gpt-35-turbo,azure,0,661,118,90.0,Word Problems,challenge,4.566193580627441
+CoT,True,wordProblems,The Ferris wheel in paradise park has 6 seats. Each seat can hold 14 people. If there are 16 people on the wheel right now How many more people can join the wheel?,68.0,"Answer:
+The Ferris wheel has 6 seats.
+And each seat can hold 14 people.
+So the total capacity of the Ferris wheel is 6 * 14 = 84 people.
+Currently, there are 16 people on the wheel.
+So there can be 84 - 16 = 68 more people who can join the wheel.
+So the answer is 68.",gpt-35-turbo,azure,0,669,78,68.0,Word Problems,challenge,2.7850260734558105
+CoT,True,wordProblems,Every day Ryan spends 6 hours on learning english and 5 hours on learning chinese. If he learns for 2 days How many hours does he spend on learning english in all?,12.0,"Answer:
+Ryan spends 6 hours on learning English every day.
+And he learns for 2 days.
+So he spends 6 * 2 = 12 hours on learning English in total.
+So the answer is 12 hours.",gpt-35-turbo,azure,0,666,47,12.0,Word Problems,challenge,1.7833945751190186
+CoT,True,wordProblems,Paul got a box of 457 erasers and 617 crayons for his birthday. At the end of the school year he only had 523 crayons left while not having lost a single eraser. How many more crayons than erasers did he have left?,66.0,"Answer:
+Paul got 457 erasers and 617 crayons for his birthday.
+At the end of the school year, he had 523 crayons left.
+Since he didn't lose any erasers, he still has 457 erasers.
+To find out how many more crayons than erasers he has left, we subtract the number of erasers from the number of crayons: 523 - 457 = 66.
+Therefore, Paul has 66 more crayons than erasers left.
+So the answer is 66.",gpt-35-turbo,azure,0,684,109,66.0,Word Problems,challenge,3.7491564750671387
+CoT,True,wordProblems,Emily is making bead necklaces for her friends where each necklace takes 5 beads. She made 4 necklaces. How many beads did Emily have?,20.0,"Answer:
+Emily made 4 necklaces.
+And each necklace takes 5 beads.
+So she used 4 * 5 = 20 beads in total.
+Therefore, Emily had 20 beads.
+So the answer is 20.",gpt-35-turbo,azure,0,660,47,20.0,Word Problems,challenge,1.6021332740783691
+CoT,True,wordProblems,A grocery store had 4 bottles of diet soda. If they had 79 more bottles of regular soda than diet soda How many bottles of regular soda did they have?,83.0,"Answer:
+The grocery store had 4 bottles of diet soda.
+And they had 79 more bottles of regular soda than diet soda.
+So the number of regular soda bottles is 4 + 79 = 83.
+So the grocery store had 83 bottles of regular soda.
+So the answer is 83.",gpt-35-turbo,azure,0,663,63,83.0,Word Problems,challenge,2.1044163703918457
+CoT,True,wordProblems,There are 18 bananas in Philip's banana collection. If the bananas are organized into groups of size 2 How many groups are there?,9.0,"Answer:
+Philip has 18 bananas.
+And the bananas are organized into groups of size 2.
+To find the number of groups, we divide the total number of bananas by the group size.
+So 18 divided by 2 equals 9.
+Therefore, there are 9 groups.
+So the answer is 9.",gpt-35-turbo,azure,0,657,65,9.0,Word Problems,challenge,2.2436349391937256
+CoT,True,wordProblems,Randy has 90 blocks. He uses 89 blocks to build a house and 63 blocks to build a tower. How many more blocks did he use to build the house than he did to build the tower?,26.0,"
+Answer:
+Randy started with 90 blocks.
+He used 89 blocks to build a house.
+And he used 63 blocks to build a tower.
+To find out how many more blocks he used to build the house than the tower, we subtract the number of blocks used for the tower from the number of blocks used for the house.
+So 89 - 63 = 26.
+Therefore, Randy used 26 more blocks to build the house than he did to build the tower.
+So the answer is 26.",gpt-35-turbo,azure,0,672,106,26.0,Word Problems,challenge,3.82295823097229
+CoT,True,wordProblems,For the walls of the house he would use 13 large planks of wood. If each plank of wood needs 17 pieces of nails to be secured and in addition 8 nails are needed for some smaller planks. How many nails does John need for the house wall?,325.0,"Answer:
+To secure each large plank of wood, John needs 17 nails.
+And he needs an additional 8 nails for some smaller planks.
+So for each large plank, he needs 17 + 8 = 25 nails.
+Since he has 13 large planks, he needs a total of 13 * 25 = 325 nails.
+So John needs 325 nails for the house wall.",gpt-35-turbo,azure,0,685,83,229.0,Word Problems,challenge,2.7381863594055176
+CoT,True,wordProblems,Emily is making bead necklaces for her friends. She made 11 necklaces and each necklace takes 28 beads. How many beads did Emily have?,308.0,"Answer:
+Emily made 11 necklaces.
+And each necklace takes 28 beads.
+So she used a total of 11 * 28 = 308 beads.
+Therefore, Emily had 308 beads.
+So the answer is 308.",gpt-35-turbo,azure,0,660,48,308.0,Word Problems,challenge,2.1064906120300293
+CoT,True,wordProblems,Baker made 110 cakes. He sold 75 of them. Then he made 76 more cakes. How many cakes would baker still have?,111.0,"
+Answer:
+Baker made 110 cakes.
+Then he sold 75 of them.
+So he would have 110 - 75 = 35 cakes left.
+Then he made 76 more cakes.
+So he would have 35 + 76 = 111 cakes in total.
+So the answer is 111.",gpt-35-turbo,azure,0,658,64,111.0,Word Problems,challenge,2.074906587600708
+CoT,True,wordProblems,Josh had some marbles in his collection. He lost 21 marbles. If he has 12 marbles now How many marbles did he have in his collection?,33.0,"Answer:
+Josh started with some marbles in his collection.
+Then he lost 21 marbles.
+So he had x - 21 marbles left, where x represents the number of marbles he had initially.
+And he currently has 12 marbles.
+So we can set up the equation x - 21 = 12.
+To solve for x, we can add 21 to both sides of the equation: x - 21 + 21 = 12 + 21.
+This simplifies to x = 33.
+Therefore, Josh had 33 marbles in his collection initially.
+So the answer is 33.",gpt-35-turbo,azure,0,664,127,33.0,Word Problems,challenge,5.345941781997681
+CoT,True,wordProblems,Baker made 157 cakes and 169 pastries. If he sold 158 cakes and 147 pastries How many more cakes than pastries did baker sell?,11.0,"Answer:
+Baker made 157 cakes and 169 pastries.
+He sold 158 cakes and 147 pastries.
+To find out how many more cakes than pastries he sold, we need to subtract the number of pastries sold from the number of cakes sold.
+So, 158 - 147 = 11 more cakes than pastries were sold.
+Therefore, Baker sold 11 more cakes than pastries.",gpt-35-turbo,azure,0,662,85,11.0,Word Problems,challenge,2.7978148460388184
+CoT,True,wordProblems,Faye was placing her pencils into rows with 5 pencils in each row. If she had 35 pencils and 7 crayons How many rows could she make?,7.0,"
+Answer:
+Faye had 35 pencils.
+And she wanted to place them into rows with 5 pencils in each row.
+To find out how many rows she can make, we need to divide the total number of pencils by the number of pencils in each row.
+So, 35 pencils divided by 5 pencils per row equals 7 rows.
+Therefore, Faye can make 7 rows with her pencils.
+So the answer is 7.",gpt-35-turbo,azure,0,663,91,7.0,Word Problems,challenge,3.2937138080596924
+CoT,True,wordProblems,Rachel's tree had 4 apples initially. She picked some apples and now there are 2 apples left on the tree. How many apples did rachel pick?,2.0,"
+Answer:
+Rachel's tree initially had 4 apples.
+And now there are 2 apples left on the tree.
+So Rachel picked 4 - 2 = 2 apples.
+So the answer is 2.",gpt-35-turbo,azure,0,662,44,2.0,Word Problems,challenge,1.646486520767212
+CoT,True,wordProblems,If the cave is 919 feet deep and they need to travel 1307 feet How far is the end of the cave?,2226.0,"Answer:
+The cave is 919 feet deep.
+And they need to travel 1307 feet.
+So the distance to the end of the cave is 919 + 1307 = 2226 feet.
+So the answer is 2226.",gpt-35-turbo,azure,0,655,50,2226.0,Word Problems,challenge,1.6508779525756836
+CoT,True,wordProblems,"7 red peaches, 15 yellow peaches and 8 green peaches are in the basket. How many peaches are in the basket?",30.0,"Answer:
+There are 7 red peaches, 15 yellow peaches, and 8 green peaches in the basket.
+To find the total number of peaches, we add the number of each color together.
+So, 7 + 15 + 8 = 30.
+Therefore, there are 30 peaches in the basket.
+So the answer is 30.",gpt-35-turbo,azure,0,660,77,30.0,Word Problems,challenge,2.7421371936798096
+CoT,True,wordProblems,Allan and Jake brought 3 balloons to the park. If Allan brought 2 balloons How many balloons did Jake bring to the park?,1.0,"
+Answer:
+Allan and Jake brought a total of 3 balloons to the park.
+And we know that Allan brought 2 balloons.
+So Jake must have brought 3 - 2 = 1 balloon.
+Therefore, Jake brought 1 balloon to the park.
+So the answer is 1.",gpt-35-turbo,azure,0,656,61,1.0,Word Problems,challenge,2.2336394786834717
+CoT,True,wordProblems,A farmer had 177 tomatoes and 12 potatoes in his garden. If he picked 53 tomatoes How many tomatoes and potatoes does he have left?,124.0,"Answer:
+The farmer started with 177 tomatoes and 12 potatoes.
+He picked 53 tomatoes.
+So he has 177 - 53 = 124 tomatoes left.
+He still has 12 potatoes.
+Therefore, he has 124 tomatoes and 12 potatoes left.
+So the answer is 124 tomatoes and 12 potatoes.",gpt-35-turbo,azure,0,659,66,136.0,Word Problems,challenge,2.1065990924835205
+CoT,True,wordProblems,At the arcade Dave had won some tickets. He used 12 tickets to buy some toys. If he still has 14 tickets left How many tickets did Dave win at the arcade?,26.0,"Answer:
+Dave started with an unknown number of tickets.
+Then he used 12 tickets to buy toys.
+So he had 14 tickets left.
+Therefore, he won a total of 14 + 12 = 26 tickets at the arcade.
+So the answer is 26.",gpt-35-turbo,azure,0,666,56,26.0,Word Problems,challenge,2.2901153564453125
+CoT,True,wordProblems,After resting they decided to go for a swim. The depth of the water is 5 times Ron's height. Dean is 11 feet shorter than Ron. If Ron stands at 12 feet How deep was the water?,60.0,"Answer:
+Ron's height is 12 feet.
+Dean is 11 feet shorter than Ron, so Dean's height is 12 - 11 = 1 foot.
+The depth of the water is 5 times Ron's height, so the depth is 5 * 12 = 60 feet.
+So the water is 60 feet deep.",gpt-35-turbo,azure,0,674,70,60.0,Word Problems,challenge,2.3722593784332275
+CoT,True,wordProblems,Emily is making bead necklaces for her friends. She had 2 beads and she was able to make 32 necklaces. How many beads did each necklace need?,2.0,"
+Answer:
+Emily started with 2 beads.
+And she was able to make 32 necklaces.
+So she used a total of 2 * 32 = 64 beads.
+Therefore, each necklace needed 64 / 32 = 2 beads.
+So the answer is 2.",gpt-35-turbo,azure,0,663,59,16.0,Word Problems,challenge,2.127368211746216
+CoT,True,wordProblems," The school cafeteria had 17 apples. If they used 2 to make lunch for the students and then bought 23 more, how many apples would they have? ",38.0,"Answer:
+The school cafeteria started with 17 apples.
+They used 2 apples to make lunch for the students.
+So they had 17 - 2 = 15 apples left.
+Then they bought 23 more apples.
+So they had 15 + 23 = 38 apples in total.
+So the answer is 38.",gpt-35-turbo,azure,0,664,67,38.0,Word Problems,multi_step,1.8346076011657715
