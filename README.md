@@ -74,23 +74,23 @@ This table gives an overview of all techniques we evaluated. The column `Paper` 
         <tr>
             <th><strong>Name</strong></th>
             <th><strong>Paper</strong></th>
-            <th><strong>Implementation</strong></th>
-            <th><strong>Licence</strong></th>
             <th><strong>Description</strong></th>
         </tr>
     </thead>
     <tbody>
         <tr>
             <td>GPT-3.5-Turbo Baseline</a></td>
-            <td>-</td>
-            <td>-</td>
-            <td>-</td>
-            <td>We used the single instrution "Just return the answer to the problem." and the few-shot solutions are just the numbers.</td>
+            <td>TECHNICAL REPORT?</td>
+            <td>TODO</td>
         </tr>
         <tr>
-            <td><a href="https://github.com/GanjinZero/math401-llm">Math-401</a></td>
-            <td><code>arithmetic_mixed</code></td>
-            <td>63</td>
-            <td>log 10(797)=</td>
+            <td>Chain-of-Thought (CoT)</a></td>
+            <td>J. Wei et al., “Chain-of-Thought Prompting Elicits Reasoning in Large Language Models.” arXiv, Jan. 10, 2023. Accessed: Mar. 22, 2024. [Online]. Available: http://arxiv.org/abs/2201.11903</td>
+            <td>TODO</td>
+        </tr>
+        <tr>
+            <td>Program-aided Language Models (PaL)</a></td>
+            <td>L. Gao et al., “PAL: Program-aided Language Models.” arXiv, Jan. 27, 2023. doi: 10.48550/arXiv.2211.10435.</td>
+            <td>TODO</td>
         </tr>
 </table>
