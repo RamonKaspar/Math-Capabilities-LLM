@@ -10,25 +10,53 @@ For detailed information on how the various techniques are implemented, as well 
 
 ### Arithmetic
 
-We use the arithmetic dataset versions `arithemtic_1000.csv` and `arithmetic_100.csv` with 1000 and 100 samples, respectively. It was sampled from the [Math-401 (Yuan et al., 2023)](https://arxiv.org/abs/2304.02015) and the [Mathematics Dataset (Saxton et al., 2019)](https://openreview.net/pdf?id=H1gR5iR5FX) datasets. You can find more informations [here](https://github.com/RamonKaspar/MathDataset-ElementarySchool).
+We use the arithmetic dataset versions and `arithmetic_100.csv` and 100 samples. It was sampled from the [Math-401 (Yuan et al., 2023)](https://arxiv.org/abs/2304.02015) and the [Mathematics Dataset (Saxton et al., 2019)](https://openreview.net/pdf?id=H1gR5iR5FX) datasets. You can find more informations [here](https://github.com/RamonKaspar/MathDataset-ElementarySchool).
 
-Here are a few examples from the dataset (in JSON format):
+Here are an example from the dataset (in JSON format):
 
 ```json
-{"category":"Arithmetic","subcategory":"mul","question":"Work out 5 * 354.","answer":"1770.0","reasoning":null,"source":"Mathematics Dataset (Google DeepMind)"}
-{"category":"Arithmetic","subcategory":"time","question":"How many minutes are there between 6:56 PM and 5:27 AM?","answer":"631","reasoning":null,"source":"Mathematics Dataset (Google DeepMind)"}
-{"category":"Arithmetic","subcategory":"arithmetic_mixed","question":"4-10=","answer":"-6.0","reasoning":null,"source":"Math-401"}
+{
+  "category": "Arithmetic",
+  "subcategory": "mul",
+  "question": "Work out 5 * 354.",
+  "answer": "1770.0",
+  "reasoning": null,
+  "source": "Mathematics Dataset (Google DeepMind)"
+}
 ```
 
 ### Math Word Problems (MWP)
 
-We use the word problems dataset versions `wordProblems_1000.csv` and `wordProblems_100.csv` with 1000 and 100 samples, respectively. It was sampled from the [SVAMP (Patel et al., 2021)](https://arxiv.org/abs/2103.07191), [AddSub (Hosseini et al., 2014)](https://aclanthology.org/D14-1058/) and [MultiArith (Roy et al., 2016)](https://arxiv.org/abs/1608.01413) datasets. You can find more informations [here](https://github.com/RamonKaspar/MathDataset-ElementarySchool).
+We use the word problems dataset versions `wordProblems_100.csv` with 100 samples. It was sampled from the [SVAMP (Patel et al., 2021)](https://arxiv.org/abs/2103.07191), [AddSub (Hosseini et al., 2014)](https://aclanthology.org/D14-1058/) and [MultiArith (Roy et al., 2016)](https://arxiv.org/abs/1608.01413) datasets. You can find more informations [here](https://github.com/RamonKaspar/MathDataset-ElementarySchool).
 
-Here are a few examples from the dataset (in JSON format):
+Here are an example from the dataset (in JSON format):
 
 ```json
-{"category":"Word Problems","subcategory":"add_sub","question":"Jessica spent $ 10.22 on a cat toy , and a cage cost her $ 11.73 . What was the total cost of Jessica 's purchases ? ","answer":21.95,"reasoning":"X = 10.22 + 11.73","source":"AddSub"}
-{"category":"Word Problems","subcategory":"multi_step","question":" At the schools book fair Sam bought 13 adventure books and 17 mystery books. If 15 of the books were used, how many new books did he buy? ","answer":15.0,"reasoning":"X=((13.0+17.0)-15.0)","source":"MultiArith"}
+{
+  "category": "Word Problems",
+  "subcategory": "add_sub",
+  "question": "Jessica spent $ 10.22 on a cat toy , and a cage cost her $ 11.73 . What was the total cost of Jessica 's purchases ? ",
+  "answer": 21.95,
+  "reasoning": "X = 10.22 + 11.73",
+  "source": "AddSub"
+}
+```
+
+### Geometry
+
+We use the word problems dataset versions `geometry_100.csv` with 100 samples. It was sampled from the [MathQA Geometry (Amini et al., 2019)](https://allenai.org/data/lila) dataset. You can find more informations [here](https://github.com/RamonKaspar/MathDataset-ElementarySchool).
+
+Here are an example from the dataset (in JSON format):
+
+```json
+{
+  "category": "Geometry",
+  "subcategory": "geometry",
+  "question": "a metallic sheet is of rectangular shape with dimensions 48 m x 36 m . from each of its corners , a square is cut off so as to make an open box . if the length of the square is 3 m , the volume of the box ( in m 3 ) is :",
+  "answer": 3780.0,
+  "reasoning": "n0 = 48.0\nn1 = 36.0\nn2 = 3.0\nn3 = 3.0\nt0 = n2 * 2.0\nt1 = n0 - t0\nt2 = n1 - t0\nanswer = n2 * t1 * t2\nprint(answer)",
+  "source": "MathQA_Geometry"
+}
 ```
 
 ## Evaluated Techniques
