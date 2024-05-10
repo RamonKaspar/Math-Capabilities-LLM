@@ -126,4 +126,48 @@ def solution():
 '''
 ]
 
-FEW_SHOT_SOLUTIONS_GEOMETRY = []
+FEW_SHOT_SOLUTIONS_GEOMETRY = [
+''' 
+def solution():
+    """A cube has a volume of 27 cubic cm. What is the length of each side of the cube?"""
+    volume = 27
+    side_length = volume ** (1/3)
+    return side_length
+''',
+'''
+def solution():
+    """A trapezoid has bases of 5 cm and 7 cm, and a height of 4 cm. Calculate its area."""
+    base1 = 5
+    base2 = 7
+    height = 4
+    area = 0.5 * (base1 + base2) * height
+    return area
+''',
+'''
+def solution():
+    """Calculate the total surface area of a cylinder with radius 4 cm and height 10 cm."""
+    import math
+    radius = 4
+    height = 10
+    area = 2 * math.pi * radius * (radius + height)
+    return area
+''',
+'''
+def solution():
+    """A classroom is 15 m long and 10 m wide. How many square meters of carpet are needed to cover the entire floor?"""
+    length = 15
+    width = 10
+    area = length * width
+    return area
+''',
+'''
+def solution():
+    """A circular sector has a radius of 6 cm and a central angle of 45 degrees. Calculate the area of the sector."""
+    import math
+    radius = 6
+    angle_degrees = 45
+    angle_radians = math.radians(angle_degrees)  # Convert angle from degrees to radians
+    area = 0.5 * radius ** 2 * angle_radians
+    return area
+'''
+]
