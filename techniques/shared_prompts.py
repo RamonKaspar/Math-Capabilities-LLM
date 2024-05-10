@@ -26,7 +26,13 @@ FEW_SHOT_EXAMPLES_WORDPROBLEMS = [
 ]
 
 
-FEW_SHOT_EXAMPLES_GEOMETRY = []
+FEW_SHOT_EXAMPLES_GEOMETRY = [
+    "A cube has a volume of 27 cubic cm. What is the length of each side of the cube?",
+    "A trapezoid has bases of 5 cm and 7 cm, and a height of 4 cm. Calculate its area.",
+    "Calculate the total surface area of a cylinder with radius 4 cm and height 10 cm.",
+    "A classroom is 15 m long and 10 m wide. How many square meters of carpet are needed to cover the entire floor?",
+    "A circular sector has a radius of 6 cm and a central angle of 45 degrees. Calculate the area of the sector."
+]
 
 def get_few_shot_examples(dataset: str) -> list[str]:
     if dataset == 'arithmetic':
