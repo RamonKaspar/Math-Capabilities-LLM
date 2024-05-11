@@ -41,11 +41,9 @@ class DeclarativeSymPy(TechniqueInterface):
 # =============== IMPLEMENTATION ===============
 # Taken from offical paper github repo: https://github.com/joyheyueya/declarative-math-word-problem
 
-import numpy as np
 from sympy import solve, sympify, Symbol
 from sympy.parsing.sympy_parser import parse_expr, standard_transformations, implicit_multiplication_application, convert_xor
 import string
-from typing import List
 
 
 def reformat_equations_from_peano(eq_list: str) -> str:
