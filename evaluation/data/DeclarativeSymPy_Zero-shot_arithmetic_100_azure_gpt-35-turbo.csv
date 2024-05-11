@@ -1,0 +1,101 @@
+technique,few_shot_prompting,dataset,question,answer,reasoning,model,service,temperature,prompt_tokens,completion_tokens,correct_answer,category,subcategory,latency_in_seconds
+DeclarativeSymPy,False,arithmetic,0.1*3.0=,0.3,,gpt-35-turbo,azure,0,162,106,0.3,Arithmetic,arithmetic_mixed,2.562037706375122
+DeclarativeSymPy,False,arithmetic,88254×26228=,26228.0,,gpt-35-turbo,azure,0,160,126,2314725912.0,Arithmetic,arithmetic_mixed,2.394582748413086
+DeclarativeSymPy,False,arithmetic,37739*66015=,2490367485.0,,gpt-35-turbo,azure,0,160,124,2491340085.0,Arithmetic,arithmetic_mixed,1.7685270309448242
+DeclarativeSymPy,False,arithmetic,5^4=,4.0,,gpt-35-turbo,azure,0,158,154,625.0,Arithmetic,arithmetic_mixed,2.342179536819458
+DeclarativeSymPy,False,arithmetic,721-847=,-126.0,,gpt-35-turbo,azure,0,158,94,-126.0,Arithmetic,arithmetic_mixed,1.233285665512085
+DeclarativeSymPy,False,arithmetic,774426524175+721318944497=,1498748460672.0,,gpt-35-turbo,azure,0,164,162,1495745468672.0,Arithmetic,arithmetic_mixed,3.725935459136963
+DeclarativeSymPy,False,arithmetic,7^4=,2401.0,,gpt-35-turbo,azure,0,158,124,2401.0,Arithmetic,arithmetic_mixed,1.7272825241088867
+DeclarativeSymPy,False,arithmetic,"What is next in 1964, 3923, 5880, 7835?",9792.0,,gpt-35-turbo,azure,0,173,158,9788.0,Arithmetic,sequence_next_term,2.1227898597717285
+DeclarativeSymPy,False,arithmetic,"What comes next: 17, 49, 129, 281, 529, 897, 1409?",1921.0,,gpt-35-turbo,azure,0,179,341,2089.0,Arithmetic,sequence_next_term,4.296581506729126
+DeclarativeSymPy,False,arithmetic,"What is the next term in -1691, -1690, -1689, -1688?",4.0,,gpt-35-turbo,azure,0,175,246,-1687.0,Arithmetic,sequence_next_term,4.619600296020508
+DeclarativeSymPy,False,arithmetic,"What is the next term in -1341, -2675, -3997, -5301, -6581, -7831?",-10005.0,,gpt-35-turbo,azure,0,183,303,-9045.0,Arithmetic,sequence_next_term,3.320268392562866
+DeclarativeSymPy,False,arithmetic,"What is the next term in 12, 24, 38, 54, 72, 92, 114?",5.0,,gpt-35-turbo,azure,0,180,400,138.0,Arithmetic,sequence_next_term,6.9103453159332275
+DeclarativeSymPy,False,arithmetic,"What is the next term in 1070, 4273, 9610, 17081?",4.0,,gpt-35-turbo,azure,0,175,400,26686.0,Arithmetic,sequence_next_term,6.413889646530151
+DeclarativeSymPy,False,arithmetic,"What comes next: -75, -80, -85, -90?",-90.0,,gpt-35-turbo,azure,0,169,246,-95.0,Arithmetic,sequence_next_term,3.9421756267547607
+DeclarativeSymPy,False,arithmetic,Calculate -13 - 40.103.,40.103,,gpt-35-turbo,azure,0,162,138,-53.103,Arithmetic,add_or_sub,2.2690727710723877
+DeclarativeSymPy,False,arithmetic,Add together -18.766737 and -0.5.,-19.266737,,gpt-35-turbo,azure,0,166,184,-19.266737,Arithmetic,add_or_sub,3.771902084350586
+DeclarativeSymPy,False,arithmetic,What is -0.3 minus 1991087?,1991087.0,,gpt-35-turbo,azure,0,165,107,-1991087.3,Arithmetic,add_or_sub,1.8956260681152344
+DeclarativeSymPy,False,arithmetic,Subtract -1 from -467.,-466.0,,gpt-35-turbo,azure,0,160,162,-466.0,Arithmetic,add_or_sub,2.1926560401916504
+DeclarativeSymPy,False,arithmetic,What is the distance between 0.7 and -1843?,1843.7,,gpt-35-turbo,azure,0,167,185,1843.7,Arithmetic,add_or_sub,2.407602071762085
+DeclarativeSymPy,False,arithmetic,What is -84217 minus -5?,-84112.0,,gpt-35-turbo,azure,0,162,126,-84212.0,Arithmetic,add_or_sub,2.0444090366363525
+DeclarativeSymPy,False,arithmetic,What is 221 take away 0.2?,220.8,,gpt-35-turbo,azure,0,164,105,220.8,Arithmetic,add_or_sub,2.2293810844421387
+DeclarativeSymPy,False,arithmetic,0 - (10 - (4 + 5)),-1.0,,gpt-35-turbo,azure,0,165,349,-1.0,Arithmetic,add_sub_multiple,5.286083698272705
+DeclarativeSymPy,False,arithmetic,0 - 2 - (4 - (-5 + 11)),0.0,,gpt-35-turbo,azure,0,168,177,0.0,Arithmetic,add_sub_multiple,2.3187272548675537
+DeclarativeSymPy,False,arithmetic,Evaluate -7 + (-7 - -2) - -5 - -9.,-3.0,,gpt-35-turbo,azure,0,170,191,2.0,Arithmetic,add_sub_multiple,3.2657113075256348
+DeclarativeSymPy,False,arithmetic,Calculate (3 - (-4 - -3)) + -4.,0.0,,gpt-35-turbo,azure,0,167,308,0.0,Arithmetic,add_sub_multiple,4.301539182662964
+DeclarativeSymPy,False,arithmetic,Calculate 1 - (4 - 8 - -8).,4.0,,gpt-35-turbo,azure,0,166,246,-3.0,Arithmetic,add_sub_multiple,3.683338165283203
+DeclarativeSymPy,False,arithmetic,Calculate -8 + 3 - (1 + -4 - 0).,-2.0,,gpt-35-turbo,azure,0,169,288,-2.0,Arithmetic,add_sub_multiple,5.381971836090088
+DeclarativeSymPy,False,arithmetic,What is 9 - 2 - 11 - (-1 - 1)?,6.0,,gpt-35-turbo,azure,0,170,201,-2.0,Arithmetic,add_sub_multiple,3.7678916454315186
+DeclarativeSymPy,False,arithmetic,-6405 divided by -105,-61.0,,gpt-35-turbo,azure,0,160,206,61.0,Arithmetic,div,2.851552963256836
+DeclarativeSymPy,False,arithmetic,Calculate -4450 divided by 178.,-25.0,,gpt-35-turbo,azure,0,162,183,-25.0,Arithmetic,div,2.7527151107788086
+DeclarativeSymPy,False,arithmetic,263 divided by 1,263.0,,gpt-35-turbo,azure,0,159,112,263.0,Arithmetic,div,1.9675068855285645
+DeclarativeSymPy,False,arithmetic,Calculate -732 divided by 4.,4.0,,gpt-35-turbo,azure,0,161,215,-183.0,Arithmetic,div,4.93397855758667
+DeclarativeSymPy,False,arithmetic,What is -44030 divided by -1190?,37.0,,gpt-35-turbo,azure,0,164,188,37.0,Arithmetic,div,2.956056594848633
+DeclarativeSymPy,False,arithmetic,What is -546 divided by 6?,-91.0,,gpt-35-turbo,azure,0,162,191,-91.0,Arithmetic,div,4.035807371139526
+DeclarativeSymPy,False,arithmetic,Calculate -102 divided by 2.,-51.0,,gpt-35-turbo,azure,0,161,197,-51.0,Arithmetic,div,3.66044282913208
+DeclarativeSymPy,False,arithmetic,What is 5 times -34?,-170.0,,gpt-35-turbo,azure,0,161,83,-170.0,Arithmetic,mul,1.4861838817596436
+DeclarativeSymPy,False,arithmetic,What is 427 times 0?,0.0,,gpt-35-turbo,azure,0,161,180,0.0,Arithmetic,mul,2.4310412406921387
+DeclarativeSymPy,False,arithmetic,What is 1247 times 0.5?,623.5,,gpt-35-turbo,azure,0,164,134,623.5,Arithmetic,mul,2.7863898277282715
+DeclarativeSymPy,False,arithmetic,Work out 0 * -3.4.,0.0,,gpt-35-turbo,azure,0,163,123,0.0,Arithmetic,mul,1.6667394638061523
+DeclarativeSymPy,False,arithmetic,-2167 times 3,-6501.0,,gpt-35-turbo,azure,0,159,140,-6501.0,Arithmetic,mul,2.7863638401031494
+DeclarativeSymPy,False,arithmetic,-45 * 66,-2970.0,,gpt-35-turbo,azure,0,158,85,-2970.0,Arithmetic,mul,1.7524845600128174
+DeclarativeSymPy,False,arithmetic,What is the product of 0.3 and -81?,-24.3,,gpt-35-turbo,azure,0,166,161,-24.3,Arithmetic,mul,3.684809923171997
+DeclarativeSymPy,False,arithmetic,Evaluate -3*(-3)/(-27)*-15.,5.0,,gpt-35-turbo,azure,0,165,373,5.0,Arithmetic,mul_div_multiple,5.784341812133789
+DeclarativeSymPy,False,arithmetic,What is (2/16*-4)/((-2)/(-8))?,-4.0,,gpt-35-turbo,azure,0,168,320,-2.0,Arithmetic,mul_div_multiple,5.8395586013793945
+DeclarativeSymPy,False,arithmetic,(-47)/(-188)*(-24)/2,-3.0,,gpt-35-turbo,azure,0,163,299,-3.0,Arithmetic,mul_div_multiple,4.667561769485474
+DeclarativeSymPy,False,arithmetic,Calculate 1/(-12)*-4*-15.,5.0,,gpt-35-turbo,azure,0,165,259,-5.0,Arithmetic,mul_div_multiple,4.929786443710327
+DeclarativeSymPy,False,arithmetic,(-3)/((-18)/4)*-3,2.0,,gpt-35-turbo,azure,0,163,344,-2.0,Arithmetic,mul_div_multiple,5.470834016799927
+DeclarativeSymPy,False,arithmetic,What is -1*(-6)/(-12)*2?,-1.0,,gpt-35-turbo,azure,0,165,339,-1.0,Arithmetic,mul_div_multiple,5.631408214569092
+DeclarativeSymPy,False,arithmetic,Evaluate (-1)/((-8)/(48/(-3))).,-3.0,,gpt-35-turbo,azure,0,165,216,-2.0,Arithmetic,mul_div_multiple,3.7336857318878174
+DeclarativeSymPy,False,arithmetic,How many millilitres are there in 910.4399 litres?,1000.0,,gpt-35-turbo,azure,0,168,156,910439.9,Arithmetic,conversion,2.4157278537750244
+DeclarativeSymPy,False,arithmetic,What is fifty-five halves of a kilometer in meters?,27500.0,,gpt-35-turbo,azure,0,165,225,27500.0,Arithmetic,conversion,3.33366060256958
+DeclarativeSymPy,False,arithmetic,What is 1.946047l in millilitres?,1946.047,,gpt-35-turbo,azure,0,166,160,1946.047,Arithmetic,conversion,2.274390697479248
+DeclarativeSymPy,False,arithmetic,What is 0.929527 centuries in millennia?,0.0929527,,gpt-35-turbo,azure,0,164,216,0.0929527,Arithmetic,conversion,3.795543909072876
+DeclarativeSymPy,False,arithmetic,How many millilitres are there in one twentieth of a litre?,1000.0,,gpt-35-turbo,azure,0,167,173,50.0,Arithmetic,conversion,2.9780962467193604
+DeclarativeSymPy,False,arithmetic,What is one tenth of a milligram in nanograms?,100000.0,,gpt-35-turbo,azure,0,165,263,100000.0,Arithmetic,conversion,4.2322893142700195
+DeclarativeSymPy,False,arithmetic,What is 2/125 of a meter in millimeters?,16.0,,gpt-35-turbo,azure,0,166,229,16.0,Arithmetic,conversion,3.7659590244293213
+DeclarativeSymPy,False,arithmetic,How many minutes are there between 2:12 PM and 3:43 PM?,132.0,,gpt-35-turbo,azure,0,171,400,91.0,Arithmetic,time,6.8109352588653564
+DeclarativeSymPy,False,arithmetic,How many minutes are there between 10:12 PM and 5:36 AM?,60.0,,gpt-35-turbo,azure,0,171,382,444.0,Arithmetic,time,5.682540416717529
+DeclarativeSymPy,False,arithmetic,How many minutes are there between 12:25 AM and 7:35 AM?,35.0,,gpt-35-turbo,azure,0,171,154,430.0,Arithmetic,time,2.592245578765869
+DeclarativeSymPy,False,arithmetic,How many minutes are there between 11:23 AM and 12:03 PM?,3.0,,gpt-35-turbo,azure,0,171,343,40.0,Arithmetic,time,4.645100116729736
+DeclarativeSymPy,False,arithmetic,How many minutes are there between 12:40 AM and 3:18 AM?,18.0,,gpt-35-turbo,azure,0,171,366,158.0,Arithmetic,time,5.865541219711304
+DeclarativeSymPy,False,arithmetic,How many minutes are there between 5:28 PM and 6:20 PM?,20.0,,gpt-35-turbo,azure,0,171,343,52.0,Arithmetic,time,6.782254457473755
+DeclarativeSymPy,False,arithmetic,How many minutes are there between 11:16 PM and 10:18 AM?,1.0,,gpt-35-turbo,azure,0,171,400,662.0,Arithmetic,time,9.76028299331665
+DeclarativeSymPy,False,arithmetic,What is the remainder when 50 is divided by 18?,18.0,,gpt-35-turbo,azure,0,166,132,14.0,Arithmetic,div_remainder,2.9139199256896973
+DeclarativeSymPy,False,arithmetic,What is the remainder when 956 is divided by 287?,287.0,,gpt-35-turbo,azure,0,166,105,95.0,Arithmetic,div_remainder,1.6117336750030518
+DeclarativeSymPy,False,arithmetic,What is the remainder when 2198 is divided by 44?,44.0,,gpt-35-turbo,azure,0,167,108,42.0,Arithmetic,div_remainder,1.4325578212738037
+DeclarativeSymPy,False,arithmetic,Calculate the remainder when 1903 is divided by 212.,212.0,,gpt-35-turbo,azure,0,166,230,207.0,Arithmetic,div_remainder,4.570023775100708
+DeclarativeSymPy,False,arithmetic,Calculate the remainder when 12707 is divided by 71.,71.0,,gpt-35-turbo,azure,0,166,109,69.0,Arithmetic,div_remainder,1.1607520580291748
+DeclarativeSymPy,False,arithmetic,What is the remainder when 129 is divided by 61?,7.0,,gpt-35-turbo,azure,0,166,146,7.0,Arithmetic,div_remainder,2.524322509765625
+DeclarativeSymPy,False,arithmetic,Calculate the remainder when 147 is divided by 23.,23.0,,gpt-35-turbo,azure,0,165,144,9.0,Arithmetic,div_remainder,1.3137924671173096
+DeclarativeSymPy,False,arithmetic,What is the highest common factor of 800 and 350?,0.0,,gpt-35-turbo,azure,0,166,400,50.0,Arithmetic,gcd,5.716125011444092
+DeclarativeSymPy,False,arithmetic,Calculate the highest common factor of 21342 and 12.,12.0,,gpt-35-turbo,azure,0,166,232,6.0,Arithmetic,gcd,3.635556221008301
+DeclarativeSymPy,False,arithmetic,What is the greatest common factor of 48 and 1520?,1520.0,,gpt-35-turbo,azure,0,167,134,16.0,Arithmetic,gcd,2.261155843734741
+DeclarativeSymPy,False,arithmetic,Calculate the greatest common divisor of 1155 and 616.,77.0,,gpt-35-turbo,azure,0,166,350,77.0,Arithmetic,gcd,5.01618766784668
+DeclarativeSymPy,False,arithmetic,What is the highest common factor of 32 and 55?,55.0,,gpt-35-turbo,azure,0,166,276,1.0,Arithmetic,gcd,4.0705108642578125
+DeclarativeSymPy,False,arithmetic,What is the greatest common factor of 5037 and 69?,69.0,,gpt-35-turbo,azure,0,167,135,69.0,Arithmetic,gcd,2.444988489151001
+DeclarativeSymPy,False,arithmetic,Calculate the greatest common divisor of 44 and 154.,22.0,,gpt-35-turbo,azure,0,165,260,22.0,Arithmetic,gcd,4.815497875213623
+DeclarativeSymPy,False,arithmetic,Calculate the least common multiple of 24498 and 8.,2.0,,gpt-35-turbo,azure,0,166,400,97992.0,Arithmetic,lcm,8.40733027458191
+DeclarativeSymPy,False,arithmetic,Calculate the common denominator of 115/582 and -4/11.,6402.0,,gpt-35-turbo,azure,0,168,236,6402.0,Arithmetic,lcm,5.003433465957642
+DeclarativeSymPy,False,arithmetic,What is the least common multiple of 6728 and 40?,151.0,,gpt-35-turbo,azure,0,167,197,33640.0,Arithmetic,lcm,3.0314342975616455
+DeclarativeSymPy,False,arithmetic,Calculate the lowest common multiple of 4 and 460.,460.0,,gpt-35-turbo,azure,0,165,400,460.0,Arithmetic,lcm,5.23984432220459
+DeclarativeSymPy,False,arithmetic,What is the common denominator of -59/120 and -29/24?,240.0,,gpt-35-turbo,azure,0,169,278,120.0,Arithmetic,lcm,5.080946683883667
+DeclarativeSymPy,False,arithmetic,What is the common denominator of -93/58 and -5/58?,58.0,,gpt-35-turbo,azure,0,169,167,58.0,Arithmetic,lcm,2.462144374847412
+DeclarativeSymPy,False,arithmetic,Calculate the smallest common multiple of 286 and 364.,364.0,,gpt-35-turbo,azure,0,165,151,4004.0,Arithmetic,lcm,2.5413882732391357
+DeclarativeSymPy,False,arithmetic,What is the units digit of 8196?,6.0,,gpt-35-turbo,azure,0,163,191,6.0,Arithmetic,place_value,3.5169365406036377
+DeclarativeSymPy,False,arithmetic,What is the tens digit of 3848?,8.0,,gpt-35-turbo,azure,0,163,175,4.0,Arithmetic,place_value,2.6624763011932373
+DeclarativeSymPy,False,arithmetic,What is the hundreds digit of 2079?,2079.0,,gpt-35-turbo,azure,0,163,206,0.0,Arithmetic,place_value,2.7262721061706543
+DeclarativeSymPy,False,arithmetic,What is the tens digit of 1599?,1599.0,,gpt-35-turbo,azure,0,163,151,9.0,Arithmetic,place_value,1.2486090660095215
+DeclarativeSymPy,False,arithmetic,What is the hundreds digit of 9001?,9001.0,,gpt-35-turbo,azure,0,163,159,0.0,Arithmetic,place_value,2.0639641284942627
+DeclarativeSymPy,False,arithmetic,What is the hundreds digit of 30741?,100.0,,gpt-35-turbo,azure,0,163,126,7.0,Arithmetic,place_value,2.4901297092437744
+DeclarativeSymPy,False,arithmetic,What is the units digit of 72672?,72672.0,,gpt-35-turbo,azure,0,163,111,2.0,Arithmetic,place_value,1.793133020401001
+DeclarativeSymPy,False,arithmetic,Round -147720 to the nearest one thousand.,-147720.0,,gpt-35-turbo,azure,0,163,235,-148000.0,Arithmetic,round_number,3.277667999267578
+DeclarativeSymPy,False,arithmetic,What is 0.57208 rounded to 1 dp?,1.0,,gpt-35-turbo,azure,0,166,74,0.6000000000000001,Arithmetic,round_number,1.1395008563995361
+DeclarativeSymPy,False,arithmetic,What is 0.00117 rounded to four dps?,4.0,,gpt-35-turbo,azure,0,165,73,0.0012,Arithmetic,round_number,0.9418656826019287
+DeclarativeSymPy,False,arithmetic,Round 13.5 to the nearest 10.,10.0,,gpt-35-turbo,azure,0,164,157,10.0,Arithmetic,round_number,2.4606566429138184
+DeclarativeSymPy,False,arithmetic,Round 4117.6 to the nearest 10.,41100.0,,gpt-35-turbo,azure,0,165,279,4120.0,Arithmetic,round_number,3.801562547683716
+DeclarativeSymPy,False,arithmetic,What is -892.7 rounded to the nearest 10?,10.0,,gpt-35-turbo,azure,0,166,400,-890.0,Arithmetic,round_number,6.1854565143585205
+DeclarativeSymPy,False,arithmetic,What is -491.93 rounded to 0 dps?,0.0,,gpt-35-turbo,azure,0,165,95,-492.0,Arithmetic,round_number,1.510354995727539
+DeclarativeSymPy,False,arithmetic,Convert 80319.95 kilograms to micrograms.,80319950000.0,,gpt-35-turbo,azure,0,164,151,80319950000000.0,Arithmetic,conversion,3.9086320400238037
+DeclarativeSymPy,False,arithmetic,Calculate the smallest common multiple of 7272 and 909.,909.0,,gpt-35-turbo,azure,0,166,361,7272.0,Arithmetic,lcm,5.227444887161255

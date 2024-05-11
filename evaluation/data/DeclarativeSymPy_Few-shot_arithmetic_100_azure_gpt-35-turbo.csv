@@ -1,0 +1,560 @@
+technique,few_shot_prompting,dataset,question,answer,reasoning,model,service,temperature,prompt_tokens,completion_tokens,correct_answer,category,subcategory,latency_in_seconds
+DeclarativeSymPy,True,arithmetic,0.1*3.0=,0.3,"
+Let a be the first factor [[var a]]. We're given [[eq a = 0.1]].
+Let b be the second factor [[var b]]. We're given [[eq b = 3.0]].
+Let p be the product of a and b [[var p]]. We have [[eq p = a * b]].
+The answer is the value of p [[answer p]].",gpt-35-turbo,azure,0,793,82,0.3,Arithmetic,arithmetic_mixed,1.7093863487243652
+DeclarativeSymPy,True,arithmetic,88254×26228=,2314725912.0,"Let a be the first factor [[var a]]. We're given [[eq a = 88254]].
+Let b be the second factor [[var b]]. We're given [[eq b = 26228]].
+Let p be the product of a and b [[var p]]. We have [[eq p = a * b]].
+The answer is the value of p [[answer p]].",gpt-35-turbo,azure,0,791,79,2314725912.0,Arithmetic,arithmetic_mixed,1.1968088150024414
+DeclarativeSymPy,True,arithmetic,37739*66015=,2491340085.0,"Let a be the first factor [[var a]]. We're given [[eq a = 37739]].
+Let b be the second factor [[var b]]. We're given [[eq b = 66015]].
+Let p be the product of a and b [[var p]]. We have [[eq p = a * b]].
+The answer is the value of p [[answer p]].",gpt-35-turbo,azure,0,791,79,2491340085.0,Arithmetic,arithmetic_mixed,1.6751923561096191
+DeclarativeSymPy,True,arithmetic,5^4=,625.0,"Let a be the base [[var a]]. We're given [[eq a = 5]].
+Let b be the exponent [[var b]]. We're given [[eq b = 4]].
+Let p be the power of a raised to b [[var p]]. We have [[eq p = a**b]].
+The answer is the value of p [[answer p]].",gpt-35-turbo,azure,0,789,76,625.0,Arithmetic,arithmetic_mixed,1.2822129726409912
+DeclarativeSymPy,True,arithmetic,721-847=,-126.0,"Let a be the minuend [[var a]]. We're given [[eq a = 721]].
+Let b be the subtrahend [[var b]]. We're given [[eq b = 847]].
+Let d be the difference between a and b [[var d]]. We have [[eq d = a - b]].
+The answer is the value of d [[answer d]].",gpt-35-turbo,azure,0,789,80,-126.0,Arithmetic,arithmetic_mixed,1.0483696460723877
+DeclarativeSymPy,True,arithmetic,774426524175+721318944497=,1495745468672.0,"Let a be the first addend [[var a]]. We're given [[eq a = 774426524175]].
+Let b be the second addend [[var b]]. We're given [[eq b = 721318944497]].
+Let s be the sum of a and b [[var s]]. We have [[eq s = a + b]].
+The answer is the value of s [[answer s]].",gpt-35-turbo,azure,0,795,85,1495745468672.0,Arithmetic,arithmetic_mixed,1.4242007732391357
+DeclarativeSymPy,True,arithmetic,7^4=,2401.0,"Let a be the base [[var a]]. We're given [[eq a = 7]].
+Let b be the exponent [[var b]]. We're given [[eq b = 4]].
+Let p be the power of a raised to b [[var p]]. We have [[eq p = a**b]].
+The answer is the value of p [[answer p]].",gpt-35-turbo,azure,0,789,76,2401.0,Arithmetic,arithmetic_mixed,1.3335013389587402
+DeclarativeSymPy,True,arithmetic,"What is next in 1964, 3923, 5880, 7835?",9840.0,"Let n be the position in the sequence of numbers [[var n]]. We're given [[eq n = 5]].
+Let a_1, a_2, a_3, a_4 be the initial terms of the sequence, with values [[eq a_1 = 1964]], [[eq a_2 = 3923]], [[eq a_3 = 5880]], [[eq a_4 = 7835]].
+Let a_n be the term in the sequence at position n [[var a_n]]. We derive [[eq a_n = (n-1)*1969 + 1964]] based on the pattern established by the initial terms.
+The answer is the value of a_n [[answer a_n]].",gpt-35-turbo,azure,0,804,151,9788.0,Arithmetic,sequence_next_term,3.110386848449707
+DeclarativeSymPy,True,arithmetic,"What comes next: 17, 49, 129, 281, 529, 897, 1409?",232.0,"Let n be the position in the sequence [[var n]]. We're given [[eq n = 7]].
+Let a_1, a_2, a_3, a_4, a_5, a_6, a_7 be the terms of the sequence, with values [[eq a_1 = 17]], [[eq a_2 = 49]], [[eq a_3 = 129]], [[eq a_4 = 281]], [[eq a_5 = 529]], [[eq a_6 = 897]], [[eq a_7 = 1409]].
+Let a_n be the term in the sequence at position n [[var a_n]]. We derive [[eq a_n = 2^n + 15n - 1]] based on the pattern established by the given terms.
+The answer is the value of a_n [[answer a_n]].",gpt-35-turbo,azure,0,810,183,2089.0,Arithmetic,sequence_next_term,3.522218704223633
+DeclarativeSymPy,True,arithmetic,"What is the next term in -1691, -1690, -1689, -1688?",-1687.0,"
+Let n be the position in the sequence of terms [[var n]]. We're given [[eq n = 5]].
+Let a_1, a_2, a_3, a_4 be the initial terms of the sequence, with values [[eq a_1 = -1691]], [[eq a_2 = -1690]], [[eq a_3 = -1689]], [[eq a_4 = -1688]].
+Let a_n be the term in the sequence at position n [[var a_n]]. We derive [[eq a_n = a_1 + (n-1)]] based on the pattern established by the initial terms.
+The answer is the value of a_n [[answer a_n]].
+",gpt-35-turbo,azure,0,806,151,-1687.0,Arithmetic,sequence_next_term,2.806389808654785
+DeclarativeSymPy,True,arithmetic,"What is the next term in -1341, -2675, -3997, -5301, -6581, -7831?",-4541.0,"Let n be the position in the sequence of terms [[var n]]. We're given [[eq n = 6]].
+Let a_1, a_2, a_3, a_4, a_5, a_6 be the initial terms of the sequence, with values [[eq a_1 = -1341]], [[eq a_2 = -2675]], [[eq a_3 = -3997]], [[eq a_4 = -5301]], [[eq a_5 = -6581]], [[eq a_6 = -7831]].
+Let a_n be the term in the sequence at position n [[var a_n]]. We derive [[eq a_n = -n*(n+1)*100-341]] based on the pattern established by the initial terms.
+The answer is the value of a_n [[answer a_n]].",gpt-35-turbo,azure,0,814,178,-9045.0,Arithmetic,sequence_next_term,2.130133628845215
+DeclarativeSymPy,True,arithmetic,"What is the next term in 12, 24, 38, 54, 72, 92, 114?",,"Let n be the position in the sequence of numbers [[var n]]. We're given [[eq n = 7]].
+Let a_1, a_2, a_3, a_4, a_5, a_6, a_7 be the initial terms of the sequence, with values [[eq a_1 = 12]], [[eq a_2 = 24]], [[eq a_3 = 38]], [[eq a_4 = 54]], [[eq a_5 = 72]], [[eq a_6 = 92]], [[eq a_7 = 114]].
+Let a_n be the term in the sequence at position n [[var a_n]]. We derive [[eq a_n = a_{n-1} + (n+1)^2]] based on the pattern established by the initial terms.
+The answer is the value of a_n [[answer a_n]].",gpt-35-turbo,azure,0,811,188,138.0,Arithmetic,sequence_next_term,3.0774052143096924
+DeclarativeSymPy,True,arithmetic,"What is the next term in 1070, 4273, 9610, 17081?",1125.0,"Let n be the position in the sequence of terms [[var n]]. We're given [[eq n = 5]].
+Let a_1, a_2, a_3, a_4 be the initial terms of the sequence, with values [[eq a_1 = 1070]], [[eq a_2 = 4273]], [[eq a_3 = 9610]], [[eq a_4 = 17081]].
+Let a_n be the term in the sequence at position n [[var a_n]]. We derive [[eq a_n = (n^3) + 1000]] based on the pattern established by the initial terms.
+The answer is the value of a_n [[answer a_n]].",gpt-35-turbo,azure,0,806,149,26686.0,Arithmetic,sequence_next_term,2.034722089767456
+DeclarativeSymPy,True,arithmetic,"What comes next: -75, -80, -85, -90?",-95.0,"
+Let a_1, a_2, a_3, a_4 be the terms in the sequence, with values [[eq a_1 = -75]], [[eq a_2 = -80]], [[eq a_3 = -85]], [[eq a_4 = -90]].
+Let a_n be the term in the sequence at position n [[var a_n]]. We derive [[eq a_n = a_1 - 5*(n-1)]] based on the pattern established by the initial terms.
+Let n be the position in the sequence of terms [[var n]]. We're given [[eq n = 5]].
+The answer is the value of a_n [[answer a_n]].
+",gpt-35-turbo,azure,0,800,148,-95.0,Arithmetic,sequence_next_term,2.391845703125
+DeclarativeSymPy,True,arithmetic,Calculate -13 - 40.103.,27.103,"
+Let a be the first number [[var a]]. We're given [[eq a = -13]].
+Let b be the second number [[var b]]. We're given [[eq b = -40.103]].
+Let s be the difference between a and b [[var s]]. We have [[eq s = a - b]].
+The answer is the value of s [[answer s]].",gpt-35-turbo,azure,0,793,80,-53.103,Arithmetic,add_or_sub,1.6788277626037598
+DeclarativeSymPy,True,arithmetic,Add together -18.766737 and -0.5.,-19.266737,"
+Let a be the first number [[var a]]. We're given [[eq a = -18.766737]].
+Let b be the second number [[var b]]. We're given [[eq b = -0.5]].
+Let s be the sum of a and b [[var s]]. We have [[eq s = a + b]].
+The answer is the value of s [[answer s]].",gpt-35-turbo,azure,0,797,83,-19.266737,Arithmetic,add_or_sub,2.153759241104126
+DeclarativeSymPy,True,arithmetic,What is -0.3 minus 1991087?,-1991087.3,"
+Let a be the first number [[var a]]. We're given [[eq a = -0.3]].
+Let b be the second number [[var b]]. We're given [[eq b = 1991087]].
+Let d be the difference between a and b [[var d]]. We have [[eq d = a - b]].
+The answer is the value of d [[answer d]].",gpt-35-turbo,azure,0,796,82,-1991087.3,Arithmetic,add_or_sub,1.8092315196990967
+DeclarativeSymPy,True,arithmetic,Subtract -1 from -467.,-466.0,"
+Let a be the minuend [[var a]]. We're given [[eq a = -467]].
+Let b be the subtrahend [[var b]]. We're given [[eq b = -1]].
+Let d be the difference between a and b [[var d]]. We have [[eq d = a - b]].
+The answer is the value of d [[answer d]].",gpt-35-turbo,azure,0,791,81,-466.0,Arithmetic,add_or_sub,1.6327624320983887
+DeclarativeSymPy,True,arithmetic,What is the distance between 0.7 and -1843?,,"
+Let x be the first number [[var x]]. We're given [[eq x = 0.7]].
+Let y be the second number [[var y]]. We're given [[eq y = -1843]].
+Let d be the distance between x and y [[var d]]. We have [[eq d = abs(x - y)]].
+The answer is the value of d [[answer d]].",gpt-35-turbo,azure,0,798,83,1843.7,Arithmetic,add_or_sub,1.0321199893951416
+DeclarativeSymPy,True,arithmetic,What is -84217 minus -5?,-84212.0,"
+Let a be the minuend [[var a]]. We're given [[eq a = -84217]].
+Let b be the subtrahend [[var b]]. We're given [[eq b = -5]].
+Let d be the difference between a and b [[var d]]. We have [[eq d = a - b]].
+The answer is the value of d [[answer d]].",gpt-35-turbo,azure,0,793,82,-84212.0,Arithmetic,add_or_sub,1.7691609859466553
+DeclarativeSymPy,True,arithmetic,What is 221 take away 0.2?,220.8,"
+Let a be the minuend [[var a]]. We're given [[eq a = 221]].
+Let b be the subtrahend [[var b]]. We're given [[eq b = 0.2]].
+Let d be the difference between a and b [[var d]]. We have [[eq d = a - b]].
+The answer is the value of d [[answer d]].",gpt-35-turbo,azure,0,795,83,220.8,Arithmetic,add_or_sub,1.961775779724121
+DeclarativeSymPy,True,arithmetic,0 - (10 - (4 + 5)),-1.0,"Let a be the value of the expression 4 + 5 [[var a]]. We have [[eq a = 4 + 5]].
+Let b be the value of the expression 10 - a [[var b]]. We have [[eq b = 10 - a]].
+Let c be the value of the expression 0 - b [[var c]]. We have [[eq c = 0 - b]].
+The answer is the value of c [[answer c]].",gpt-35-turbo,azure,0,796,97,-1.0,Arithmetic,add_sub_multiple,1.6321516036987305
+DeclarativeSymPy,True,arithmetic,0 - 2 - (4 - (-5 + 11)),0.0,"Let's simplify the expression step by step:
+
+Let's start with the innermost parentheses:
+Let a be the value of -5 + 11 [[var a]]. We have [[eq a = -5 + 11]].
+
+Now let's simplify the expression inside the parentheses:
+Let b be the value of 4 - a [[var b]]. We have [[eq b = 4 - a]].
+
+Now let's substitute the value of a into b:
+Let c be the value of 4 - (-5 + 11) [[var c]]. We have [[eq c = 4 - (-5 + 11)]].
+
+Now let's substitute the value of c into the original expression:
+Let d be the value of 0 - 2 - c [[var d]]. We have [[eq d = 0 - 2 - c]].
+
+The answer is the value of d [[answer d]].",gpt-35-turbo,azure,0,799,185,0.0,Arithmetic,add_sub_multiple,4.0815269947052
+DeclarativeSymPy,True,arithmetic,Evaluate -7 + (-7 - -2) - -5 - -9.,-26.0,"Let's simplify the given expression step by step:
+
+Let's start by simplifying the expression inside the parentheses:
+Let a be the first term inside the parentheses [[var a]]. We're given [[eq a = -7]].
+Let b be the second term inside the parentheses [[var b]]. We're given [[eq b = -2]].
+Let c be the difference of a and b [[var c]]. We have [[eq c = a - b]].
+
+Now let's simplify the entire expression:
+Let d be the sum of -7 and c [[var d]]. We have [[eq d = -7 + c]].
+Let e be the sum of d, -5, and -9 [[var e]]. We have [[eq e = d - 5 - 9]].
+
+The answer is the value of e [[answer e]].",gpt-35-turbo,azure,0,801,172,2.0,Arithmetic,add_sub_multiple,2.346473455429077
+DeclarativeSymPy,True,arithmetic,Calculate (3 - (-4 - -3)) + -4.,0.0,"Let's break down the expression step by step:
+
+Step 1: Evaluate the expression inside the innermost parentheses.
+Let a be the value of -4 - -3 [[var a]]. We have [[eq a = -4 - (-3)]].
+
+Step 2: Evaluate the expression inside the outer parentheses.
+Let b be the value of 3 - a [[var b]]. We have [[eq b = 3 - a]].
+
+Step 3: Add -4 to b.
+Let c be the value of b + -4 [[var c]]. We have [[eq c = b + -4]].
+
+The answer is the value of c [[answer c]].",gpt-35-turbo,azure,0,798,137,0.0,Arithmetic,add_sub_multiple,1.9594590663909912
+DeclarativeSymPy,True,arithmetic,Calculate 1 - (4 - 8 - -8).,-3.0,"Let a be the result of the expression 4 - 8 - -8 [[var a]]. We have [[eq a = 4 - 8 - -8]].
+Let b be the result of the expression 1 - a [[var b]]. We have [[eq b = 1 - a]].
+The answer is the value of b [[answer b]].",gpt-35-turbo,azure,0,797,75,-3.0,Arithmetic,add_sub_multiple,0.8775651454925537
+DeclarativeSymPy,True,arithmetic,Calculate -8 + 3 - (1 + -4 - 0).,-5.0,"Let's break down the expression step by step:
+
+Let's start with the innermost parentheses:
+Let p be the value inside the parentheses [[var p]]. We have [[eq p = 1 + -4 - 0]].
+
+Now let's simplify the expression inside the parentheses:
+Let q be the value of 1 + -4 [[var q]]. We have [[eq q = 1 + -4]].
+
+Now let's simplify the expression q - 0:
+Let r be the value of q - 0 [[var r]]. We have [[eq r = q - 0]].
+
+Now let's substitute the values back into the original expression:
+Let a be the first addend [[var a]]. We're given [[eq a = -8]].
+Let b be the second addend [[var b]]. We're given [[eq b = 3]].
+Let c be the value of p [[var c]]. We have [[eq c = p]].
+Let d be the value of r [[var d]]. We have [[eq d = r]].
+Let s be the sum of a, b, c, and d [[var s]]. We have [[eq s = a + b - c + d]].
+
+The answer is the value of s [[answer s]].",gpt-35-turbo,azure,0,800,262,-2.0,Arithmetic,add_sub_multiple,5.390544414520264
+DeclarativeSymPy,True,arithmetic,What is 9 - 2 - 11 - (-1 - 1)?,-4.0,"
+Let a be the first number [[var a]]. We're given [[eq a = 9]].
+Let b be the second number [[var b]]. We're given [[eq b = 2]].
+Let c be the third number [[var c]]. We're given [[eq c = 11]].
+Let d be the fourth number [[var d]]. We're given [[eq d = -1]].
+Let e be the fifth number [[var e]]. We're given [[eq e = -1]].
+Let f be the result of the subtraction [[var f]]. We have [[eq f = a - b - c - (d - e)]].
+The answer is the value of f [[answer f]].",gpt-35-turbo,azure,0,801,148,-2.0,Arithmetic,add_sub_multiple,2.389453172683716
+DeclarativeSymPy,True,arithmetic,-6405 divided by -105,61.0,"Let a be the dividend [[var a]]. We're given [[eq a = -6405]].
+Let b be the divisor [[var b]]. We're given [[eq b = -105]].
+Let q be the quotient of a divided by b [[var q]]. We have [[eq q = a / b]].
+The answer is the value of q [[answer q]].",gpt-35-turbo,azure,0,791,77,61.0,Arithmetic,div,1.4348626136779785
+DeclarativeSymPy,True,arithmetic,Calculate -4450 divided by 178.,-25.0,"
+Let a be the dividend [[var a]]. We're given [[eq a = -4450]].
+Let b be the divisor [[var b]]. We're given [[eq b = 178]].
+Let q be the quotient of a divided by b [[var q]]. We have [[eq q = a / b]].
+The answer is the value of q [[answer q]].",gpt-35-turbo,azure,0,793,78,-25.0,Arithmetic,div,1.4334125518798828
+DeclarativeSymPy,True,arithmetic,263 divided by 1,263.0,"Let a be the dividend [[var a]]. We're given [[eq a = 263]].
+Let b be the divisor [[var b]]. We're given [[eq b = 1]].
+Let q be the quotient of a divided by b [[var q]]. We have [[eq q = a / b]].
+The answer is the value of q [[answer q]].",gpt-35-turbo,azure,0,790,76,263.0,Arithmetic,div,1.4208598136901855
+DeclarativeSymPy,True,arithmetic,Calculate -732 divided by 4.,-183.0,"
+Let a be the dividend [[var a]]. We're given [[eq a = -732]].
+Let b be the divisor [[var b]]. We're given [[eq b = 4]].
+Let q be the quotient of a divided by b [[var q]]. We have [[eq q = a / b]].
+The answer is the value of q [[answer q]].",gpt-35-turbo,azure,0,792,77,-183.0,Arithmetic,div,1.764861822128296
+DeclarativeSymPy,True,arithmetic,What is -44030 divided by -1190?,37.0,"
+Let a be the dividend [[var a]]. We're given [[eq a = -44030]].
+Let b be the divisor [[var b]]. We're given [[eq b = -1190]].
+Let q be the quotient of a divided by b [[var q]]. We have [[eq q = a / b]].
+The answer is the value of q [[answer q]].",gpt-35-turbo,azure,0,795,79,37.0,Arithmetic,div,2.0321693420410156
+DeclarativeSymPy,True,arithmetic,What is -546 divided by 6?,-91.0,"
+Let a be the dividend [[var a]]. We're given [[eq a = -546]].
+Let b be the divisor [[var b]]. We're given [[eq b = 6]].
+Let q be the quotient of a divided by b [[var q]]. We have [[eq q = a / b]].
+The answer is the value of q [[answer q]].",gpt-35-turbo,azure,0,793,77,-91.0,Arithmetic,div,1.7795414924621582
+DeclarativeSymPy,True,arithmetic,Calculate -102 divided by 2.,-51.0,"
+Let a be the dividend [[var a]]. We're given [[eq a = -102]].
+Let b be the divisor [[var b]]. We're given [[eq b = 2]].
+Let q be the quotient of a divided by b [[var q]]. We have [[eq q = a / b]].
+The answer is the value of q [[answer q]].",gpt-35-turbo,azure,0,792,77,-51.0,Arithmetic,div,1.4537105560302734
+DeclarativeSymPy,True,arithmetic,What is 5 times -34?,-170.0,"
+Let a be the first factor [[var a]]. We're given [[eq a = 5]].
+Let b be the second factor [[var b]]. We're given [[eq b = -34]].
+Let p be the product of a and b [[var p]]. We have [[eq p = a * b]].
+The answer is the value of p [[answer p]].",gpt-35-turbo,azure,0,792,78,-170.0,Arithmetic,mul,1.4505200386047363
+DeclarativeSymPy,True,arithmetic,What is 427 times 0?,0.0,"
+Let a be the first factor [[var a]]. We're given [[eq a = 427]].
+Let b be the second factor [[var b]]. We're given [[eq b = 0]].
+Let p be the product of a and b [[var p]]. We have [[eq p = a * b]].
+The answer is the value of p [[answer p]].
+",gpt-35-turbo,azure,0,792,79,0.0,Arithmetic,mul,1.6140427589416504
+DeclarativeSymPy,True,arithmetic,What is 1247 times 0.5?,623.5,"
+Let a be the first factor [[var a]]. We're given [[eq a = 1247]].
+Let b be the second factor [[var b]]. We're given [[eq b = 0.5]].
+Let p be the product of a and b [[var p]]. We have [[eq p = a * b]].
+The answer is the value of p [[answer p]].",gpt-35-turbo,azure,0,795,81,623.5,Arithmetic,mul,1.409606695175171
+DeclarativeSymPy,True,arithmetic,Work out 0 * -3.4.,0.0,"
+Let a be the first factor [[var a]]. We're given [[eq a = 0]].
+Let b be the second factor [[var b]]. We're given [[eq b = -3.4]].
+Let p be the product of a and b [[var p]]. We have [[eq p = a * b]].
+The answer is the value of p [[answer p]].
+",gpt-35-turbo,azure,0,794,81,0.0,Arithmetic,mul,1.513657808303833
+DeclarativeSymPy,True,arithmetic,-2167 times 3,-6501.0,"Let a be the first factor [[var a]]. We're given [[eq a = -2167]].
+Let b be the second factor [[var b]]. We're given [[eq b = 3]].
+Let p be the product of a and b [[var p]]. We have [[eq p = a * b]].
+The answer is the value of p [[answer p]].",gpt-35-turbo,azure,0,790,78,-6501.0,Arithmetic,mul,1.116008996963501
+DeclarativeSymPy,True,arithmetic,-45 * 66,-2970.0,"Let a be the first factor [[var a]]. We're given [[eq a = -45]].
+Let b be the second factor [[var b]]. We're given [[eq b = 66]].
+Let p be the product of a and b [[var p]]. We have [[eq p = a * b]].
+The answer is the value of p [[answer p]].",gpt-35-turbo,azure,0,789,77,-2970.0,Arithmetic,mul,1.3731772899627686
+DeclarativeSymPy,True,arithmetic,What is the product of 0.3 and -81?,-24.3,"
+Let a be the first factor [[var a]]. We're given [[eq a = 0.3]].
+Let b be the second factor [[var b]]. We're given [[eq b = -81]].
+Let p be the product of a and b [[var p]]. We have [[eq p = a * b]].
+The answer is the value of p [[answer p]].",gpt-35-turbo,azure,0,797,80,-24.3,Arithmetic,mul,1.3930506706237793
+DeclarativeSymPy,True,arithmetic,Evaluate -3*(-3)/(-27)*-15.,5.0,"Let a be the value of -3 [[var a]]. We're given [[eq a = -3]].
+Let b be the value of -27 [[var b]]. We're given [[eq b = -27]].
+Let c be the value of -15 [[var c]]. We're given [[eq c = -15]].
+Let x be the result of the expression -3*(-3)/(-27)*-15 [[var x]]. We have [[eq x = a * (a / b) * c]].
+The answer is the value of x [[answer x]].",gpt-35-turbo,azure,0,796,119,5.0,Arithmetic,mul_div_multiple,2.6165497303009033
+DeclarativeSymPy,True,arithmetic,What is (2/16*-4)/((-2)/(-8))?,-0.0078125,"Let a be the numerator of the first fraction [[var a]]. We're given [[eq a = 2]].
+Let b be the denominator of the first fraction [[var b]]. We're given [[eq b = 16]].
+Let c be the numerator of the second fraction [[var c]]. We're given [[eq c = -4]].
+Let d be the numerator of the second fraction [[var d]]. We're given [[eq d = -2]].
+Let e be the denominator of the second fraction [[var e]]. We're given [[eq e = -8]].
+Let f be the value of the first fraction [[var f]]. We have [[eq f = a / b]].
+Let g be the value of the second fraction [[var g]]. We have [[eq g = c / (d / e)]].
+Let h be the value of the expression [[var h]]. We have [[eq h = f / g]].
+The answer is the value of h [[answer h]].",gpt-35-turbo,azure,0,799,206,-2.0,Arithmetic,mul_div_multiple,4.199784994125366
+DeclarativeSymPy,True,arithmetic,(-47)/(-188)*(-24)/2,-3.0,"Let a be the first fraction numerator [[var a]]. We're given [[eq a = -47]].
+Let b be the first fraction denominator [[var b]]. We're given [[eq b = -188]].
+Let c be the second fraction numerator [[var c]]. We're given [[eq c = -24]].
+Let d be the second fraction denominator [[var d]]. We're given [[eq d = 2]].
+Let e be the result of the division of the two fractions [[var e]]. We have [[eq e = (a / b) * (c / d)]].
+The answer is the value of e [[answer e]].",gpt-35-turbo,azure,0,794,134,-3.0,Arithmetic,mul_div_multiple,2.0721240043640137
+DeclarativeSymPy,True,arithmetic,Calculate 1/(-12)*-4*-15.,-5.0,"Let a be the numerator of the fraction [[var a]]. We're given [[eq a = 1]].
+Let b be the denominator of the fraction [[var b]]. We're given [[eq b = -12]].
+Let c be the first factor [[var c]]. We're given [[eq c = -4]].
+Let d be the second factor [[var d]]. We're given [[eq d = -15]].
+Let p be the product of a, b, c, and d [[var p]]. We have [[eq p = (a / b) * c * d]].
+The answer is the value of p [[answer p]].",gpt-35-turbo,azure,0,796,134,-5.0,Arithmetic,mul_div_multiple,2.0161848068237305
+DeclarativeSymPy,True,arithmetic,(-3)/((-18)/4)*-3,-2.0,"Let's break down the expression step by step:
+
+Step 1: Evaluate (-18)/4
+Let a be the numerator [[var a]]. We're given [[eq a = -18]].
+Let b be the denominator [[var b]]. We're given [[eq b = 4]].
+Let c be the division of a by b [[var c]]. We have [[eq c = a / b]].
+
+Step 2: Evaluate (-3)/c
+Let d be the numerator [[var d]]. We're given [[eq d = -3]].
+Let e be the division of d by c [[var e]]. We have [[eq e = d / c]].
+
+Step 3: Evaluate e * -3
+Let f be the first factor [[var f]]. We're given [[eq f = e]].
+Let g be the second factor [[var g]]. We're given [[eq g = -3]].
+Let h be the product of f and g [[var h]]. We have [[eq h = f * g]].
+
+The answer is the value of h [[answer h]].",gpt-35-turbo,azure,0,794,224,-2.0,Arithmetic,mul_div_multiple,4.6389000415802
+DeclarativeSymPy,True,arithmetic,What is -1*(-6)/(-12)*2?,-1.0,"
+Let a be the first factor [[var a]]. We're given [[eq a = -1]].
+Let b be the second factor [[var b]]. We're given [[eq b = -6]].
+Let c be the third factor [[var c]]. We're given [[eq c = -12]].
+Let d be the fourth factor [[var d]]. We're given [[eq d = 2]].
+Let p be the product of a, b, c, and d [[var p]]. We have [[eq p = a * b / c * d]].
+The answer is the value of p [[answer p]].",gpt-35-turbo,azure,0,796,129,-1.0,Arithmetic,mul_div_multiple,2.743161916732788
+DeclarativeSymPy,True,arithmetic,Evaluate (-1)/((-8)/(48/(-3))).,-2.0,"Let's break down the expression step by step:
+
+Step 1: Evaluate the expression inside the innermost parentheses.
+Let a be the value of 48 divided by -3 [[var a]]. We have [[eq a = 48 / (-3)]].
+
+Step 2: Evaluate the expression inside the next set of parentheses.
+Let b be the value of -8 divided by a [[var b]]. We have [[eq b = -8 / a]].
+
+Step 3: Evaluate the expression inside the outermost parentheses.
+Let c be the value of -1 divided by b [[var c]]. We have [[eq c = -1 / b]].
+
+The answer is the value of c [[answer c]].",gpt-35-turbo,azure,0,796,145,-2.0,Arithmetic,mul_div_multiple,2.3148751258850098
+DeclarativeSymPy,True,arithmetic,How many millilitres are there in 910.4399 litres?,910439.9,"
+Let l be the quantity in litres [[var l]]. We're given [[eq l = 910.4399]].
+Let m be the quantity in millilitres [[var m]]. We have [[eq m = l * 1000]].
+The answer is the value of m [[answer m]].
+",gpt-35-turbo,azure,0,799,64,910439.9,Arithmetic,conversion,1.241739273071289
+DeclarativeSymPy,True,arithmetic,What is fifty-five halves of a kilometer in meters?,27500.0,"
+Let d be the distance in kilometers [[var d]]. We're given [[eq d = 55/2]].
+Let m be the distance in meters [[var m]]. We have [[eq m = d * 1000]].
+The answer is the value of m [[answer m]].",gpt-35-turbo,azure,0,796,60,27500.0,Arithmetic,conversion,1.1978728771209717
+DeclarativeSymPy,True,arithmetic,What is 1.946047l in millilitres?,1946.047,"
+Let v be the volume in liters [[var v]]. We're given [[eq v = 1.946047]].
+Let m be the volume in milliliters [[var m]]. We have [[eq m = v * 1000]].
+The answer is the value of m [[answer m]].",gpt-35-turbo,azure,0,797,63,1946.047,Arithmetic,conversion,1.6004142761230469
+DeclarativeSymPy,True,arithmetic,What is 0.929527 centuries in millennia?,0.0929527,"
+Let c be the number of centuries [[var c]]. We're given [[eq c = 0.929527]].
+Let m be the number of millennia [[var m]]. We have [[eq m = c / 10]].
+The answer is the value of m [[answer m]].",gpt-35-turbo,azure,0,795,60,0.0929527,Arithmetic,conversion,1.251485824584961
+DeclarativeSymPy,True,arithmetic,How many millilitres are there in one twentieth of a litre?,50.0,"
+Let l be the quantity in litres [[var l]]. We're given [[eq l = 1/20]].
+Let m be the quantity in millilitres [[var m]]. We know that 1 litre is equal to 1000 millilitres, so [[eq m = l * 1000]].
+The answer is the value of m [[answer m]].",gpt-35-turbo,azure,0,798,77,50.0,Arithmetic,conversion,1.0418200492858887
+DeclarativeSymPy,True,arithmetic,What is one tenth of a milligram in nanograms?,100000.0,"
+Let m be the quantity in milligrams [[var m]]. We're given [[eq m = 1/10]].
+Let n be the quantity in nanograms [[var n]]. We have [[eq n = m * 1000000]].
+The answer is the value of n [[answer n]].",gpt-35-turbo,azure,0,796,63,100000.0,Arithmetic,conversion,1.186396598815918
+DeclarativeSymPy,True,arithmetic,What is 2/125 of a meter in millimeters?,,"
+Let m be the length in meters [[var m]]. We're given [[eq m = 2/125]].
+Let mm be the length in millimeters [[var mm]]. We have [[eq mm = m * 1000]].
+The answer is the value of mm [[answer mm]].",gpt-35-turbo,azure,0,797,61,16.0,Arithmetic,conversion,0.8718822002410889
+DeclarativeSymPy,True,arithmetic,How many minutes are there between 2:12 PM and 3:43 PM?,91.0,"
+Let t_1 be the start time in minutes [[var t_1]]. We're given [[eq t_1 = 2 * 60 + 12]] (since 2:12 PM is 2 hours and 12 minutes from noon).
+Let t_2 be the end time in minutes [[var t_2]]. We're given [[eq t_2 = 3 * 60 + 43]] (since 3:43 PM is 3 hours and 43 minutes from noon).
+Let d be the difference in minutes between t_1 and t_2 [[var d]]. We have [[eq d = t_2 - t_1]].
+The answer is the value of d [[answer d]].
+",gpt-35-turbo,azure,0,802,151,91.0,Arithmetic,time,2.2733185291290283
+DeclarativeSymPy,True,arithmetic,How many minutes are there between 10:12 PM and 5:36 AM?,444.0,"
+Let t_1 be the start time in minutes [[var t_1]]. We're given [[eq t_1 = 22 * 60 + 12]] (since 10:12 PM is 22 hours and 12 minutes from midnight).
+Let t_2 be the end time in minutes [[var t_2]]. We're given [[eq t_2 = 5 * 60 + 36]] (since 5:36 AM is 5 hours and 36 minutes from midnight).
+Let d be the difference in minutes between t_1 and t_2 [[var d]]. We have [[eq d = (t_2 + 24 * 60 - t_1) % (24 * 60)]].
+The answer is the value of d [[answer d]].
+",gpt-35-turbo,azure,0,802,166,444.0,Arithmetic,time,3.847409963607788
+DeclarativeSymPy,True,arithmetic,How many minutes are there between 12:25 AM and 7:35 AM?,-290.0,"
+Let t_1 be the start time in minutes [[var t_1]]. We're given [[eq t_1 = 12 * 60 + 25]] (since 12:25 AM is 12 hours and 25 minutes from midnight).
+Let t_2 be the end time in minutes [[var t_2]]. We're given [[eq t_2 = 7 * 60 + 35]] (since 7:35 AM is 7 hours and 35 minutes from midnight).
+Let d be the difference in minutes between t_1 and t_2 [[var d]]. We have [[eq d = t_2 - t_1]].
+The answer is the value of d [[answer d]].
+",gpt-35-turbo,azure,0,802,151,430.0,Arithmetic,time,2.2944226264953613
+DeclarativeSymPy,True,arithmetic,How many minutes are there between 11:23 AM and 12:03 PM?,40.0,"
+Let t_1 be the start time in minutes [[var t_1]]. We're given [[eq t_1 = 11 * 60 + 23]] (since 11:23 AM is 11 hours and 23 minutes from midnight).
+Let t_2 be the end time in minutes [[var t_2]]. We're given [[eq t_2 = 12 * 60 + 3]] (since 12:03 PM is 12 hours and 3 minutes from midnight).
+Let d be the difference in minutes between t_1 and t_2 [[var d]]. We have [[eq d = t_2 - t_1]].
+The answer is the value of d [[answer d]].
+",gpt-35-turbo,azure,0,802,151,40.0,Arithmetic,time,2.230151653289795
+DeclarativeSymPy,True,arithmetic,How many minutes are there between 12:40 AM and 3:18 AM?,-562.0,"
+Let t_1 be the start time in minutes [[var t_1]]. We're given [[eq t_1 = 12 * 60 + 40]] (since 12:40 AM is 12 hours and 40 minutes from midnight).
+Let t_2 be the end time in minutes [[var t_2]]. We're given [[eq t_2 = 3 * 60 + 18]] (since 3:18 AM is 3 hours and 18 minutes from midnight).
+Let d be the difference in minutes between t_1 and t_2 [[var d]]. We have [[eq d = t_2 - t_1]].
+The answer is the value of d [[answer d]].
+",gpt-35-turbo,azure,0,802,151,158.0,Arithmetic,time,2.5840601921081543
+DeclarativeSymPy,True,arithmetic,How many minutes are there between 5:28 PM and 6:20 PM?,52.0,"
+Let t_1 be the start time in minutes [[var t_1]]. We're given [[eq t_1 = 17 * 60 + 28]] (since 5:28 PM is 17 hours and 28 minutes from midnight).
+Let t_2 be the end time in minutes [[var t_2]]. We're given [[eq t_2 = 18 * 60 + 20]] (since 6:20 PM is 18 hours and 20 minutes from midnight).
+Let d be the difference in minutes between t_1 and t_2 [[var d]]. We have [[eq d = t_2 - t_1]].
+The answer is the value of d [[answer d]].
+",gpt-35-turbo,azure,0,802,151,52.0,Arithmetic,time,3.323453664779663
+DeclarativeSymPy,True,arithmetic,How many minutes are there between 11:16 PM and 10:18 AM?,-778.0,"
+Let t_1 be the start time in minutes [[var t_1]]. We're given [[eq t_1 = 23 * 60 + 16]] (since 11:16 PM is 23 hours and 16 minutes from midnight).
+Let t_2 be the end time in minutes [[var t_2]]. We're given [[eq t_2 = 10 * 60 + 18]] (since 10:18 AM is 10 hours and 18 minutes from midnight).
+Let d be the difference in minutes between t_1 and t_2 [[var d]]. We have [[eq d = t_2 - t_1]].
+The answer is the value of d [[answer d]].
+",gpt-35-turbo,azure,0,802,151,662.0,Arithmetic,time,2.9370627403259277
+DeclarativeSymPy,True,arithmetic,What is the remainder when 50 is divided by 18?,14.0,"
+Let a be the dividend [[var a]]. We're given [[eq a = 50]].
+Let b be the divisor [[var b]]. We're given [[eq b = 18]].
+Let r be the remainder when a is divided by b [[var r]]. We have [[eq r = a % b]].
+The answer is the value of r [[answer r]].",gpt-35-turbo,azure,0,797,78,14.0,Arithmetic,div_remainder,1.7510030269622803
+DeclarativeSymPy,True,arithmetic,What is the remainder when 956 is divided by 287?,95.0,"
+Let a be the dividend [[var a]]. We're given [[eq a = 956]].
+Let b be the divisor [[var b]]. We're given [[eq b = 287]].
+Let r be the remainder when a is divided by b [[var r]]. We have [[eq r = a % b]].
+The answer is the value of r [[answer r]].",gpt-35-turbo,azure,0,797,78,95.0,Arithmetic,div_remainder,1.586073875427246
+DeclarativeSymPy,True,arithmetic,What is the remainder when 2198 is divided by 44?,,"
+Let dividend be the number being divided [[var dividend]]. We're given [[eq dividend = 2198]].
+Let divisor be the number dividing the dividend [[var divisor]]. We're given [[eq divisor = 44]].
+Let remainder be the remainder when dividend is divided by divisor [[var remainder]]. We have [[eq remainder = dividend % divisor]].
+The answer is the value of remainder [[answer remainder]].",gpt-35-turbo,azure,0,798,84,42.0,Arithmetic,div_remainder,1.7277116775512695
+DeclarativeSymPy,True,arithmetic,Calculate the remainder when 1903 is divided by 212.,207.0,"
+Let a be the dividend [[var a]]. We're given [[eq a = 1903]].
+Let b be the divisor [[var b]]. We're given [[eq b = 212]].
+Let r be the remainder when a is divided by b [[var r]]. We have [[eq r = a % b]].
+The answer is the value of r [[answer r]].",gpt-35-turbo,azure,0,797,79,207.0,Arithmetic,div_remainder,2.0859148502349854
+DeclarativeSymPy,True,arithmetic,Calculate the remainder when 12707 is divided by 71.,,"
+Let dividend be the number being divided [[var dividend]]. We're given [[eq dividend = 12707]].
+Let divisor be the number dividing the dividend [[var divisor]]. We're given [[eq divisor = 71]].
+Let remainder be the remainder when dividend is divided by divisor [[var remainder]]. We have [[eq remainder = dividend % divisor]].
+The answer is the value of remainder [[answer remainder]].",gpt-35-turbo,azure,0,797,84,69.0,Arithmetic,div_remainder,1.7925386428833008
+DeclarativeSymPy,True,arithmetic,What is the remainder when 129 is divided by 61?,,"
+Let dividend be the number being divided [[var dividend]]. We're given [[eq dividend = 129]].
+Let divisor be the number dividing the dividend [[var divisor]]. We're given [[eq divisor = 61]].
+Let remainder be the remainder when dividend is divided by divisor [[var remainder]]. We have [[eq remainder = dividend % divisor]].
+The answer is the value of remainder [[answer remainder]].",gpt-35-turbo,azure,0,797,83,7.0,Arithmetic,div_remainder,1.5578854084014893
+DeclarativeSymPy,True,arithmetic,Calculate the remainder when 147 is divided by 23.,9.0,"
+Let a be the dividend [[var a]]. We're given [[eq a = 147]].
+Let b be the divisor [[var b]]. We're given [[eq b = 23]].
+Let r be the remainder when a is divided by b [[var r]]. We have [[eq r = a % b]].
+The answer is the value of r [[answer r]].",gpt-35-turbo,azure,0,796,78,9.0,Arithmetic,div_remainder,1.402292013168335
+DeclarativeSymPy,True,arithmetic,What is the highest common factor of 800 and 350?,,"
+Let a be the first number [[var a]]. We're given [[eq a = 800]].
+Let b be the second number [[var b]]. We're given [[eq b = 350]].
+Let hcf be the highest common factor of a and b [[var hcf]]. We have [[eq hcf = sympy.gcd(a, b)]].
+The answer is the value of hcf [[answer hcf]].
+",gpt-35-turbo,azure,0,797,91,50.0,Arithmetic,gcd,2.726652145385742
+DeclarativeSymPy,True,arithmetic,Calculate the highest common factor of 21342 and 12.,,"Let a be the first number [[var a]]. We're given [[eq a = 21342]].
+Let b be the second number [[var b]]. We're given [[eq b = 12]].
+Let hcf be the highest common factor of a and b [[var hcf]].
+We can calculate the highest common factor using the gcd function from the math module in Python.
+The answer is the value of hcf [[answer hcf]].
+
+Using Python code:
+```python
+import math
+
+a = 21342
+b = 12
+hcf = math.gcd(a, b)
+hcf
+```
+The highest common factor of 21342 and 12 is 6.",gpt-35-turbo,azure,0,797,144,6.0,Arithmetic,gcd,3.299628496170044
+DeclarativeSymPy,True,arithmetic,What is the greatest common factor of 48 and 1520?,,"
+Let a be the first number [[var a]]. We're given [[eq a = 48]].
+Let b be the second number [[var b]]. We're given [[eq b = 1520]].
+Let g be the greatest common factor of a and b [[var g]]. We have [[eq g = gcd(a, b)]].
+The answer is the value of g [[answer g]].
+",gpt-35-turbo,azure,0,798,84,16.0,Arithmetic,gcd,1.9712684154510498
+DeclarativeSymPy,True,arithmetic,Calculate the greatest common divisor of 1155 and 616.,,"
+Let a be the first number [[var a]]. We're given [[eq a = 1155]].
+Let b be the second number [[var b]]. We're given [[eq b = 616]].
+Let gcd be the greatest common divisor of a and b [[var gcd]]. We have [[eq gcd = sympy.gcd(a, b)]].
+The answer is the value of gcd [[answer gcd]].",gpt-35-turbo,azure,0,797,86,77.0,Arithmetic,gcd,1.6678466796875
+DeclarativeSymPy,True,arithmetic,What is the highest common factor of 32 and 55?,,"
+Let a be the first number [[var a]]. We're given [[eq a = 32]].
+Let b be the second number [[var b]]. We're given [[eq b = 55]].
+Let hcf be the highest common factor of a and b [[var hcf]]. We have [[eq hcf = sympy.gcd(a, b)]].
+The answer is the value of hcf [[answer hcf]].
+",gpt-35-turbo,azure,0,797,91,1.0,Arithmetic,gcd,1.382920265197754
+DeclarativeSymPy,True,arithmetic,What is the greatest common factor of 5037 and 69?,,"
+Let a be the first number [[var a]]. We're given [[eq a = 5037]].
+Let b be the second number [[var b]]. We're given [[eq b = 69]].
+Let g be the greatest common factor of a and b [[var g]]. We have [[eq g = gcd(a, b)]].
+The answer is the value of g [[answer g]].
+",gpt-35-turbo,azure,0,798,84,69.0,Arithmetic,gcd,1.5006532669067383
+DeclarativeSymPy,True,arithmetic,Calculate the greatest common divisor of 44 and 154.,,"
+Let a be the first number [[var a]]. We're given [[eq a = 44]].
+Let b be the second number [[var b]]. We're given [[eq b = 154]].
+Let gcd be the greatest common divisor of a and b [[var gcd]]. We have [[eq gcd = sympy.gcd(a, b)]].
+The answer is the value of gcd [[answer gcd]].",gpt-35-turbo,azure,0,796,85,22.0,Arithmetic,gcd,1.8360118865966797
+DeclarativeSymPy,True,arithmetic,Calculate the least common multiple of 24498 and 8.,,"
+Let a be the first number [[var a]]. We're given [[eq a = 24498]].
+Let b be the second number [[var b]]. We're given [[eq b = 8]].
+Let lcm be the least common multiple of a and b [[var lcm]]. We have [[eq lcm = sympy.lcm(a, b)]].
+The answer is the value of lcm [[answer lcm]].",gpt-35-turbo,azure,0,797,86,97992.0,Arithmetic,lcm,1.5742690563201904
+DeclarativeSymPy,True,arithmetic,Calculate the common denominator of 115/582 and -4/11.,,"Let a be the numerator of the first fraction [[var a]]. We're given [[eq a = 115]].
+Let b be the denominator of the first fraction [[var b]]. We're given [[eq b = 582]].
+Let c be the numerator of the second fraction [[var c]]. We're given [[eq c = -4]].
+Let d be the denominator of the second fraction [[var d]]. We're given [[eq d = 11]].
+Let lcm be the least common multiple of b and d [[var lcm]]. We have [[eq lcm = sympy.lcm(b, d)]].
+The answer is the value of lcm [[answer lcm]].",gpt-35-turbo,azure,0,799,138,6402.0,Arithmetic,lcm,2.1197073459625244
+DeclarativeSymPy,True,arithmetic,What is the least common multiple of 6728 and 40?,,"
+Let a be the first number [[var a]]. We're given [[eq a = 6728]].
+Let b be the second number [[var b]]. We're given [[eq b = 40]].
+Let lcm be the least common multiple of a and b [[var lcm]]. We have [[eq lcm = sympy.lcm(a, b)]].
+The answer is the value of lcm [[answer lcm]].",gpt-35-turbo,azure,0,798,86,33640.0,Arithmetic,lcm,1.3927366733551025
+DeclarativeSymPy,True,arithmetic,Calculate the lowest common multiple of 4 and 460.,,"
+Let a be the first number [[var a]]. We're given [[eq a = 4]].
+Let b be the second number [[var b]]. We're given [[eq b = 460]].
+Let lcm be the lowest common multiple of a and b [[var lcm]]. We have [[eq lcm = sympy.lcm(a, b)]].
+The answer is the value of lcm [[answer lcm]].",gpt-35-turbo,azure,0,796,85,460.0,Arithmetic,lcm,1.3730816841125488
+DeclarativeSymPy,True,arithmetic,What is the common denominator of -59/120 and -29/24?,,"
+Let a be the numerator of the first fraction [[var a]]. We're given [[eq a = -59]].
+Let b be the denominator of the first fraction [[var b]]. We're given [[eq b = 120]].
+Let c be the numerator of the second fraction [[var c]]. We're given [[eq c = -29]].
+Let d be the denominator of the second fraction [[var d]]. We're given [[eq d = 24]].
+Let x be the common denominator of the fractions [[var x]].
+We need to find the least common multiple (LCM) of b and d, which is x [[eq x = lcm(b, d)]].
+The answer is the value of x [[answer x]].
+",gpt-35-turbo,azure,0,800,154,120.0,Arithmetic,lcm,3.753328561782837
+DeclarativeSymPy,True,arithmetic,What is the common denominator of -93/58 and -5/58?,,"
+Let a be the numerator of the first fraction [[var a]]. We're given [[eq a = -93]].
+Let b be the denominator of the first fraction [[var b]]. We're given [[eq b = 58]].
+Let c be the numerator of the second fraction [[var c]]. We're given [[eq c = -5]].
+Let d be the denominator of the second fraction [[var d]]. We're given [[eq d = 58]].
+Let cd be the common denominator of the fractions [[var cd]]. We have [[eq cd = b * d]].
+The answer is the value of cd [[answer cd]].",gpt-35-turbo,azure,0,800,132,58.0,Arithmetic,lcm,2.2165002822875977
+DeclarativeSymPy,True,arithmetic,Calculate the smallest common multiple of 286 and 364.,,"
+Let a be the first number [[var a]]. We're given [[eq a = 286]].
+Let b be the second number [[var b]]. We're given [[eq b = 364]].
+Let lcm be the smallest common multiple of a and b [[var lcm]]. We have [[eq lcm = a * b // gcd(a, b)]], where gcd(a, b) represents the greatest common divisor of a and b.
+The answer is the value of lcm [[answer lcm]].
+",gpt-35-turbo,azure,0,796,102,4004.0,Arithmetic,lcm,1.7005853652954102
+DeclarativeSymPy,True,arithmetic,What is the units digit of 8196?,6.0,"
+Let n be the number [[var n]]. We're given [[eq n = 8196]].
+Let d be the units digit of n [[var d]]. We have [[eq d = n % 10]].
+The answer is the value of d [[answer d]].",gpt-35-turbo,azure,0,794,57,6.0,Arithmetic,place_value,1.2521040439605713
+DeclarativeSymPy,True,arithmetic,What is the tens digit of 3848?,4.0,"Let n be the number [[var n]]. We're given [[eq n = 3848]].
+Let d be the tens digit of n [[var d]]. We have [[eq d = (n // 10) % 10]].
+The answer is the value of d [[answer d]].",gpt-35-turbo,azure,0,794,61,4.0,Arithmetic,place_value,1.0410254001617432
+DeclarativeSymPy,True,arithmetic,What is the hundreds digit of 2079?,0.0,"Let n be the number [[var n]]. We're given [[eq n = 2079]].
+Let d be the hundreds digit of n [[var d]]. We have [[eq d = (n // 100) % 10]].
+The answer is the value of d [[answer d]].",gpt-35-turbo,azure,0,794,61,0.0,Arithmetic,place_value,1.3407268524169922
+DeclarativeSymPy,True,arithmetic,What is the tens digit of 1599?,9.0,"Let n be the number [[var n]]. We're given [[eq n = 1599]].
+Let d be the tens digit of n [[var d]]. We have [[eq d = (n // 10) % 10]].
+The answer is the value of d [[answer d]].",gpt-35-turbo,azure,0,794,61,9.0,Arithmetic,place_value,1.5354092121124268
+DeclarativeSymPy,True,arithmetic,What is the hundreds digit of 9001?,0.0,"
+Let n be the number [[var n]]. We're given [[eq n = 9001]].
+Let d be the hundreds digit of n [[var d]]. We have [[eq d = (n // 100) % 10]].
+The answer is the value of d [[answer d]].",gpt-35-turbo,azure,0,794,62,0.0,Arithmetic,place_value,1.0592877864837646
+DeclarativeSymPy,True,arithmetic,What is the hundreds digit of 30741?,7.0,"Let n be the number [[var n]]. We're given [[eq n = 30741]].
+Let d be the hundreds digit of n [[var d]]. We have [[eq d = (n // 100) % 10]].
+The answer is the value of d [[answer d]].",gpt-35-turbo,azure,0,794,61,7.0,Arithmetic,place_value,1.2440834045410156
+DeclarativeSymPy,True,arithmetic,What is the units digit of 72672?,2.0,"
+Let n be the number [[var n]]. We're given [[eq n = 72672]].
+Let d be the units digit of n [[var d]]. We have [[eq d = n % 10]].
+The answer is the value of d [[answer d]].",gpt-35-turbo,azure,0,794,57,2.0,Arithmetic,place_value,1.1670513153076172
+DeclarativeSymPy,True,arithmetic,Round -147720 to the nearest one thousand.,,"
+Let n be the number [[var n]]. We're given [[eq n = -147720]].
+Let r be the rounded value of n to the nearest one thousand [[var r]]. We have [[eq r = -1000 * floor(-n / 1000 + 0.5)]].
+The answer is the value of r [[answer r]].",gpt-35-turbo,azure,0,794,75,-148000.0,Arithmetic,round_number,1.2176995277404785
+DeclarativeSymPy,True,arithmetic,What is 0.57208 rounded to 1 dp?,,"
+Let x be the original number [[var x]]. We're given [[eq x = 0.57208]].
+Let y be the rounded number to 1 decimal place [[var y]]. We have [[eq y = round(x, 1)]].
+The answer is the value of y [[answer y]].",gpt-35-turbo,azure,0,797,65,0.6000000000000001,Arithmetic,round_number,1.3317177295684814
+DeclarativeSymPy,True,arithmetic,What is 0.00117 rounded to four dps?,,"
+Let x be the given number [[var x]]. We're given [[eq x = 0.00117]].
+Let r be the rounded value of x to four decimal places [[var r]]. We have [[eq r = round(x, 4)]].
+The answer is the value of r [[answer r]].",gpt-35-turbo,azure,0,796,66,0.0012,Arithmetic,round_number,1.3639204502105713
+DeclarativeSymPy,True,arithmetic,Round 13.5 to the nearest 10.,,"
+Let x be the number to be rounded [[var x]]. We're given [[eq x = 13.5]].
+Let r be the result of rounding x to the nearest 10 [[var r]]. We have [[eq r = 10 * ceiling(x / 10)]].
+The answer is the value of r [[answer r]].",gpt-35-turbo,azure,0,795,71,10.0,Arithmetic,round_number,0.9951331615447998
+DeclarativeSymPy,True,arithmetic,Round 4117.6 to the nearest 10.,,"
+Let x be the number to be rounded [[var x]]. We're given [[eq x = 4117.6]].
+Let r be the result of rounding x to the nearest 10 [[var r]]. We have [[eq r = round(x / 10) * 10]].
+The answer is the value of r [[answer r]].",gpt-35-turbo,azure,0,796,72,4120.0,Arithmetic,round_number,1.4673492908477783
+DeclarativeSymPy,True,arithmetic,What is -892.7 rounded to the nearest 10?,,"
+Let x be the number [[var x]]. We're given [[eq x = -892.7]].
+Let r be x rounded to the nearest 10 [[var r]]. We have [[eq r = -10 * floor(-x / 10 + 0.5)]].
+The answer is the value of r [[answer r]].",gpt-35-turbo,azure,0,797,71,-890.0,Arithmetic,round_number,1.2303497791290283
+DeclarativeSymPy,True,arithmetic,What is -491.93 rounded to 0 dps?,,"
+Let x be the number [[var x]]. We're given [[eq x = -491.93]].
+Let r be x rounded to 0 decimal places [[var r]]. We have [[eq r = floor(x)]].
+The answer is the value of r [[answer r]].",gpt-35-turbo,azure,0,796,59,-492.0,Arithmetic,round_number,1.0363335609436035
+DeclarativeSymPy,True,arithmetic,Convert 80319.95 kilograms to micrograms.,80319950000000.0,"
+Let k be the mass in kilograms [[var k]]. We're given [[eq k = 80319.95]].
+Let m be the mass in micrograms [[var m]]. We have [[eq m = k * 10**9]].
+The answer is the value of m [[answer m]].",gpt-35-turbo,azure,0,795,63,80319950000000.0,Arithmetic,conversion,1.2452130317687988
+DeclarativeSymPy,True,arithmetic,Calculate the smallest common multiple of 7272 and 909.,,"
+Let a be the first number [[var a]]. We're given [[eq a = 7272]].
+Let b be the second number [[var b]]. We're given [[eq b = 909]].
+Let lcm be the smallest common multiple of a and b [[var lcm]]. We have [[eq lcm = sympy.lcm(a, b)]].
+The answer is the value of lcm [[answer lcm]].",gpt-35-turbo,azure,0,797,86,7272.0,Arithmetic,lcm,1.8855488300323486

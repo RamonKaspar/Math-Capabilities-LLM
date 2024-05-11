@@ -1,0 +1,587 @@
+technique,few_shot_prompting,dataset,question,answer,reasoning,model,service,temperature,prompt_tokens,completion_tokens,correct_answer,category,subcategory,latency_in_seconds
+DeclarativeSymPy,True,wordProblems,"Paco 's Countertop Company purchased pieces of marble from a quarry . The weights of the pieces they purchased were 0.3333333333333333 ton , 0.3333333333333333 ton , and 0.08333333333333333 ton . How many tons of marble did Paco 's Countertop Company purchase in all ? ",0.75,"Let a be the weight of the first piece of marble purchased [[var a]]. We're given [[eq a = 0.3333333333333333]] ton.
+Let b be the weight of the second piece of marble purchased [[var b]]. We're given [[eq b = 0.3333333333333333]] ton.
+Let c be the weight of the third piece of marble purchased [[var c]]. We're given [[eq c = 0.08333333333333333]] ton.
+Let d be the total weight of marble purchased [[var d]]. We have [[eq d = a + b + c]].
+The answer is the value of d [[answer d]].",gpt-35-turbo,azure,0,1093,142,0.75,Word Problems,add_sub,2.7931928634643555
+DeclarativeSymPy,True,wordProblems,"While playing a video game , Paul scored 3103 points . He and his cousin together have a total of 5816 points . How many points does Paul 's cousin have ? ",2713.0,"Let a be the number of points Paul scored [[var a]]. We're given [[eq a = 3103]]. 
+Let b be the total number of points Paul and his cousin have [[var b]]. We're given [[eq b = 5816]].
+Let c be the number of points Paul's cousin has [[var c]]. We have [[eq c = b - a]].
+The answer is the value of c [[answer c]].",gpt-35-turbo,azure,0,1054,91,2713.0,Word Problems,add_sub,1.2646613121032715
+DeclarativeSymPy,True,wordProblems,A worker at a medical lab is studying blood samples . 2 samples contained a total of 7341 blood cells . The first sample contained 4221 blood cells . How many blood cells were in the second sample ? ,3120.0,"Let a be the number of blood cells in the first sample [[var a]]. We're given [[eq a = 4221]]. 
+Let b be the number of blood cells in the second sample [[var b]].
+Let c be the total number of blood cells in both samples [[var c]]. We're given [[eq c = 7341]].
+We know that the total number of blood cells is the sum of the number of blood cells in each sample, so we have the equation [[eq c = a + b]].
+The answer is the value of b [[answer b]].",gpt-35-turbo,azure,0,1061,120,3120.0,Word Problems,add_sub,2.7122349739074707
+DeclarativeSymPy,True,wordProblems,Tim has 44 books . Sam has 52 books . How many books do they have together ? ,96.0,"Let a be the number of books Tim has [[var a]]. We're given [[eq a = 44]]. 
+Let b be the number of books Sam has [[var b]]. We're given [[eq b = 52]].
+Let c be the total number of books they have together [[var c]]. We have [[eq c = a + b]].
+The answer is the value of c [[answer c]].",gpt-35-turbo,azure,0,1037,85,96.0,Word Problems,add_sub,1.5794603824615479
+DeclarativeSymPy,True,wordProblems,"A ship full of grain crashes into a coral reef . By the time the ship is fixed , 49952 tons of grain have spilled into the water . Only 918 tons of grain remain onboard . How many tons of grain did the ship originally contain ? ",50870.0,"Let a be the original amount of grain the ship contained [[var a]].
+We're given that 49952 tons of grain have spilled into the water, so the amount of grain remaining onboard is a - 49952 [[eq a - 49952 = 918]].
+We're given that the remaining amount of grain onboard is 918 tons, so we have a - 49952 = 918 [[eq a - 49952 = 918]].
+To find the original amount of grain, we solve the equation for a.
+The answer is the value of a [[answer a]].",gpt-35-turbo,azure,0,1068,121,50870.0,Word Problems,add_sub,2.5937118530273438
+DeclarativeSymPy,True,wordProblems,"Joan 's high school played 864 baseball games this year , 128 of the games were played at night . She attended 395 games . How many baseball games did Joan miss ? ",469.0,"Let a be the total number of baseball games played this year [[var a]]. We're given [[eq a = 864]]. 
+Let b be the number of games played at night [[var b]]. We're given [[eq b = 128]].
+Let c be the number of games Joan attended [[var c]]. We're given [[eq c = 395]].
+Let d be the number of games Joan missed [[var d]]. We have [[eq d = a - c]].
+The answer is the value of d [[answer d]].",gpt-35-turbo,azure,0,1054,111,469.0,Word Problems,add_sub,1.525989294052124
+DeclarativeSymPy,True,wordProblems,"Benny received 79 dollars and 9 movie tickets for his birthday . He went to a sporting goods store and bought a baseball glove , baseball , and bat . He had 32 dollars over , how much did he spent on the baseball gear ? ",47.0,"Let a be the amount of money Benny received for his birthday [[var a]]. We're given [[eq a = 79]].
+Let b be the number of movie tickets Benny received for his birthday [[var b]]. We're given [[eq b = 9]].
+Let c be the total cost of the baseball gear Benny bought [[var c]].
+Let d be the amount of money Benny had left after buying the baseball gear [[var d]]. We're given [[eq d = 32]].
+We know that the cost of the baseball gear plus the amount of money left equals the amount of money Benny received, so we have the equation [[eq c + d = a]].
+The answer is the value of c [[answer c]].
+",gpt-35-turbo,azure,0,1066,151,47.0,Word Problems,add_sub,2.230536460876465
+DeclarativeSymPy,True,wordProblems,"Kevin bought 2 watermelons . The first watermelon was 9.91 pounds , and the second watermelon was 4.11 pounds . How many pounds of watermelon did Kevin buy ? ",14.02,"Let a be the weight of the first watermelon Kevin bought [[var a]]. We're given [[eq a = 9.91]].
+Let b be the weight of the second watermelon Kevin bought [[var b]]. We're given [[eq b = 4.11]].
+Let c be the total weight of watermelons Kevin bought [[var c]]. We have [[eq c = a + b]].
+The answer is the value of c [[answer c]].",gpt-35-turbo,azure,0,1058,96,14.02,Word Problems,add_sub,1.7082083225250244
+DeclarativeSymPy,True,wordProblems,"Mary found 45 seashells , Melanie found 23 seashells , and Jason found 32 seashells on the beach . When they cleaned them , they discovered that 31 were cracked . How many seashells did they find together ? ",69.0,"Let a be the number of seashells Mary found [[var a]]. We're given [[eq a = 45]]. 
+Let b be the number of seashells Melanie found [[var b]]. We're given [[eq b = 23]].
+Let c be the number of seashells Jason found [[var c]]. We're given [[eq c = 32]].
+Let d be the number of cracked seashells [[var d]]. We're given [[eq d = 31]].
+Let e be the total number of seashells they found together [[var e]]. We have [[eq e = a + b + c - d]].
+The answer is the value of e [[answer e]].",gpt-35-turbo,azure,0,1068,146,100.0,Word Problems,add_sub,2.4430394172668457
+DeclarativeSymPy,True,wordProblems,There are 9 oak trees currently in the park . Park workers had to cut down 2 oak trees that were damaged . How many oak trees will the park have when the workers are finished ? ,7.0,"
+Let a be the number of oak trees currently in the park [[var a]]. We're given [[eq a = 9]]. 
+Let b be the number of oak trees that were cut down by the workers [[var b]]. We're given [[eq b = 2]].
+Let c be the number of oak trees the park will have when the workers are finished [[var c]]. We have [[eq c = a - b]].
+The answer is the value of c [[answer c]].",gpt-35-turbo,azure,0,1056,101,7.0,Word Problems,add_sub,1.9292211532592773
+DeclarativeSymPy,True,wordProblems,There are 9 pencils and 4 rulers in the drawer . Sally took 4 pencils out of the drawer . How many pencils are there now ? ,5.0,"Let a be the initial number of pencils in the drawer [[var a]]. We're given [[eq a = 9]].
+Let b be the number of pencils Sally took out of the drawer [[var b]]. We're given [[eq b = 4]].
+Let c be the number of pencils remaining in the drawer [[var c]]. We have [[eq c = a - b]].
+The answer is the value of c [[answer c]].",gpt-35-turbo,azure,0,1047,91,5.0,Word Problems,add_sub,1.9182283878326416
+DeclarativeSymPy,True,wordProblems,"Alyssa went to 11 soccer games this year , but missed 12 . She went to 13 games last year and plans to go to 15 games next year . How many soccer games will Alyssa go to in all ? ",51.0,"Let a be the number of soccer games Alyssa went to this year [[var a]]. We're given [[eq a = 11]].
+Let b be the number of soccer games Alyssa missed this year [[var b]]. We're given [[eq b = 12]].
+Let c be the number of soccer games Alyssa went to last year [[var c]]. We're given [[eq c = 13]].
+Let d be the number of soccer games Alyssa plans to go to next year [[var d]]. We're given [[eq d = 15]].
+Let e be the total number of soccer games Alyssa will go to in all [[var e]]. We have [[eq e = a + b + c + d]].
+The answer is the value of e [[answer e]].",gpt-35-turbo,azure,0,1064,163,39.0,Word Problems,add_sub,3.774397850036621
+DeclarativeSymPy,True,wordProblems,"Michelle began her pizza delivery route with 0.5 tank of gas in her car . When she made it back to the pizzeria , 0.16666666666666666 tank of gas was . How much gas did Michelle use ? ",0.3333333333333333,"Let a be the initial amount of gas in Michelle's car [[var a]]. We're given [[eq a = 0.5]].
+Let b be the amount of gas left in Michelle's car after the delivery [[var b]]. We're given [[eq b = 0.16666666666666666]].
+Let c be the amount of gas Michelle used for the delivery [[var c]]. We have [[eq c = a - b]].
+The answer is the value of c [[answer c]].",gpt-35-turbo,azure,0,1067,104,0.333333333333333,Word Problems,add_sub,3.0529961585998535
+DeclarativeSymPy,True,wordProblems,A restaurant served 9 hot dogs during lunch and 2 during dinner today . It served 5 of them yesterday . How many hot dogs were served today ? ,11.0,"Let a be the number of hot dogs served during lunch today [[var a]]. We're given [[eq a = 9]]. 
+Let b be the number of hot dogs served during dinner today [[var b]]. We're given [[eq b = 2]].
+Let c be the number of hot dogs served yesterday [[var c]]. We're given [[eq c = 5]].
+Let d be the total number of hot dogs served today [[var d]]. We have [[eq d = a + b]].
+The answer is the value of d [[answer d]].",gpt-35-turbo,azure,0,1049,116,11.0,Word Problems,add_sub,2.4607133865356445
+DeclarativeSymPy,True,wordProblems,A truck carrying 4.1 pounds of sand travels to a construction yard and loses 2.4 pounds of sand along the way . How much sand does the truck have when it arrives at the yard ? ,1.7,"
+Let a be the initial amount of sand in the truck [[var a]]. We're given [[eq a = 4.1]].
+Let b be the amount of sand lost during the journey [[var b]]. We're given [[eq b = 2.4]].
+Let c be the amount of sand the truck has when it arrives at the yard [[var c]].
+We have the equation [[eq c = a - b]].
+The answer is the value of c [[answer c]].",gpt-35-turbo,azure,0,1059,102,1.7000000000000002,Word Problems,add_sub,1.7779209613800049
+DeclarativeSymPy,True,wordProblems,There are 43 maple trees and 22 orange trees currently in the park . Park workers will plant maple trees today . When the workers are finished there will be 54 maple trees in the park . How many maple trees did the workers plant today ? ,11.0,"Let a be the initial number of maple trees in the park [[var a]]. We're given [[eq a = 43]].
+Let b be the initial number of orange trees in the park [[var b]]. We're given [[eq b = 22]].
+Let c be the number of maple trees planted today [[var c]].
+Let d be the final number of maple trees in the park [[var d]]. We're given [[eq d = 54]].
+We know that the final number of maple trees is the sum of the initial number of maple trees and the number of maple trees planted today, so [[eq d = a + c]].
+The answer is the value of c [[answer c]].",gpt-35-turbo,azure,0,1067,145,11.0,Word Problems,add_sub,2.690046787261963
+DeclarativeSymPy,True,wordProblems,Gordon bought 3.42 pounds of fruit for a class party . The class ate 2.2 pounds of the fruit . How much fruit is ? ,1.22,"Let a be the amount of fruit Gordon bought for the class party [[var a]]. We're given [[eq a = 3.42]] pounds.
+Let b be the amount of fruit the class ate [[var b]]. We're given [[eq b = 2.2]] pounds.
+Let c be the amount of fruit left [[var c]]. We have [[eq c = a - b]].
+The answer is the value of c [[answer c]].",gpt-35-turbo,azure,0,1048,93,1.22,Word Problems,add_sub,2.496054172515869
+DeclarativeSymPy,True,wordProblems,Joan picked 37 oranges and Sara picked 10 oranges . Alyssa picked 30 pears . How many oranges were picked in total ? ,47.0,"
+Let a be the number of oranges Joan picked [[var a]]. We're given [[eq a = 37]]. 
+Let b be the number of oranges Sara picked [[var b]]. We're given [[eq b = 10]].
+Let c be the total number of oranges picked [[var c]]. We have [[eq c = a + b]].
+The answer is the value of c [[answer c]].
+",gpt-35-turbo,azure,0,1045,85,47.0,Word Problems,add_sub,1.5479986667633057
+DeclarativeSymPy,True,wordProblems,Jason has 18 books and he has read 9 of them . Mary has 42 books . How many books do they have together ? ,60.0,"Let a be the number of books Jason has [[var a]]. We're given [[eq a = 18]].
+Let b be the number of books Jason has read [[var b]]. We're given [[eq b = 9]].
+Let c be the number of books Mary has [[var c]]. We're given [[eq c = 42]].
+Let d be the total number of books they have together [[var d]]. We have [[eq d = a + c]].
+The answer is the value of d [[answer d]].",gpt-35-turbo,azure,0,1045,110,60.0,Word Problems,add_sub,2.111142158508301
+DeclarativeSymPy,True,wordProblems,Sally had 13 peaches at her roadside fruit dish . She went to the orchard and picked peaches to stock up . There are now 55 peaches . how many did she pick ? ,42.0,"Let a be the number of peaches Sally had initially [[var a]]. We're given [[eq a = 13]]. 
+Let b be the number of peaches Sally picked from the orchard [[var b]].
+Let c be the total number of peaches Sally has now [[var c]]. We're given [[eq c = 55]].
+We know that Sally had a peaches initially, picked b peaches, and now has c peaches. Therefore, we have the equation [[eq a + b = c]].
+The answer is the value of b [[answer b]].",gpt-35-turbo,azure,0,1057,120,42.0,Word Problems,add_sub,2.0270349979400635
+DeclarativeSymPy,True,wordProblems,Sandy had 36 pennies and 31 nickels in her bank . Her dad borrowed 20 nickels from Sandy . How many nickels does she have now ? ,11.0,"Let a be the number of pennies Sandy had [[var a]]. We're given [[eq a = 36]]. 
+Let b be the number of nickels Sandy had [[var b]]. We're given [[eq b = 31]].
+Let c be the number of nickels Sandy's dad borrowed [[var c]]. We're given [[eq c = 20]].
+Let d be the number of nickels Sandy has now [[var d]]. We have [[eq d = b - c]].
+The answer is the value of d [[answer d]].",gpt-35-turbo,azure,0,1051,114,11.0,Word Problems,add_sub,1.6378929615020752
+DeclarativeSymPy,True,wordProblems,Dan 's cat had kittens and 5 had spots . He gave 7 to Tim and 4 to Jason . He now has 5 kittens . How many kittens did he have to start with ? ,16.0,"Let a be the total number of kittens Dan's cat had [[var a]].
+Let b be the number of kittens with spots [[var b]]. We're given that [[eq b = 5]].
+Let c be the number of kittens Dan gave to Tim [[var c]]. We're given that [[eq c = 7]].
+Let d be the number of kittens Dan gave to Jason [[var d]]. We're given that [[eq d = 4]].
+Let e be the number of kittens Dan has now [[var e]]. We're given that [[eq e = 5]].
+We know that the number of kittens Dan has now is equal to the total number of kittens minus the number of kittens he gave away, so we have the equation [[eq e = a - c - d]].
+We also know that the number of kittens with spots is equal to the number of kittens he has now, so we have the equation [[eq b = e]].
+Substituting the value of e from the second equation into the first equation, we have [[eq e = a - c - d]].
+The answer is the value of a [[answer a]].",gpt-35-turbo,azure,0,1058,238,16.0,Word Problems,add_sub,4.65551233291626
+DeclarativeSymPy,True,wordProblems,There are 5 scissors and 3 pencils in the drawer . Jason placed 4 scissors in the drawer . How many scissors are now there in total ? ,9.0,"Let a be the initial number of scissors in the drawer [[var a]]. We're given [[eq a = 5]].
+Let b be the initial number of pencils in the drawer [[var b]]. We're given [[eq b = 3]].
+Let c be the number of scissors Jason placed in the drawer [[var c]]. We're given [[eq c = 4]].
+Let d be the total number of scissors in the drawer now [[var d]]. We have [[eq d = a + c]].
+The answer is the value of d [[answer d]].",gpt-35-turbo,azure,0,1048,117,9.0,Word Problems,add_sub,1.908581256866455
+DeclarativeSymPy,True,wordProblems,There are 7 dogwood trees currently in the park . Park workers will plant 5 dogwood trees today and 4 dogwood trees tomorrow . It took 8 workers to finish the work . How many dogwood trees will the park have when the workers are finished ? ,16.0,"Let a be the number of dogwood trees currently in the park [[var a]]. We're given [[eq a = 7]]. 
+Let b be the number of dogwood trees planted today [[var b]]. We're given [[eq b = 5]].
+Let c be the number of dogwood trees planted tomorrow [[var c]]. We're given [[eq c = 4]].
+Let d be the total number of dogwood trees planted [[var d]]. We have [[eq d = b + c]].
+Let e be the number of dogwood trees the park will have when the workers are finished [[var e]]. We have [[eq e = a + d]].
+The answer is the value of e [[answer e]].",gpt-35-turbo,azure,0,1072,150,16.0,Word Problems,add_sub,2.515620708465576
+DeclarativeSymPy,True,wordProblems,"Jessica spent $ 10.22 on a cat toy , and a cage cost her $ 11.73 . What was the total cost of Jessica 's purchases ? ",21.95,"Let a be the cost of the cat toy [[var a]]. We're given [[eq a = 10.22]]. 
+Let b be the cost of the cage [[var b]]. We're given [[eq b = 11.73]].
+Let c be the total cost of Jessica's purchases [[var c]]. We have [[eq c = a + b]].
+The answer is the value of c [[answer c]].",gpt-35-turbo,azure,0,1051,87,21.95,Word Problems,add_sub,1.5340945720672607
+DeclarativeSymPy,True,wordProblems,Jason has 676 Pokemon cards . Alyssa bought 224 of Jason 's Pokemon cards . How many Pokemon cards does Jason have now ? ,452.0,"Let a be the number of Pokemon cards Jason had [[var a]]. We're given [[eq a = 676]]. 
+Let b be the number of Pokemon cards Alyssa bought from Jason [[var b]]. We're given [[eq b = 224]].
+Let c be the number of Pokemon cards Jason has now [[var c]]. We have [[eq c = a - b]].
+The answer is the value of c [[answer c]].",gpt-35-turbo,azure,0,1045,90,452.0,Word Problems,add_sub,2.1555333137512207
+DeclarativeSymPy,True,wordProblems,"Alyssa has 37 blue balloons , Sandy has 28 blue balloons , and Sally has 39 blue balloons . How many blue balloons do they have in all ? ",104.0,"Let a be the number of blue balloons Alyssa has [[var a]]. We're given [[eq a = 37]]. 
+Let b be the number of blue balloons Sandy has [[var b]]. We're given [[eq b = 28]].
+Let c be the number of blue balloons Sally has [[var c]]. We're given [[eq c = 39]].
+Let d be the total number of blue balloons they have in all [[var d]]. We have [[eq d = a + b + c]].
+The answer is the value of d [[answer d]].",gpt-35-turbo,azure,0,1050,117,104.0,Word Problems,add_sub,2.350886821746826
+DeclarativeSymPy,True,wordProblems,Sandy 's dog had 8 puppies and 4 had spots . She gave 4 to her friends . How many puppies does she now have ? ,4.0,"Let a be the total number of puppies Sandy's dog had [[var a]]. We're given [[eq a = 8]].
+Let b be the number of puppies with spots [[var b]]. We're given [[eq b = 4]].
+Let c be the number of puppies Sandy gave to her friends [[var c]]. We're given [[eq c = 4]].
+Let d be the number of puppies Sandy now has [[var d]]. We have [[eq d = a - c]].
+The answer is the value of d [[answer d]].",gpt-35-turbo,azure,0,1047,114,4.0,Word Problems,add_sub,1.909888505935669
+DeclarativeSymPy,True,wordProblems,Sally had 8 pennies and 7 nickels in her bank . Her dad gave her 9 nickels and her mother gave her 2 nickels . How many nickels does Sally have now ? ,18.0,"Let a be the number of nickels Sally had initially [[var a]]. We're given that she had 7 nickels, so [[eq a = 7]].
+Let b be the number of nickels Sally received from her dad [[var b]]. We're given that her dad gave her 9 nickels, so [[eq b = 9]].
+Let c be the number of nickels Sally received from her mother [[var c]]. We're given that her mother gave her 2 nickels, so [[eq c = 2]].
+Let d be the total number of nickels Sally has now [[var d]]. We have [[eq d = a + b + c]].
+The answer is the value of d [[answer d]].",gpt-35-turbo,azure,0,1059,153,18.0,Word Problems,add_sub,2.521854877471924
+DeclarativeSymPy,True,wordProblems,"Joan spent $ 15 on shorts and $ 14.82 on a jacket , and $ 12.51 on a shirt . She went to 3 shops . In total , how much money did Joan spend on clothing ? ",42.33,"Let a be the amount of money Joan spent on shorts [[var a]]. We're given [[eq a = 15]].
+Let b be the amount of money Joan spent on a jacket [[var b]]. We're given [[eq b = 14.82]].
+Let c be the amount of money Joan spent on a shirt [[var c]]. We're given [[eq c = 12.51]].
+Let d be the number of shops Joan went to [[var d]]. We're given [[eq d = 3]].
+Let e be the total amount of money Joan spent on clothing [[var e]]. We have [[eq e = a + b + c]].
+The answer is the value of e [[answer e]].",gpt-35-turbo,azure,0,1063,149,42.33,Word Problems,add_sub,2.8582119941711426
+DeclarativeSymPy,True,wordProblems,Tom found 5 seashells on the beach . he gave Jessica 2 of the seashells . How many seashells does he now have ? ,3.0,"Let a be the number of seashells Tom found on the beach [[var a]]. We're given [[eq a = 5]]. 
+Let b be the number of seashells Tom gave Jessica [[var b]]. We're given [[eq b = 2]].
+Let c be the number of seashells Tom now has [[var c]]. We have [[eq c = a - b]].
+The answer is the value of c [[answer c]].",gpt-35-turbo,azure,0,1049,94,3.0,Word Problems,add_sub,2.165492534637451
+DeclarativeSymPy,True,wordProblems,Keith picked 3 pears and Jason picked 2 pears from the pear tree . Joan picked 5 apples from the apple tree . How many pears were picked in total ? ,5.0,"
+Let a be the number of pears Keith picked [[var a]]. We're given [[eq a = 3]]. 
+Let b be the number of pears Jason picked [[var b]]. We're given [[eq b = 2]].
+Let c be the total number of pears picked [[var c]]. We have [[eq c = a + b]].
+The answer is the value of c [[answer c]].",gpt-35-turbo,azure,0,1054,87,5.0,Word Problems,add_sub,1.8234364986419678
+DeclarativeSymPy,True,wordProblems,"There were a total of 8 football games this year , 4 are played at night . Keith missed 4 of the games . How many football games did Keith go to in total ? ",4.0,"Let a be the total number of football games this year [[var a]]. We're given [[eq a = 8]]. 
+Let b be the number of football games played at night [[var b]]. We're given [[eq b = 4]].
+Let c be the number of football games Keith missed [[var c]]. We're given [[eq c = 4]].
+Let d be the number of football games Keith went to in total [[var d]]. We have [[eq d = a - c]].
+The answer is the value of d [[answer d]].",gpt-35-turbo,azure,0,1055,116,4.0,Word Problems,add_sub,2.5920398235321045
+DeclarativeSymPy,True,wordProblems," Paul had saved up 4 dollars. If he received another 11 dollars for his allowance, how many 5 dollar toys could he buy? ",3.0,"
+Let a be the amount of money Paul had saved up [[var a]]. We're given [[eq a = 4]]. 
+Let b be the amount of money Paul received for his allowance [[var b]]. We're given [[eq b = 11]].
+Let c be the cost of each toy [[var c]]. We're given that each toy costs 5 dollars, so [[eq c = 5]].
+Let d be the number of toys Paul could buy [[var d]].
+Let e be the total cost of the toys Paul could buy [[var e]]. We have [[eq e = c * d]].
+Let f be the total amount of money Paul has [[var f]]. We have [[eq f = a + b]].
+We know that the total cost of the toys Paul could buy is equal to the total amount of money he has, so [[eq e = f]].
+Substituting the values, we have [[eq 5d = 4 + 11]].
+Simplifying, we have [[eq 5d = 15]].
+Dividing both sides by 5, we have [[eq d = 15/5]].
+The answer is the value of d [[answer d]].",gpt-35-turbo,azure,0,1047,252,3.0,Word Problems,multi_step,5.110736131668091
+DeclarativeSymPy,True,wordProblems," While shopping for music online, Isabel bought 6 country albums and 2 pop albums. Each album came with a lyric sheet and had 9 songs. How many songs did Isabel buy total? ",72.0,"Let a be the number of country albums Isabel bought [[var a]]. We're given [[eq a = 6]]. 
+Let b be the number of pop albums Isabel bought [[var b]]. We're given [[eq b = 2]].
+Let c be the number of songs in each album [[var c]]. We're given [[eq c = 9]].
+Let d be the total number of songs Isabel bought [[var d]]. We have [[eq d = (a + b) * c]].
+The answer is the value of d [[answer d]].",gpt-35-turbo,azure,0,1057,115,72.0,Word Problems,multi_step,2.3520400524139404
+DeclarativeSymPy,True,wordProblems, Edward was working as a sacker at a grocery store where he made 6 dollars an hour. On Monday he worked 3 hours and on Tuesday he worked 5 hours. How much money did Edward make in those two days? ,48.0,"
+Let a be the hourly wage of Edward [[var a]]. We're given [[eq a = 6]].
+Let b be the number of hours Edward worked on Monday [[var b]]. We're given [[eq b = 3]].
+Let c be the number of hours Edward worked on Tuesday [[var c]]. We're given [[eq c = 5]].
+Let d be the total amount of money Edward made [[var d]]. We have [[eq d = (b + c) * a]].
+The answer is the value of d [[answer d]].",gpt-35-turbo,azure,0,1065,116,48.0,Word Problems,multi_step,2.4669837951660156
+DeclarativeSymPy,True,wordProblems," Kaleb had 34 books. If he sold 17 of them and used the money he earned to buy 7 new books, how many books would Kaleb have? ",24.0,"Let a be the number of books Kaleb started with [[var a]]. We're given [[eq a = 34]]. 
+Let b be the number of books Kaleb sold [[var b]]. We're given [[eq b = 17]].
+Let c be the number of books Kaleb bought [[var c]]. We're given [[eq c = 7]].
+Let d be the number of books Kaleb would have [[var d]]. We have [[eq d = a - b + c]].
+The answer is the value of d [[answer d]].",gpt-35-turbo,azure,0,1053,115,24.0,Word Problems,multi_step,2.03971004486084
+DeclarativeSymPy,True,wordProblems," Oliver made 35 dollars mowing lawns over the summer. If he spent 7 dollars buying new mower blades, how many 4 dollar games could he buy with the money he had left? ",7.0,"
+Let a be the amount of money Oliver made over the summer [[var a]]. We're given [[eq a = 35]].
+Let b be the amount of money Oliver spent on new mower blades [[var b]]. We're given [[eq b = 7]].
+Let c be the amount of money Oliver had left [[var c]]. We have [[eq c = a - b]].
+Let d be the number of 4 dollar games Oliver could buy [[var d]].
+We can calculate d by dividing c by 4: [[eq d = c / 4]].
+The answer is the value of d [[answer d]].",gpt-35-turbo,azure,0,1058,131,7.0,Word Problems,multi_step,2.4432461261749268
+DeclarativeSymPy,True,wordProblems," Mike is at the library helping put away books. There are 82 book to put away total but a librarian takes 10 of them and leaves Mike with the rest. If he can fit 9 books on a shelf, how many shelves will he need? ",,"
+Let a be the total number of books to put away [[var a]]. We're given [[eq a = 82]]. 
+Let b be the number of books the librarian took [[var b]]. We're given [[eq b = 10]].
+Let c be the number of books Mike is left with [[var c]]. We have [[eq c = a - b]].
+Let d be the number of books that can fit on a shelf [[var d]]. We're given [[eq d = 9]].
+Let e be the number of shelves Mike will need [[var e]]. We have [[eq e = ceiling(c / d)]].
+The answer is the value of e [[answer e]].",gpt-35-turbo,azure,0,1070,144,8.0,Word Problems,multi_step,3.318586587905884
+DeclarativeSymPy,True,wordProblems," There are 58 students trying out for the school's trivia teams. If 10 of them didn't get picked for the team and the rest were put into 8 groups, how many students would be in each group? ",6.0,"
+Let a be the total number of students trying out for the trivia teams [[var a]]. We're given [[eq a = 58]]. 
+Let b be the number of students who didn't get picked for the team [[var b]]. We're given [[eq b = 10]].
+Let c be the number of students who were put into groups [[var c]].
+Let d be the number of groups [[var d]]. We're given [[eq d = 8]].
+Let e be the number of students in each group [[var e]]. We have [[eq e = (a - b) / d]].
+The answer is the value of e [[answer e]].
+",gpt-35-turbo,azure,0,1063,140,6.0,Word Problems,multi_step,2.8150668144226074
+DeclarativeSymPy,True,wordProblems," Ned was trying to expand his game collection. He bought 11 games from a friend and bought 22 more at a garage sale. If 19 of the games didn't work, how many good games did he end up with? ",14.0,"Let a be the number of games Ned bought from his friend [[var a]]. We're given [[eq a = 11]]. 
+Let b be the number of games Ned bought at the garage sale [[var b]]. We're given [[eq b = 22]].
+Let c be the number of games that didn't work [[var c]]. We're given [[eq c = 19]].
+Let d be the total number of games Ned bought [[var d]]. We have [[eq d = a + b]].
+Let e be the number of good games Ned ended up with [[var e]]. We have [[eq e = d - c]].
+The answer is the value of e [[answer e]].",gpt-35-turbo,azure,0,1065,144,14.0,Word Problems,multi_step,2.425050973892212
+DeclarativeSymPy,True,wordProblems," Katie had 11 songs on her mp3 player. If she deleted 7 old songs from it and then added 24 new songs, how many songs does she have on her mp3 player? ",28.0,"
+Let a be the number of songs Katie had on her mp3 player [[var a]]. We're given [[eq a = 11]]. 
+Let b be the number of old songs Katie deleted [[var b]]. We're given [[eq b = 7]].
+Let c be the number of new songs Katie added [[var c]]. We're given [[eq c = 24]].
+Let d be the number of songs Katie has on her mp3 player now [[var d]]. We have [[eq d = a - b + c]].
+The answer is the value of d [[answer d]].",gpt-35-turbo,azure,0,1058,123,28.0,Word Problems,multi_step,2.2394866943359375
+DeclarativeSymPy,True,wordProblems," A waiter had 6 tables he was waiting on, with 3 women and 5 men at each table. How many customers total did the waiter have? ",48.0,"
+Let a be the number of tables the waiter had [[var a]]. We're given [[eq a = 6]]. 
+Let b be the number of women at each table [[var b]]. We're given [[eq b = 3]].
+Let c be the number of men at each table [[var c]]. We're given [[eq c = 5]].
+Let d be the total number of customers the waiter had [[var d]]. We have [[eq d = a * (b + c)]].
+The answer is the value of d [[answer d]].",gpt-35-turbo,azure,0,1050,117,48.0,Word Problems,multi_step,2.0686538219451904
+DeclarativeSymPy,True,wordProblems," The school cafeteria had 14 apples. If they used 13 to make lunch for the students and then bought 49 more, how many apples would they have? ",50.0,"
+Let a be the initial number of apples in the cafeteria [[var a]]. We're given [[eq a = 14]]. 
+Let b be the number of apples used to make lunch for the students [[var b]]. We're given [[eq b = 13]].
+Let c be the number of apples bought [[var c]]. We're given [[eq c = 49]].
+Let d be the final number of apples in the cafeteria [[var d]]. We have [[eq d = a - b + c]].
+The answer is the value of d [[answer d]].",gpt-35-turbo,azure,0,1051,118,50.0,Word Problems,multi_step,2.3842830657958984
+DeclarativeSymPy,True,wordProblems, Chloe was unboxing some of her old winter clothes. She found 4 boxes of clothing and inside each box there were 2 scarves and 6 mittens. How many pieces of winter clothing did Chloe have total? ,32.0,"
+Let a be the number of boxes Chloe found [[var a]]. We're given [[eq a = 4]]. 
+Let b be the number of scarves in each box [[var b]]. We're given [[eq b = 2]].
+Let c be the number of mittens in each box [[var c]]. We're given [[eq c = 6]].
+Let d be the total number of pieces of winter clothing Chloe had [[var d]]. We have [[eq d = a * (b + c)]].
+The answer is the value of d [[answer d]].",gpt-35-turbo,azure,0,1063,120,32.0,Word Problems,multi_step,2.2729833126068115
+DeclarativeSymPy,True,wordProblems, Debby bought two coloring books. One had 16 pictures and the other had 40. After one week she had already colored 33 of the pictures. How many pictures does she still have to color? ,23.0,"
+Let a be the number of pictures in the first coloring book [[var a]]. We're given [[eq a = 16]]. 
+Let b be the number of pictures in the second coloring book [[var b]]. We're given [[eq b = 40]].
+Let c be the total number of pictures in both coloring books [[var c]]. We have [[eq c = a + b]].
+Let d be the number of pictures Debby has already colored [[var d]]. We're given [[eq d = 33]].
+Let e be the number of pictures Debby still has to color [[var e]]. We have [[eq e = c - d]].
+The answer is the value of e [[answer e]].",gpt-35-turbo,azure,0,1060,148,23.0,Word Problems,multi_step,2.7858378887176514
+DeclarativeSymPy,True,wordProblems, Oliver had 35 dollars. For his birthday he got 50 more dollars but spent 84 on a new game. How much money does he have now? ,1.0,"Let a be the amount of money Oliver had initially [[var a]]. We're given [[eq a = 35]].
+Let b be the amount of money Oliver got for his birthday [[var b]]. We're given [[eq b = 50]].
+Let c be the amount of money Oliver spent on a new game [[var c]]. We're given [[eq c = 84]].
+Let d be the amount of money Oliver has now [[var d]]. We have [[eq d = a + b - c]].
+The answer is the value of d [[answer d]].",gpt-35-turbo,azure,0,1050,118,1.0,Word Problems,multi_step,2.486633539199829
+DeclarativeSymPy,True,wordProblems," Frank made 19 dollars mowing lawns over the summer. If he spent 11 dollars buying new mower blades, how many 2 dollar games could he buy with the money he had left? ",4.0,"Let a be the amount of money Frank made mowing lawns [[var a]]. We're given [[eq a = 19]].
+Let b be the amount of money Frank spent on new mower blades [[var b]]. We're given [[eq b = 11]].
+Let c be the amount of money Frank had left [[var c]]. We have [[eq c = a - b]].
+Let d be the number of 2 dollar games Frank could buy [[var d]].
+We can calculate d by dividing c by 2: [[eq d = c / 2]].
+The answer is the value of d [[answer d]].",gpt-35-turbo,azure,0,1058,131,4.0,Word Problems,multi_step,2.9512014389038086
+DeclarativeSymPy,True,wordProblems," Bianca and her mom were picking carrots from their garden. Bianca picked 26 and her mother picked 15. If only 16 of the carrots were good, how many bad carrots did they have? ",25.0,"
+Let a be the number of carrots Bianca picked [[var a]]. We're given [[eq a = 26]]. 
+Let b be the number of carrots her mother picked [[var b]]. We're given [[eq b = 15]].
+Let c be the number of good carrots [[var c]]. We're given [[eq c = 16]].
+Let d be the number of bad carrots [[var d]]. We have [[eq d = a + b - c]].
+The answer is the value of d [[answer d]].",gpt-35-turbo,azure,0,1060,110,25.0,Word Problems,multi_step,1.000067949295044
+DeclarativeSymPy,True,wordProblems," The school cafeteria had 23 apples. If they used 20 to make lunch for the students and then bought 6 more, how many apples would they have? ",9.0,"
+Let a be the initial number of apples in the cafeteria [[var a]]. We're given [[eq a = 23]]. 
+Let b be the number of apples used to make lunch [[var b]]. We're given [[eq b = 20]].
+Let c be the number of apples bought [[var c]]. We're given [[eq c = 6]].
+Let d be the number of apples the cafeteria would have after the process [[var d]]. We have [[eq d = a - b + c]].
+The answer is the value of d [[answer d]].",gpt-35-turbo,azure,0,1051,118,9.0,Word Problems,multi_step,1.8034703731536865
+DeclarativeSymPy,True,wordProblems," The school cafeteria had 17 apples. If they used 2 to make lunch for the students and then bought 23 more, how many apples would they have? ",38.0,"
+Let a be the initial number of apples in the cafeteria [[var a]]. We're given [[eq a = 17]]. 
+Let b be the number of apples used to make lunch for the students [[var b]]. We're given [[eq b = 2]].
+Let c be the number of apples bought [[var c]]. We're given [[eq c = 23]].
+Let d be the number of apples the cafeteria would have [[var d]]. We have [[eq d = a - b + c]].
+The answer is the value of d [[answer d]].",gpt-35-turbo,azure,0,1051,118,38.0,Word Problems,multi_step,1.6294093132019043
+DeclarativeSymPy,True,wordProblems," A new building needed 10 windows. The builder had already installed 6 of them. If it takes 5 hours to install each window, how long will it take him to install the rest? ",20.0,"
+Let a be the total number of windows needed [[var a]]. We're given [[eq a = 10]]. 
+Let b be the number of windows already installed [[var b]]. We're given [[eq b = 6]].
+Let c be the number of windows left to be installed [[var c]]. We have [[eq c = a - b]].
+Let d be the time it takes to install each window [[var d]]. We're given [[eq d = 5]].
+Let e be the total time it will take to install the rest of the windows [[var e]]. We have [[eq e = c * d]].
+The answer is the value of e [[answer e]].
+",gpt-35-turbo,azure,0,1058,144,20.0,Word Problems,multi_step,2.356980562210083
+DeclarativeSymPy,True,wordProblems," While on vacation, Nancy took 49 pictures at the zoo and 8 at the museum. If she later deleted 38 of the pictures, how many pictures from her vacation did she still have? ",19.0,"
+Let a be the number of pictures Nancy took at the zoo [[var a]]. We're given [[eq a = 49]]. 
+Let b be the number of pictures Nancy took at the museum [[var b]]. We're given [[eq b = 8]].
+Let c be the number of pictures Nancy still has from her vacation [[var c]]. We have [[eq c = a + b - 38]].
+The answer is the value of c [[answer c]].",gpt-35-turbo,azure,0,1058,97,19.0,Word Problems,multi_step,1.7310817241668701
+DeclarativeSymPy,True,wordProblems," There were 13 friends playing a video game online when 8 players quit. If each player left had 6 lives, how many lives did they have total? ",30.0,"
+Let a be the initial number of friends playing the video game [[var a]]. We're given [[eq a = 13]].
+Let b be the number of players who quit [[var b]]. We're given [[eq b = 8]].
+Let c be the number of players remaining [[var c]]. We have [[eq c = a - b]].
+Let d be the number of lives each player had [[var d]]. We're given [[eq d = 6]].
+Let e be the total number of lives remaining [[var e]]. We have [[eq e = c * d]].
+The answer is the value of e [[answer e]].",gpt-35-turbo,azure,0,1051,135,30.0,Word Problems,multi_step,2.305943727493286
+DeclarativeSymPy,True,wordProblems," At the arcade Edward won 9 tickets. If he spent 4 tickets on a beanie and later won 4 more tickets, how many would he have? ",9.0,"
+Let a be the number of tickets Edward won initially [[var a]]. We're given [[eq a = 9]]. 
+Let b be the number of tickets Edward spent on a beanie [[var b]]. We're given [[eq b = 4]].
+Let c be the number of tickets Edward won later [[var c]]. We're given [[eq c = 4]].
+Let d be the number of tickets Edward would have now [[var d]]. We have [[eq d = a - b + c]].
+The answer is the value of d [[answer d]].",gpt-35-turbo,azure,0,1051,118,9.0,Word Problems,multi_step,2.313387870788574
+DeclarativeSymPy,True,wordProblems," Luke had 48 dollars in January. By March he had spent 11 dollars. If he got another 21 dollars from his mom, how much money would he have? ",58.0,"
+Let a be the amount of money Luke had in January [[var a]]. We're given [[eq a = 48]]. 
+Let b be the amount of money Luke spent by March [[var b]]. We're given [[eq b = 11]].
+Let c be the amount of money Luke got from his mom [[var c]]. We're given [[eq c = 21]].
+Let d be the amount of money Luke would have [[var d]]. We have [[eq d = a - b + c]].
+The answer is the value of d [[answer d]].",gpt-35-turbo,azure,0,1053,118,58.0,Word Problems,multi_step,2.1264357566833496
+DeclarativeSymPy,True,wordProblems," Roger had 25 books. If he sold 21 of them and used the money he earned to buy 30 new books, how many books would Roger have? ",34.0,"Let a be the number of books Roger had [[var a]]. We're given [[eq a = 25]]. 
+Let b be the number of books Roger sold [[var b]]. We're given [[eq b = 21]].
+Let c be the number of books Roger bought [[var c]]. We're given [[eq c = 30]].
+Let d be the number of books Roger would have [[var d]]. We have [[eq d = a - b + c]].
+The answer is the value of d [[answer d]].",gpt-35-turbo,azure,0,1051,110,34.0,Word Problems,multi_step,2.044924259185791
+DeclarativeSymPy,True,wordProblems," At the schools book fair Sam bought 13 adventure books and 17 mystery books. If 15 of the books were used, how many new books did he buy? ",15.0,"
+Let a be the number of adventure books Sam bought [[var a]]. We're given [[eq a = 13]]. 
+Let b be the number of mystery books Sam bought [[var b]]. We're given [[eq b = 17]].
+Let c be the total number of books Sam bought [[var c]]. We have [[eq c = a + b]].
+Let d be the number of used books [[var d]]. We're given [[eq d = 15]].
+Let e be the number of new books Sam bought [[var e]]. We have [[eq e = c - d]].
+The answer is the value of e [[answer e]].",gpt-35-turbo,azure,0,1052,135,15.0,Word Problems,multi_step,2.696969985961914
+DeclarativeSymPy,True,wordProblems," Bianca earned 5 points for each bag of cans she recycled. If she had 17 bags, but didn't recycle 8 of them, how many points would she have earned? ",45.0,"
+Let a be the number of points Bianca earned for each bag of cans she recycled [[var a]]. We're given [[eq a = 5]]. 
+Let b be the total number of bags Bianca had [[var b]]. We're given [[eq b = 17]].
+Let c be the number of bags Bianca didn't recycle [[var c]]. We're given [[eq c = 8]].
+Let d be the number of bags Bianca recycled [[var d]]. We have [[eq d = b - c]].
+Let e be the total number of points Bianca earned [[var e]]. We have [[eq e = a * d]].
+The answer is the value of e [[answer e]].",gpt-35-turbo,azure,0,1056,148,45.0,Word Problems,multi_step,2.8345868587493896
+DeclarativeSymPy,True,wordProblems," At the town carnival Oliver rode the ferris wheel 5 times and the bumper cars 4 times. If each ride cost 7 tickets, how many tickets did he use? ",63.0,"
+Let a be the number of times Oliver rode the ferris wheel [[var a]]. We're given [[eq a = 5]]. 
+Let b be the number of times Oliver rode the bumper cars [[var b]]. We're given [[eq b = 4]].
+Let c be the cost of each ride in tickets [[var c]]. We're given [[eq c = 7]].
+Let d be the total number of tickets Oliver used [[var d]]. We have [[eq d = (a + b) * c]].
+The answer is the value of d [[answer d]].",gpt-35-turbo,azure,0,1054,121,63.0,Word Problems,multi_step,2.0426576137542725
+DeclarativeSymPy,True,wordProblems," Dave was helping the cafeteria workers pick up lunch trays, but he could only carry 9 trays at a time. If he had to pick up 17 trays from one table and 55 trays from another, how many trips will he make? ",8.0,"
+Let a be the number of trays Dave can carry at a time [[var a]]. We're given [[eq a = 9]]. 
+Let b be the number of trays from the first table [[var b]]. We're given [[eq b = 17]].
+Let c be the number of trays from the second table [[var c]]. We're given [[eq c = 55]].
+Let d be the total number of trips Dave will make [[var d]].
+To calculate the number of trips, we need to find the sum of the number of trays from each table and divide it by the number of trays Dave can carry at a time. We have [[eq d = (b + c) / a]].
+The answer is the value of d [[answer d]].
+",gpt-35-turbo,azure,0,1067,160,8.0,Word Problems,multi_step,2.52445387840271
+DeclarativeSymPy,True,wordProblems," A waiter at 'The Greasy Spoon' restaurant had 26 customers to wait on. During the lunch rush he added another 27 customers. If 27 of the customers didn't leave him a tip, how many customers did leave a tip? ",26.0,"Let a be the initial number of customers the waiter had to wait on [[var a]]. We're given [[eq a = 26]]. 
+Let b be the number of additional customers the waiter added during the lunch rush [[var b]]. We're given [[eq b = 27]].
+Let c be the total number of customers the waiter had to wait on after the lunch rush [[var c]]. We have [[eq c = a + b]].
+Let d be the number of customers who didn't leave a tip [[var d]]. We're given [[eq d = 27]].
+Let e be the number of customers who left a tip [[var e]]. We have [[eq e = c - d]].
+The answer is the value of e [[answer e]].",gpt-35-turbo,azure,0,1068,157,26.0,Word Problems,multi_step,3.268479347229004
+DeclarativeSymPy,True,wordProblems," A trivia team had 15 members total, but during a game 6 members didn't show up. If each member that did show up scored 3 points, how many points were scored total? ",27.0,"
+Let a be the total number of members in the trivia team [[var a]]. We're given [[eq a = 15]]. 
+Let b be the number of members who didn't show up [[var b]]. We're given [[eq b = 6]].
+Let c be the number of members who did show up [[var c]]. We have [[eq c = a - b]].
+Let d be the number of points scored by each member who showed up [[var d]]. We're given [[eq d = 3]].
+Let e be the total number of points scored [[var e]]. We have [[eq e = c * d]].
+The answer is the value of e [[answer e]].",gpt-35-turbo,azure,0,1058,145,27.0,Word Problems,multi_step,3.032668113708496
+DeclarativeSymPy,True,wordProblems, A store had 120 coloring books in stock. They ended up putting them on sale and getting rid of 39 of them. The put the ones they still had onto shelves with 9 on each shelf. How many shelves did they use? ,9.0,"
+Let a be the initial number of coloring books in stock [[var a]]. We're given [[eq a = 120]]. 
+Let b be the number of coloring books they got rid of [[var b]]. We're given [[eq b = 39]].
+Let c be the number of coloring books they still had [[var c]]. We have [[eq c = a - b]].
+Let d be the number of coloring books on each shelf [[var d]]. We're given [[eq d = 9]].
+Let e be the number of shelves they used [[var e]]. We have [[eq e = c // d]].
+The answer is the value of e [[answer e]].",gpt-35-turbo,azure,0,1067,141,9.0,Word Problems,multi_step,2.7128145694732666
+DeclarativeSymPy,True,wordProblems," Adam had 48 books. If he sold 19 of them and used the money he earned to buy 38 new books, how many books would Adam have? ",67.0,"Let a be the number of books Adam started with [[var a]]. We're given [[eq a = 48]]. 
+Let b be the number of books Adam sold [[var b]]. We're given [[eq b = 19]].
+Let c be the number of books Adam bought [[var c]]. We're given [[eq c = 38]].
+Let d be the number of books Adam has now [[var d]]. We have [[eq d = a - b + c]].
+The answer is the value of d [[answer d]].",gpt-35-turbo,azure,0,1051,111,67.0,Word Problems,multi_step,1.657956838607788
+DeclarativeSymPy,True,wordProblems," The cafeteria had 75 apples. For lunch they handed out 19 to students and decided to use the rest to make pies. If each pie takes 8 apples, how many pies could they make? ",7.0,"
+Let a be the number of apples the cafeteria had [[var a]]. We're given [[eq a = 75]]. 
+Let b be the number of apples handed out to students [[var b]]. We're given [[eq b = 19]].
+Let c be the number of apples left to make pies [[var c]]. We have [[eq c = a - b]].
+Let d be the number of pies they could make [[var d]]. We have [[eq d = c // 8]].
+The answer is the value of d [[answer d]].",gpt-35-turbo,azure,0,1059,115,7.0,Word Problems,multi_step,1.9597833156585693
+DeclarativeSymPy,True,wordProblems,The school is planning a field trip. The school has 67 classrooms. There are 66 students in each classroom in the school. If there are 6 seats on each school bus How many buses are needed to take the trip?,,"
+Let a be the number of classrooms in the school [[var a]]. We're given [[eq a = 67]]. 
+Let b be the number of students in each classroom [[var b]]. We're given [[eq b = 66]].
+Let c be the number of seats on each school bus [[var c]]. We're given [[eq c = 6]].
+Let d be the total number of students in the school [[var d]]. We have [[eq d = a * b]].
+Let e be the number of buses needed to take the trip [[var e]]. We have [[eq e = ceil(d / c)]], where ceil(x) is the ceiling function that rounds x up to the nearest integer.
+The answer is the value of e [[answer e]].",gpt-35-turbo,azure,0,1063,159,737.0,Word Problems,challenge,3.800729274749756
+DeclarativeSymPy,True,wordProblems,5 red peaches and 11 green peaches are in the basket. How many more green peaches than red peaches are in the basket?,6.0,"
+Let a be the number of red peaches in the basket [[var a]]. We're given [[eq a = 5]]. 
+Let b be the number of green peaches in the basket [[var b]]. We're given [[eq b = 11]].
+Let c be the difference between the number of green peaches and red peaches [[var c]]. We have [[eq c = b - a]].
+The answer is the value of c [[answer c]].",gpt-35-turbo,azure,0,1047,97,6.0,Word Problems,challenge,1.1975891590118408
+DeclarativeSymPy,True,wordProblems,Mom buys 51 white t - shirts. If white t - shirts can be purchased in packages of 3 How many packages will she have?,17.0,"
+Let a be the number of white t-shirts Mom buys [[var a]]. We're given [[eq a = 51]]. 
+Let b be the number of t-shirts in each package [[var b]]. We're given [[eq b = 3]].
+Let c be the number of packages Mom will have [[var c]]. We have [[eq c = a / b]].
+The answer is the value of c [[answer c]].",gpt-35-turbo,azure,0,1045,89,17.0,Word Problems,challenge,1.5471129417419434
+DeclarativeSymPy,True,wordProblems,Emily is making bead necklaces for her friends. Each necklace takes 8 beads and she has 16 beads. How many necklaces can Emily make?,2.0,"
+Let a be the number of beads Emily has [[var a]]. We're given [[eq a = 16]]. 
+Let b be the number of beads needed for each necklace [[var b]]. We're given [[eq b = 8]].
+Let c be the number of necklaces Emily can make [[var c]].
+We can calculate the number of necklaces Emily can make by dividing the total number of beads she has by the number of beads needed for each necklace. Therefore, we have the equation [[eq c = a // b]].
+The answer is the value of c [[answer c]].",gpt-35-turbo,azure,0,1047,123,2.0,Word Problems,challenge,2.2165324687957764
+DeclarativeSymPy,True,wordProblems,"7 red peaches, 71 yellow peaches and 8 green peaches are in the basket. How many more green peaches than red peaches are in the basket?",1.0,"
+Let a be the number of red peaches in the basket [[var a]]. We're given [[eq a = 7]]. 
+Let b be the number of yellow peaches in the basket [[var b]]. We're given [[eq b = 71]].
+Let c be the number of green peaches in the basket [[var c]]. We're given [[eq c = 8]].
+Let d be the difference between the number of green peaches and red peaches [[var d]]. We have [[eq d = c - a]].
+The answer is the value of d [[answer d]].
+",gpt-35-turbo,azure,0,1053,125,1.0,Word Problems,challenge,2.117856740951538
+DeclarativeSymPy,True,wordProblems,4 birds and 3 storks were sitting on the fence. 6 more storks came to join them. How many more storks than birds are sitting on the fence?,5.0,"
+Let a be the number of birds sitting on the fence [[var a]]. We're given [[eq a = 4]]. 
+Let b be the number of storks sitting on the fence [[var b]]. We're given [[eq b = 3]].
+Let c be the number of additional storks that joined them [[var c]]. We're given [[eq c = 6]].
+Let d be the total number of storks sitting on the fence now [[var d]]. We have [[eq d = b + c]].
+Let e be the difference between the number of storks and birds sitting on the fence [[var e]]. We have [[eq e = d - a]].
+The answer is the value of e [[answer e]].
+",gpt-35-turbo,azure,0,1053,154,5.0,Word Problems,challenge,4.093040943145752
+DeclarativeSymPy,True,wordProblems,Jessie weighed 114 kilograms. After she started to go jogging everyday she lost 50 kilograms in the first week and 60 kilograms in the second week. How much does she weigh now?,4.0,"
+Let a be Jessie's initial weight [[var a]]. We're given [[eq a = 114]].
+Let b be the weight Jessie lost in the first week [[var b]]. We're given [[eq b = 50]].
+Let c be the weight Jessie lost in the second week [[var c]]. We're given [[eq c = 60]].
+Let d be Jessie's current weight [[var d]]. We have [[eq d = a - b - c]].
+The answer is the value of d [[answer d]].",gpt-35-turbo,azure,0,1054,110,4.0,Word Problems,challenge,1.9299817085266113
+DeclarativeSymPy,True,wordProblems,We ordered some pizzas. Each pizza has 2 slices. If there were a total of 28 slices How many pizzas did we order?,14.0,"
+Let a be the number of pizzas we ordered [[var a]].
+Let b be the number of slices per pizza [[var b]]. We're given [[eq b = 2]].
+Let c be the total number of slices [[var c]]. We're given [[eq c = 28]].
+Let d be the total number of slices after dividing by the number of slices per pizza [[var d]]. We have [[eq d = c / b]].
+The answer is the value of d [[answer d]].
+",gpt-35-turbo,azure,0,1044,106,14.0,Word Problems,challenge,1.852372169494629
+DeclarativeSymPy,True,wordProblems,Luke played a trivia game and scored 154 points. If he gained the 11 points in each round How many rounds did he play?,14.0,"
+Let a be the number of rounds Luke played [[var a]].
+Let b be the number of points Luke gained in each round [[var b]]. We're given [[eq b = 11]].
+Let c be the total number of points Luke scored [[var c]]. We're given [[eq c = 154]].
+We know that the total number of points scored is equal to the number of rounds multiplied by the points gained in each round. Therefore, we have the equation [[eq c = a * b]].
+The answer is the value of a [[answer a]].",gpt-35-turbo,azure,0,1044,118,14.0,Word Problems,challenge,1.7407283782958984
+DeclarativeSymPy,True,wordProblems,In Haley's class some boys love to play marbles. If Haley has 10 marbles and she gave 5 marbles to each boy How many boys did she give the marbles to?,2.0,"
+Let a be the number of marbles Haley started with [[var a]]. We're given [[eq a = 10]]. 
+Let b be the number of marbles Haley gave to each boy [[var b]]. We're given [[eq b = 5]].
+Let c be the number of boys Haley gave marbles to [[var c]]. We have [[eq c = a / b]].
+The answer is the value of c [[answer c]].",gpt-35-turbo,azure,0,1056,93,2.0,Word Problems,challenge,1.7490675449371338
+DeclarativeSymPy,True,wordProblems,Paco had 22 sweet cookies and 75 salty cookies. He ate 15 sweet cookies and 54 salty cookies. How many sweet cookies did Paco have left?,7.0,"
+Let a be the number of sweet cookies Paco had [[var a]]. We're given [[eq a = 22]]. 
+Let b be the number of salty cookies Paco had [[var b]]. We're given [[eq b = 75]].
+Let c be the number of sweet cookies Paco ate [[var c]]. We're given [[eq c = 15]].
+Let d be the number of salty cookies Paco ate [[var d]]. We're given [[eq d = 54]].
+Let e be the number of sweet cookies Paco has left [[var e]]. We have [[eq e = a - c]].
+The answer is the value of e [[answer e]].",gpt-35-turbo,azure,0,1051,143,7.0,Word Problems,challenge,3.4135706424713135
+DeclarativeSymPy,True,wordProblems,Randy has some blocks. He uses 52 blocks to build a tower. If there are 38 blocks left How many blocks did he have at the start?,90.0,"Let a be the number of blocks Randy had at the start [[var a]].
+Let b be the number of blocks Randy used to build the tower [[var b]]. We're given [[eq b = 52]].
+Let c be the number of blocks Randy has left [[var c]]. We're given [[eq c = 38]].
+We know that Randy used b blocks and has c blocks left, so the total number of blocks Randy had at the start is the sum of the blocks used and the blocks left: [[eq a = b + c]].
+The answer is the value of a [[answer a]].",gpt-35-turbo,azure,0,1048,126,90.0,Word Problems,challenge,2.243103265762329
+DeclarativeSymPy,True,wordProblems,The Ferris wheel in paradise park has 6 seats. Each seat can hold 14 people. If there are 16 people on the wheel right now How many more people can join the wheel?,68.0,"
+Let a be the number of seats on the Ferris wheel [[var a]]. We're given [[eq a = 6]]. 
+Let b be the number of people each seat can hold [[var b]]. We're given [[eq b = 14]].
+Let c be the number of people currently on the Ferris wheel [[var c]]. We're given [[eq c = 16]].
+Let d be the total number of people the Ferris wheel can hold [[var d]]. We have [[eq d = a * b]].
+Let e be the number of more people that can join the Ferris wheel [[var e]]. We have [[eq e = d - c]].
+The answer is the value of e [[answer e]].",gpt-35-turbo,azure,0,1056,152,68.0,Word Problems,challenge,2.4242372512817383
+DeclarativeSymPy,True,wordProblems,Every day Ryan spends 6 hours on learning english and 5 hours on learning chinese. If he learns for 2 days How many hours does he spend on learning english in all?,12.0,"
+Let a be the number of hours Ryan spends on learning English each day [[var a]]. We're given [[eq a = 6]]. 
+Let b be the number of days Ryan learns [[var b]]. We're given [[eq b = 2]].
+Let c be the total number of hours Ryan spends on learning English [[var c]]. We have [[eq c = a * b]].
+The answer is the value of c [[answer c]].",gpt-35-turbo,azure,0,1053,93,12.0,Word Problems,challenge,1.5041766166687012
+DeclarativeSymPy,True,wordProblems,Paul got a box of 457 erasers and 617 crayons for his birthday. At the end of the school year he only had 523 crayons left while not having lost a single eraser. How many more crayons than erasers did he have left?,66.0,"
+Let a be the number of erasers Paul got for his birthday [[var a]]. We're given [[eq a = 457]]. 
+Let b be the number of crayons Paul got for his birthday [[var b]]. We're given [[eq b = 617]].
+Let c be the number of crayons Paul had left at the end of the school year [[var c]]. We're given [[eq c = 523]].
+Let d be the number of erasers Paul had left at the end of the school year [[var d]]. We're given that he didn't lose any erasers, so [[eq d = a]].
+Let e be the difference between the number of crayons and erasers Paul had left [[var e]]. We have [[eq e = c - d]].
+The answer is the value of e [[answer e]].
+",gpt-35-turbo,azure,0,1071,176,66.0,Word Problems,challenge,3.8253612518310547
+DeclarativeSymPy,True,wordProblems,Emily is making bead necklaces for her friends where each necklace takes 5 beads. She made 4 necklaces. How many beads did Emily have?,20.0,"
+Let a be the number of beads Emily had [[var a]].
+Let b be the number of necklaces Emily made [[var b]]. We're given [[eq b = 4]].
+Let c be the number of beads required for each necklace [[var c]]. We're given [[eq c = 5]].
+Let d be the total number of beads Emily used [[var d]]. We have [[eq d = b * c]].
+The answer is the value of d [[answer d]].
+",gpt-35-turbo,azure,0,1047,103,20.0,Word Problems,challenge,1.8739240169525146
+DeclarativeSymPy,True,wordProblems,A grocery store had 4 bottles of diet soda. If they had 79 more bottles of regular soda than diet soda How many bottles of regular soda did they have?,83.0,"Let a be the number of bottles of diet soda [[var a]]. We're given [[eq a = 4]].
+Let b be the number of bottles of regular soda [[var b]].
+We're given that the number of bottles of regular soda is 79 more than the number of bottles of diet soda, so we have the equation [[eq b = a + 79]].
+The answer is the value of b [[answer b]].",gpt-35-turbo,azure,0,1050,90,83.0,Word Problems,challenge,1.4343316555023193
+DeclarativeSymPy,True,wordProblems,There are 18 bananas in Philip's banana collection. If the bananas are organized into groups of size 2 How many groups are there?,9.0,"
+Let a be the number of bananas in Philip's collection [[var a]]. We're given [[eq a = 18]]. 
+Let b be the size of each group [[var b]]. We're given [[eq b = 2]].
+Let c be the number of groups [[var c]]. We have [[eq c = a / b]].
+The answer is the value of c [[answer c]].",gpt-35-turbo,azure,0,1044,83,9.0,Word Problems,challenge,1.6265034675598145
+DeclarativeSymPy,True,wordProblems,Randy has 90 blocks. He uses 89 blocks to build a house and 63 blocks to build a tower. How many more blocks did he use to build the house than he did to build the tower?,26.0,"
+Let a be the number of blocks Randy started with [[var a]]. We're given [[eq a = 90]]. 
+Let b be the number of blocks Randy used to build the house [[var b]]. We're given [[eq b = 89]].
+Let c be the number of blocks Randy used to build the tower [[var c]]. We're given [[eq c = 63]].
+Let d be the difference in the number of blocks used to build the house and the tower [[var d]]. We have [[eq d = b - c]].
+The answer is the value of d [[answer d]].
+",gpt-35-turbo,azure,0,1059,127,26.0,Word Problems,challenge,2.0894863605499268
+DeclarativeSymPy,True,wordProblems,For the walls of the house he would use 13 large planks of wood. If each plank of wood needs 17 pieces of nails to be secured and in addition 8 nails are needed for some smaller planks. How many nails does John need for the house wall?,229.0,"Let a be the number of large planks of wood John would use [[var a]]. We're given [[eq a = 13]].
+Let b be the number of nails needed for each large plank of wood [[var b]]. We're given [[eq b = 17]].
+Let c be the number of nails needed for smaller planks [[var c]]. We're given [[eq c = 8]].
+Let d be the total number of nails John needs for the house wall [[var d]]. We have [[eq d = a * b + c]].
+The answer is the value of d [[answer d]].",gpt-35-turbo,azure,0,1072,127,229.0,Word Problems,challenge,3.3082022666931152
+DeclarativeSymPy,True,wordProblems,Emily is making bead necklaces for her friends. She made 11 necklaces and each necklace takes 28 beads. How many beads did Emily have?,308.0,"
+Let a be the number of necklaces Emily made [[var a]]. We're given [[eq a = 11]]. 
+Let b be the number of beads each necklace takes [[var b]]. We're given [[eq b = 28]].
+Let c be the total number of beads Emily had [[var c]]. We have [[eq c = a * b]].
+The answer is the value of c [[answer c]].",gpt-35-turbo,azure,0,1047,87,308.0,Word Problems,challenge,1.8649349212646484
+DeclarativeSymPy,True,wordProblems,Baker made 110 cakes. He sold 75 of them. Then he made 76 more cakes. How many cakes would baker still have?,111.0,"
+Let a be the number of cakes Baker made initially [[var a]]. We're given [[eq a = 110]]. 
+Let b be the number of cakes Baker sold [[var b]]. We're given [[eq b = 75]].
+Let c be the number of cakes Baker made after selling [[var c]]. We're given [[eq c = 76]].
+Let d be the number of cakes Baker would still have [[var d]]. We have [[eq d = a - b + c]].
+The answer is the value of d [[answer d]].",gpt-35-turbo,azure,0,1045,115,111.0,Word Problems,challenge,2.2532410621643066
+DeclarativeSymPy,True,wordProblems,Josh had some marbles in his collection. He lost 21 marbles. If he has 12 marbles now How many marbles did he have in his collection?,33.0,"Let a be the number of marbles Josh had in his collection [[var a]].
+Let b be the number of marbles Josh lost [[var b]]. We're given [[eq b = 21]].
+Let c be the number of marbles Josh has now [[var c]]. We're given [[eq c = 12]].
+We have the equation [[eq c = a - b]].
+Substituting the given values, we have [[eq 12 = a - 21]].
+To find the value of a, we can rearrange the equation to solve for a: [[eq a = 12 + 21]].
+The answer is the value of a [[answer a]].",gpt-35-turbo,azure,0,1051,142,33.0,Word Problems,challenge,2.1994564533233643
+DeclarativeSymPy,True,wordProblems,Baker made 157 cakes and 169 pastries. If he sold 158 cakes and 147 pastries How many more cakes than pastries did baker sell?,11.0,"
+Let a be the number of cakes Baker made [[var a]]. We're given [[eq a = 157]]. 
+Let b be the number of pastries Baker made [[var b]]. We're given [[eq b = 169]].
+Let c be the number of cakes Baker sold [[var c]]. We're given [[eq c = 158]].
+Let d be the number of pastries Baker sold [[var d]]. We're given [[eq d = 147]].
+Let e be the difference between the number of cakes and pastries Baker sold [[var e]]. We have [[eq e = c - d]].
+The answer is the value of e [[answer e]].
+",gpt-35-turbo,azure,0,1049,141,11.0,Word Problems,challenge,2.640458345413208
+DeclarativeSymPy,True,wordProblems,Faye was placing her pencils into rows with 5 pencils in each row. If she had 35 pencils and 7 crayons How many rows could she make?,,"
+Let a be the number of pencils Faye had [[var a]]. We're given [[eq a = 35]]. 
+Let b be the number of pencils in each row [[var b]]. We're given [[eq b = 5]].
+Let c be the number of rows Faye could make [[var c]].
+We can calculate the total number of pencils used in the rows by multiplying the number of pencils in each row by the number of rows: [[eq b * c]].
+We know that the total number of pencils used in the rows plus the number of crayons is equal to the total number of pencils Faye had: [[eq b * c + 7 = a]].
+We can substitute the value of a into the equation: [[eq b * c + 7 = 35]].
+Simplifying the equation, we have [[eq b * c = 28]].
+The answer is the value of c [[answer c]].
+",gpt-35-turbo,azure,0,1050,197,7.0,Word Problems,challenge,3.489929676055908
+DeclarativeSymPy,True,wordProblems,Rachel's tree had 4 apples initially. She picked some apples and now there are 2 apples left on the tree. How many apples did rachel pick?,2.0,"
+Let a be the number of apples Rachel initially had on the tree [[var a]]. We're given [[eq a = 4]]. 
+Let b be the number of apples Rachel picked [[var b]].
+Let c be the number of apples left on the tree now [[var c]]. We have [[eq c = a - b]]. We're given that [[eq c = 2]].
+The answer is the value of b [[answer b]].",gpt-35-turbo,azure,0,1049,92,2.0,Word Problems,challenge,1.6400973796844482
+DeclarativeSymPy,True,wordProblems,If the cave is 919 feet deep and they need to travel 1307 feet How far is the end of the cave?,2226.0,"Let a be the depth of the cave [[var a]]. We're given [[eq a = 919]].
+Let b be the distance they need to travel [[var b]]. We're given [[eq b = 1307]].
+Let c be the distance to the end of the cave [[var c]]. We have [[eq c = a + b]].
+The answer is the value of c [[answer c]].",gpt-35-turbo,azure,0,1042,85,2226.0,Word Problems,challenge,1.2598555088043213
+DeclarativeSymPy,True,wordProblems,"7 red peaches, 15 yellow peaches and 8 green peaches are in the basket. How many peaches are in the basket?",30.0,"
+Let a be the number of red peaches in the basket [[var a]]. We're given [[eq a = 7]]. 
+Let b be the number of yellow peaches in the basket [[var b]]. We're given [[eq b = 15]].
+Let c be the number of green peaches in the basket [[var c]]. We're given [[eq c = 8]].
+Let d be the total number of peaches in the basket [[var d]]. We have [[eq d = a + b + c]].
+The answer is the value of d [[answer d]].",gpt-35-turbo,azure,0,1047,122,30.0,Word Problems,challenge,2.776880979537964
+DeclarativeSymPy,True,wordProblems,Allan and Jake brought 3 balloons to the park. If Allan brought 2 balloons How many balloons did Jake bring to the park?,1.0,"Let a be the total number of balloons brought to the park [[var a]]. We're given [[eq a = 3]].
+Let b be the number of balloons Allan brought [[var b]]. We're given [[eq b = 2]].
+Let c be the number of balloons Jake brought [[var c]]. We have [[eq c = a - b]].
+The answer is the value of c [[answer c]].",gpt-35-turbo,azure,0,1043,86,1.0,Word Problems,challenge,2.234071731567383
+DeclarativeSymPy,True,wordProblems,A farmer had 177 tomatoes and 12 potatoes in his garden. If he picked 53 tomatoes How many tomatoes and potatoes does he have left?,12.0,"
+Let a be the number of tomatoes the farmer had [[var a]]. We're given [[eq a = 177]]. 
+Let b be the number of potatoes the farmer had [[var b]]. We're given [[eq b = 12]].
+Let c be the number of tomatoes the farmer picked [[var c]]. We're given [[eq c = 53]].
+Let d be the number of tomatoes the farmer has left [[var d]]. We have [[eq d = a - c]].
+Let e be the number of potatoes the farmer has left [[var e]]. We have [[eq e = b]].
+The answer is the value of d and e [[answer d, e]].",gpt-35-turbo,azure,0,1046,141,136.0,Word Problems,challenge,2.724215269088745
+DeclarativeSymPy,True,wordProblems,At the arcade Dave had won some tickets. He used 12 tickets to buy some toys. If he still has 14 tickets left How many tickets did Dave win at the arcade?,26.0,"
+Let a be the number of tickets Dave won at the arcade [[var a]].
+Let b be the number of tickets Dave used to buy toys [[var b]]. We're given [[eq b = 12]].
+Let c be the number of tickets Dave has left [[var c]]. We're given [[eq c = 14]].
+Let d be the total number of tickets Dave initially won [[var d]]. We have [[eq d = b + c]].
+The answer is the value of d [[answer d]].",gpt-35-turbo,azure,0,1053,107,26.0,Word Problems,challenge,1.7168498039245605
+DeclarativeSymPy,True,wordProblems,After resting they decided to go for a swim. The depth of the water is 5 times Ron's height. Dean is 11 feet shorter than Ron. If Ron stands at 12 feet How deep was the water?,60.0,"Let a be Ron's height [[var a]]. We're given [[eq a = 12]].
+Let b be Dean's height [[var b]]. We're given that [[eq b = a - 11]].
+Let c be the depth of the water [[var c]]. We're given that [[eq c = 5 * a]].
+The answer is the value of c [[answer c]].
+",gpt-35-turbo,azure,0,1061,83,60.0,Word Problems,challenge,1.571091651916504
+DeclarativeSymPy,True,wordProblems,Emily is making bead necklaces for her friends. She had 2 beads and she was able to make 32 necklaces. How many beads did each necklace need?,0.0625,"Let a be the number of beads Emily started with [[var a]]. We're given [[eq a = 2]]. 
+Let b be the number of necklaces Emily made [[var b]]. We're given [[eq b = 32]].
+Let c be the number of beads each necklace needs [[var c]]. We have [[eq a = b * c]].
+The answer is the value of c [[answer c]].",gpt-35-turbo,azure,0,1050,86,16.0,Word Problems,challenge,2.0741195678710938
+DeclarativeSymPy,True,wordProblems," The school cafeteria had 17 apples. If they used 2 to make lunch for the students and then bought 23 more, how many apples would they have? ",38.0,"
+Let a be the initial number of apples in the cafeteria [[var a]]. We're given [[eq a = 17]]. 
+Let b be the number of apples used to make lunch for the students [[var b]]. We're given [[eq b = 2]].
+Let c be the number of apples bought [[var c]]. We're given [[eq c = 23]].
+Let d be the number of apples the cafeteria would have [[var d]]. We have [[eq d = a - b + c]].
+The answer is the value of d [[answer d]].",gpt-35-turbo,azure,0,1051,118,38.0,Word Problems,multi_step,2.1742115020751953
