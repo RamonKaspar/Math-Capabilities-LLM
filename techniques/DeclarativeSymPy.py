@@ -18,7 +18,7 @@ class DeclarativeSymPy(TechniqueInterface):
             tmp = reformat_equations_from_peano(eq_list)
             return get_final_using_sympy(tmp), response, prompt_tokens, completion_tokens
         else:
-            return extract_number(response), None, prompt_tokens, completion_tokens # Try our best
+            return extract_number(response), response, prompt_tokens, completion_tokens # Try our best
 
     def get_chat_introduction(self) -> str:
         return CHAT_INTRODUCTION

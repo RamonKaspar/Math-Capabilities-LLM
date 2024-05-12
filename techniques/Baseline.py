@@ -11,7 +11,7 @@ class Baseline(TechniqueInterface):
         response, prompt_tokens, completion_tokens = self.get_llm_response(question)
         # Extract the answer from the response
         answer = extract_number(response)   
-        return answer, None, prompt_tokens, completion_tokens
+        return answer, response, prompt_tokens, completion_tokens
 
     def get_chat_introduction(self) -> str:
         return "Just return the answer to the problem."
