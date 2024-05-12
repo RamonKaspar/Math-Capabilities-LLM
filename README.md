@@ -81,26 +81,26 @@ This table gives an overview of all techniques we evaluated. The column `Paper` 
     <tbody>
         <tr>
             <td>GPT-3.5-Turbo Baseline (<code>Baseline.py</code>)</a></td>
-            <td>TECHNICAL REPORT?</td>
+            <td>-</td>
             <td>Implemented on my own.</td>
-            <td>TODO</td>
+            <td>Baseline with minimal instructions.</td>
         </tr>
         <tr>
             <td>Chain-of-Thought (<code>CoT.py</code>)</a></td>
             <td>J. Wei et al., “Chain-of-Thought Prompting Elicits Reasoning in Large Language Models.” arXiv, Jan. 10, 2023. Accessed: Mar. 22, 2024. [Online]. Available: http://arxiv.org/abs/2201.11903</td>
-            <td>-</td>
-            <td>TODO</td>
+            <td>Implemented on my own.</td>
+            <td>Method using LLMs to generate step-by-step textual reasoning chains for problem-solving.</td>
         </tr>
         <tr>
             <td>Program-aided Language Models (<code>PaL.py</code>)</a></td>
             <td>L. Gao et al., “PAL: Program-aided Language Models.” arXiv, Jan. 27, 2023. doi: 10.48550/arXiv.2211.10435.</td>
-            <td>-</td>
-            <td>TODO</td>
+            <td><a href="https://github.com/reasoning-machines/pal">Author's implementation</a>(with slight adaptations)</td>
+            <td>Method leveraging LLMs for generating programmatic reasoning steps in natural language problems, executed via a Python interpreter.</td>
         </tr>
         <tr>
             <td>Role-Play Prompting (<code>RolePlay.py</code>)</a></td>
             <td>A. Kong et al., “Better Zero-Shot Reasoning with Role-Play Prompting.” arXiv, Mar. 13, 2024. Accessed: May 03, 2024. [Online]. Available: http://arxiv.org/abs/2308.07702</td>
-            <td>-</td>
+            <td><a href="https://github.com/NKU-HLT/Role-Play-Prompting">Author's implementation</a>(with slight adaptations)</td>
             <td>Role-play prompting involves instructing a language model to adopt a specific persona (i.e. a Math teacher) to tailor its responses accordingly.</td>
         </tr>
         <tr>
@@ -109,4 +109,9 @@ This table gives an overview of all techniques we evaluated. The column `Paper` 
             <td><a href="https://github.com/joyheyueya/declarative-math-word-problem/tree/main">Author's implementation</a>(with slight adaptations)</td>
             <td>Uses the LLM to incrementally formalize problems into variables and equations, then employs a symbolic solver (Python SymPy) to compute solutions.</td>
         </tr>
+        <tr>
+            <td>Automatic Model Selection (<code>ModelSelection.py</code>)</a></td>
+            <td>J. X. Zhao, Y. Xie, K. Kawaguchi, J. He, and M. Q. Xie, “Automatic Model Selection with Large Language Models for Reasoning.” arXiv, Oct. 23, 2023. doi: 10.48550/arXiv.2305.14333.</td>
+            <td><a href="https://github.com/XuZhao0/Model-Selection-Reasoning/tree/main">Author's implementation</a>(with slight adaptations)</td>
+            <td>Method for dynamic model selection between Chain-of-Thought (CoT) and Program-Aided Language Models (PAL) using LLMs, i.e. choose the most effective reasoning approach based on the problem specifics.</td>
 </table>
