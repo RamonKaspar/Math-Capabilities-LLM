@@ -148,7 +148,9 @@ This plot gives an overview on the performance of each method:
 
 The composite score for each technique is calculated as:
 
-\[ \text{Score}_{\text{Technique}} = \alpha \cdot \text{Accuracy}_{\text{Technique}} + \beta \cdot \text{Normalized Latency}_{\text{Technique}} + \gamma \cdot \text{Normalized Token Usage}_{\text{Technique}} \]
+$$
+\text{Score}_{\text{Technique}} = \alpha \cdot \text{Accuracy}_{\text{Technique}} + \beta \cdot \text{Normalized Latency}_{\text{Technique}} + \gamma \cdot \text{Normalized Token Usage}_{\text{Technique}}
+$$
 
 Normalization for Latency and Token Usage is performed using the following formula:
 $$\text{Normalized Metric} = 1 - \frac{\text{Metric} - \min(\text{Metric})}{\max(\text{Metric}) - \min(\text{Metric})}$$
