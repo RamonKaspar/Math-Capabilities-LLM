@@ -8,14 +8,11 @@ We deviate from using standard classification metrics such as True Positives (TP
 
 ### Terminology
 
-- **Correct Answer (CA)**: The technique returns the exact ground truth float.
-- **Incorrect Answer (IC)**: The technique returns a float that is not correct.
-- **Abstention (AB)**: The technique returns `None`, indicating it does not know the answer (or an error occured). While not ideal, this may be preferable to providing an incorrect answer.
+- **Correct Answer**: The technique returns the exact ground truth float.
+- **Incorrect Answer**: The technique returns a float that is not correct.
+- **Error**: The technique returns `None`, indicating that an error occured. While not ideal, this may be preferable to providing an incorrect answer.
 
 ### Metrics
 
-- **Accuracy**: The proportion of all correct answers to the total number of questions. Abstentions are not counted as correct.
-  $$\text{Accuracy} = \frac{\text{Number of Correct Answers}}{\text{Total Number of Questions}} = \frac{\text{CA}}{\text{Total Number of Questions}}$$
-
-- **Precision**: - **Precision**: The proportion of correct answers among all the answers provided by the technique. This metric highlights the ability to avoid incorrect answers, with higher precision indicating a lower tendency to provide false information (i.e. a "hallucination").
-  $$\text{Precision} = \frac{\text{Number of Correct Answers}}{\text{Number of Correct Answers + Number of Incorrect Answers}} = \frac{\text{CA}}{\text{CA + IC}}$$
+**Accuracy**: The proportion of all correct answers to the total number of questions. Errors are counted as incorrect.
+$$\text{Accuracy} = \frac{\text{Number of Correct Answers}}{\text{Total Number of Questions}}$$
