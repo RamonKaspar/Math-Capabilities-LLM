@@ -149,7 +149,7 @@ This plot gives an overview on the performance of each method:
 The composite score for each technique is calculated as:
 
 $$
-\text{Score}_{\text{Technique}} = \alpha \cdot \text{Accuracy}_{\text{Technique}} + \beta \cdot \text{Normalized Latency}_{\text{Technique}} + \gamma \cdot \text{Normalized Token Usage}_{\text{Technique}}
+Score_{Technique} = \alpha \cdot Accuracy_{Technique} + \beta \cdot Normalized\_Latency_{Technique} + \gamma \cdot Normalized\_Token\_Usage_{Technique}
 $$
 
 Normalization for Latency and Token Usage is performed using the following formula:
@@ -176,3 +176,6 @@ To determine the best performing methods, we averaged the results from the three
 | DeclarativeSymPy Few-shot  |     0.56 |          540.185 |      2.82096 | 0.602099 |
 | ModelSelection Zero-shot   | 0.653333 |          347.842 |      20.3894 | 0.562639 |
 | DeclarativeSymPy Zero-shot |     0.37 |           216.23 |      4.24902 | 0.509588 |
+
+$$
+$$
