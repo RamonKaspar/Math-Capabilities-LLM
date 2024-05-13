@@ -115,3 +115,62 @@ This table gives an overview of all techniques we evaluated. The column `Paper` 
             <td><a href="https://github.com/XuZhao0/Model-Selection-Reasoning/tree/main">Author's implementation</a>(with slight adaptations)</td>
             <td>Method for dynamic model selection between Chain-of-Thought (CoT) and Program-Aided Language Models (PAL) using LLMs, i.e. choose the most effective reasoning approach based on the problem specifics.</td>
 </table>
+
+## Evaluation
+
+When the method directly returns a number (e.g., PaL, DeclarativeSymPy, ModelSelection), we use that value. Otherwise, we extract the last number in the LLM's response.
+
+### Accuracy
+
+The accuracy of each method across three benchmarks is displayed in the plot below. Each method was evaluated in both a zero-shot scenario and a few-shot scenario, the latter utilizing 5 example prompts.
+
+![Overview accuracies](evaluation/plots/Overview_Accuracies.png)
+
+The accuracies for the geometry dataset are significantly lower than those for the arithmetic and word problems, highlighting challenges specific to geometric reasoning.
+
+### Which questions can be answered?
+
+This section visualizes the performance of each method across three different datasets: `arithmetic_100`, `wordProblems_100`, and `geometry_100`, each containing 100 questions. The data is represented in three separate plots, one for each dataset. The grid layout within each plot allows for a visual comparison of the methods per question, effectively showing not only individual performance but also how the methods complement each other.
+
+![Overview question classification](evaluation/plots/Classification_grid.png)
+
+### The best method
+
+We evaluate the methods based on three criteria:
+
+- **Accuracy:** The overall accuracy should be as high as possible.
+- **Latency:** Should be as low as possible.
+- **Token Usage:** Use as few tokens as possible to reduce costs.
+
+This plot gives an overview on the performance of each method:
+
+![alt text](evaluation/plots/Methods_accuracy_vs_latency_vs_tokens.png)
+
+The composite score for each technique is calculated as:
+
+$$\text{Score}_{\text{Technique}} = \alpha \cdot \text{Accuracy}_{\text{Technique}} + \beta \cdot\text{Normalized Latency}_{\text{Technique}} + \gamma \cdot \text{Normalized Token Usage}_{\text{Technique}}$$
+
+Normalization for Latency and Token Usage is performed using the following formula:
+$$\text{Normalized Metric} = 1 - \frac{\text{Metric} - \min(\text{Metric})}{\max(\text{Metric}) - \min(\text{Metric})}$$
+This normalization ensures that lower values, which are preferable, contribute positively to the overall score.
+
+Weights are assigned based on the relative importance of each criterion: We choose $\alpha = 0.7$ for accuracy because providing correct answers is paramount. $\beta = 0.15$ and $\gamma = 0.15$ are assigned to latency and token usage respectively, reflecting their lesser but still significant roles in overall performance.
+
+The resulting score represents the method's overall efficiency and effectiveness, making it easier to identify the most suitable techniques for practical applications in solving mathematical problems with LLMs.
+
+To determine the best performing methods, we averaged the results from the three datasets (`arithmetic_100`, `wordProblems_100`, `geometry_100`).
+
+| Technique                  | Accuracy | Mean Token usage | Mean Latency |    Score |
+| :------------------------- | -------: | ---------------: | -----------: | -------: |
+| PaL Few-shot               |      0.7 |          369.613 |      2.07205 | 0.732982 |
+| RolePlaying Few-shot       |     0.64 |          200.403 |      1.02318 | 0.725959 |
+| PaL Zero-shot              | 0.616667 |           108.69 |      1.80708 | 0.718163 |
+| Baseline Zero-shot         | 0.586667 |          66.6517 |     0.921686 | 0.710667 |
+| Baseline Few-shot          |      0.6 |           150.38 |      1.18518 | 0.704661 |
+| RolePlaying Zero-shot      |     0.57 |          136.563 |      4.42511 | 0.660894 |
+| CoT Few-shot               | 0.593333 |           425.51 |      3.91327 | 0.635244 |
+| CoT Zero-shot              | 0.526667 |          113.805 |       4.9358 | 0.630243 |
+| ModelSelection Few-shot    |     0.74 |          1010.36 |      6.35093 | 0.626167 |
+| DeclarativeSymPy Few-shot  |     0.56 |          540.185 |      2.82096 | 0.602099 |
+| ModelSelection Zero-shot   | 0.653333 |          347.842 |      20.3894 | 0.562639 |
+| DeclarativeSymPy Zero-shot |     0.37 |           216.23 |      4.24902 | 0.509588 |
