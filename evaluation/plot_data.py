@@ -96,29 +96,37 @@ def plot_results_grid(dataset, ax=None):
     cmap = ListedColormap(color_map[unique_classifications])
     norm = BoundaryNorm(np.arange(len(unique_classifications) + 1), cmap.N)  # Set boundaries for color bins
 
-    aspect_ratio = len(methods) / float(n) 
+    aspect_ratio = len(methods) / float(n)
 
     if ax is None:
         plt.figure(figsize=(10 * aspect_ratio, 10))
     sns.heatmap(results_array, cmap=cmap, norm=norm, linewidths=0.5,
-                     cbar_kws={"ticks": np.arange(len(unique_classifications)) + 0.5}, ax=ax)
+                cbar_kws={"ticks": np.arange(len(unique_classifications)) + 0.5}, ax=ax)
     ax.figure.axes[-1].set_yticklabels(['Correct', 'Incorrect', 'Error'][i] for i in unique_classifications)  # Colorbar label setup
 
+    # Add y-ticks every 10th row
+    y_ticks = np.arange(10, n + 1, 10)
+    ax.set_yticks(y_ticks - 0.5)  # Shift to align with heatmap grid
+    
+    # Set y-tick labels to 0, 10, 20, ...
+    ax.set_yticklabels(y_ticks)
+    
+    # # Highlight every 10th row
+    # for i in range(10, n, 10):
+    #     ax.axhline(i, color='black', linestyle='--', linewidth=0.5)
+
     # Plot formatting
-    ax.set_yticks(np.arange(n) + 0.5)
     ax.set_xticks(np.arange(len(methods)) + 0.5)
     ax.set_xticklabels(methods, rotation=45, ha="right")
-    ax.set_yticks([])  # Optionally hide y-ticks if they are irrelevant
-    ax.set_title(f"Classification Grid for {dataset} on azure gpt-3.5-turbo")
+    ax.set_title(f"{dataset}")
     if ax is None: 
         plt.show()
-    
 
-def plot_accuracy(dataset, ax = None):
-    """Plots an overview of the accracies for each method."""
-    # Set the color palette from Seaborn
-    sns.set_palette('deep')
-    
+
+def plot_accuracy(dataset, ax=None):
+    """Plots an overview of the accuracies for each method."""
+    sns.set_palette('deep')  # Set the color palette from Seaborn
+
     techniques, zero_shot, few_shot = [], [], []
     for file in os.listdir("data"):
         if file.endswith(".csv") and dataset in file:
@@ -128,26 +136,28 @@ def plot_accuracy(dataset, ax = None):
             if method_name not in techniques:
                 techniques.append(method_name)
             method_few_shot_or_zero_shot = file.split("_")[1]
-            if (method_few_shot_or_zero_shot == "Zero-shot"):
-                zero_shot.append(round(acc*100, 1))
-            elif (method_few_shot_or_zero_shot == "Few-shot"):
-                few_shot.append(round(acc*100, 1))
+            if method_few_shot_or_zero_shot == "Zero-shot":
+                zero_shot.append(round(acc * 100, 1))
+            elif method_few_shot_or_zero_shot == "Few-shot":
+                few_shot.append(round(acc * 100, 1))
+    
     x = range(len(techniques))  # the label locations
+    width = 0.35  # width of the bars
 
     if ax is None:
         fig, ax = plt.subplots()
-    rects1 = ax.bar(x, zero_shot, width=0.4, label='Zero-shot')
-    rects2 = ax.bar([p + 0.4 for p in x], few_shot, width=0.4, label='Few-shot')
+    
+    rects1 = ax.bar(x, zero_shot, width=width, label='Zero-shot')
+    rects2 = ax.bar([p + width + 0.05 for p in x], few_shot, width=width, label='Few-shot')
 
     # Add some text for labels, title, and custom x-axis tick labels, etc.
     ax.set_ylabel('Accuracy (%)')
     ax.set_title(f"Accuracies for {dataset}")
-    ax.set_xticks([p + 0.2 for p in x])
+    ax.set_xticks([p + width / 2 + 0.025 for p in x])
     ax.set_xticklabels(techniques, rotation=45, ha="right")
     ax.legend()
-    if ax is not None:
-        ax.set_ylim(0, 100)  # Set y-axis limits from 0 to 100
-        
+    ax.set_ylim(0, 100)  # Set y-axis limits from 0 to 100
+
     # Function to add labels on the bars
     def autolabel(rects):
         for rect in rects:
